@@ -1,87 +1,63 @@
 ---
 title: About
 layout: page
-description: About
+description: About MgonnacrushT
 bodyClass: page-about
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+# About MgonnacrushT Limited
 
-![Accounting Services](/images/thom-holmes-Lrfw0U_o9I0-unsplash.jpg)
+MgonnacrushT Limited is a small UK company focused on building a simple, honest tool for people who collect a lot of inspiration, ideas and recommendations online — and don’t want them to disappear into forgotten tabs and screenshots.
 
-# Objectives
+The product is still in active development. The aim is not to be the loudest app in your life, but to quietly keep track of the things you actually care about.
 
-Financial accounting and financial reporting are often used as synonyms.
+## Why this app exists
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+I’m a 28‑year‑old software developer who has always saved way too many things across too many apps: movies on Letterboxd, board games on BoardGameGeek, restaurants in Google Maps, articles in notes, videos in playlists, and “someday” ideas in half‑finished documents.
 
-## Relevance
+Over time I realised I was spending more effort **remembering where I saved things** than actually using them.
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
+MgonnacrushT started as a tool I wanted for myself: one inbox where I can send all of this, tag it, and come back to it later without thinking “which app did I put that in?”.
 
-> The ingredients of relevance are the predictive value and confirmatory value.
+Once I started sketching it out, it became obvious that other people with similar habits might want the same thing — especially anyone who loves recommendations, side projects, learning new skills or planning trips and experiences.
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
+## Small, independent, long‑term
 
-## Faithful Representation
+This is not a “move fast and break everything” project. It’s a **small, focused product** that I plan to build and improve over the long term.
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
+That means:
 
-## Enhancing Qualitative Characteristics
+- No pressure to chase every trend.
+- A clear, opinionated scope instead of trying to do everything.
+- Time to get the core experience right before adding lots of extras.
 
-### Verifiability
+The business model is straightforward: a generous free tier, a fair paid plan for people who get real value from the app, and optional future revenue from things like affiliate links and APIs — always with clear disclosure.
 
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
+## Privacy, trust and respect
 
-### Comparability
+Your saved items are **your data**, not content to be quietly resold.
 
-Comparability is the uniform application of accounting methods across entities in the same industry. The principle of consistency is under comparability. Consistency is the uniform application of accounting across points in time within an entity.
+Before public launch, there will be:
 
-### Understandability
+- A clear **Privacy Policy**.
+- Easy‑to‑understand **Terms of Service**.
 
-Understandability means that accounting reports should be expressed as clearly as possible and should be understood by those to whom the information is relevant.
-Timeliness: Timeliness implies that financial information must be presented to the users before a decision is to be made.
+The product is being designed to respect **GDPR / UK GDPR**, including data subject rights and sensible data retention.
 
----
+If affiliate links or in‑app ads are used in the future, they will be:
 
-## Statement of cash flows
+- Clearly **labelled and disclosed**.
+- Kept **reasonable**, not overwhelming the experience.
+- Always paired with real editorial context, not dark patterns.
 
-The statement of cash flows considers the inputs and outputs in concrete cash within a stated period. The general template of a cash flow statement is as follows: Cash Inflow - Cash Outflow + Opening Balance = Closing Balance
+## Get in touch
 
-| Cash Inflow | Outflow   | Opening Balance |
-| ----------- | --------- | --------------- |
-| _Monday_    | `Tuesday` | **Wednesday**   |
-| 1           | 2         | 3               |
+If you:
 
-**Example 1:** in the beginning of September, Ellen started out with $5 in her bank account. During that same month, Ellen borrowed $20 from Tom. At the end of the month, Ellen bought a pair of shoes for $7. Ellen's cash flow statement for the month of September looks like this:
+- Struggle with too many lists and tabs,
+- Want to try an early version of the app, or
+- Are interested in partnering or integrating with a future API,
 
-- Cash inflow: $20
-- Cash outflow:$7
-- Opening balance: $5
-- Closing balance: $20 – $7 + $5 = $18
+I’d love to hear from you.
 
-**Example 2:** in the beginning of June, WikiTables, a company that buys and resells tables, sold 2 tables. They'd originally bought the tables for $25 each, and sold them at a price of $50 per table. The first table was paid out in cash however the second one was bought in credit terms. WikiTables' cash flow statement for the month of June looks like this:
-
-> **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
-
-## Statement of financial position (balance sheet)
-
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
-
-- **fixed assets**
-  - property
-  - building
-  - equipment (such as factory machinery)
-- **intangible assets**
-  - copyrights
-  - trademarks
-  - patents
-    - pending
-    - international
-- goodwill
-
-Owner's equity, sometimes referred to as net assets, is represented differently depending on the type of business ownership. Business ownership can be in the form of a sole proprietorship, partnership, or a corporation. For a corporation, the owner's equity portion usually shows common stock, and retained earnings (earnings kept in the company). Retained earnings come from the retained earnings statement, prepared prior to the balance sheet.
+You can reach me at **mgonnacrusht@gmail.com**.
