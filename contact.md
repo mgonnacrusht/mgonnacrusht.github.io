@@ -10,7 +10,6 @@ If you’re interested in MgonnacrushT, have feedback, or want to hear when the 
 
 ### Reasons to contact
 
-- You want to **try an early version** of the app when it’s ready.
 - You have specific **use cases or workflows** you’d like the app to support.
 - You’re curious about **partnerships or future API access**.
 - Or you simply want to say “this is a problem I have too”.
@@ -21,9 +20,7 @@ For now, the simplest way to get in touch is email:
 
 **mgonnacrusht@gmail.com**
 
-### Early access & newsletter
-
-There will be an **early access list** and possibly a small, low‑frequency newsletter sharing product updates, feature progress and behind‑the‑scenes notes.
+### newsletter
 
 Until a dedicated signup is live, just send a short email if you’d like to:
 
