@@ -20,22 +20,7 @@ Instead of splitting your memory across multiple single‑purpose tools, Mgonnac
 - One way to organise them.
 - One interface to search and revisit them.
 
-## How saving works
-
-The first versions of the app will make it easy to **save items quickly**, without overthinking structure:
-
-- Save a **link** (movie page, restaurant, article, product, video, etc.).
-- Add an optional **title and note** so future you remembers why it mattered.
-- Add **tags** like “watch”, “read later”, “restaurants‑London”, “board games”, “gift ideas”, “career” and more. [tags will be in the future]
-
-Over time, additional ways to save may be added, such as:
-
-- Simple **text‑only items** (ideas without a URL).
-- Support for **screenshots or images** where a visual reminder is more helpful.
-
-The core principle is speed: it should feel natural to capture something in a few seconds and get back to what you were doing.
-
-## Pricing & future plans
+## **Pricing & future plans**
 
 * The app will be free and contain minimal, non-disturbing advertising in its initial release.
 * Afterwards, we plan to generate affiliate income from sales sites like Amazon by fetching product prices and tracking price features.
