@@ -4,7 +4,7 @@ date: 2019-06-18T12:33:46+10:00
 weight: 8
 ---
 
-Looking further out, MgonnacrushT could become a platform other tools can hook into. That means respectful APIs, optional integrations and smarter recommendations built on the data you already trust the app with.
+Looking further out, SaveT could become a platform other tools can hook into. That means respectful APIs, optional integrations and smarter recommendations built on the data you already trust the app with.
 <!--more-->
 
 Concepts on the horizon:
