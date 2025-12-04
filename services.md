@@ -20,8 +20,8 @@ Instead of splitting your memory across multiple single‑purpose tools, Mgonnac
 - One way to organise them.
 - One interface to search and revisit them.
 
-## **Pricing & future plans**
 
+**Pricing & future plans**
 * The app will be free and contain minimal, non-disturbing advertising in its initial release.
 * Afterwards, we plan to generate affiliate income from sales sites like Amazon by fetching product prices and tracking price features.
 * It could be a membership system where we offer features like the price drop warning and the noads option to premium users, which we plan to add much later.
