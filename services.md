@@ -1,15 +1,16 @@
 ---
-title: Product
+title: SaveT
 layout: services
-description: Product and Features
+description: SaveT product and features
+permalink: "/savet/"
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# The MgonnacrushT product
+# SaveT – the MgonnacrushT product
 
-MgonnacrushT is a personal bookmarking and organisation app for all the things you don’t want to forget online: media, places, links, ideas and more.
+SaveT is a personal bookmarking and organisation app built by MgonnacrushT for all the things you don’t want to forget online: media, places, links, ideas and more.
 
 Instead of splitting your memory across multiple single‑purpose tools, MgonnacrushT gives you:
 
@@ -45,7 +46,7 @@ The aim is to make “what should I watch / do / read next?” easier to answer,
 
 ## Cross‑device usage
 
-From the beginning, MgonnacrushT is being designed as a **cross‑platform** tool.
+From the beginning, SaveT is being designed as a **cross‑platform** tool.
 
 - **Now / early stages:** focus on a solid mobile experience, so you can capture ideas when you’re out in the world or scrolling on your phone.
 - **Later:** web and desktop access, so you can browse and organise from your laptop, plus a **browser extension** for one‑click saving while you work.
