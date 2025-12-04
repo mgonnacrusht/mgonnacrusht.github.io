@@ -4,7 +4,7 @@ date: 2019-03-28T15:14:54+10:00
 weight: 6
 ---
 
-MgonnacrushT is starting as a personal inbox, but collaboration is on the roadmap. The plan is to let you collect things together with the people who matter most.
+SaveT is starting as a personal inbox, but collaboration is on the roadmap. The plan is to let you collect things together with the people who matter most.
 <!--more-->
 
 Ideas under exploration include:

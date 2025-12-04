@@ -4,7 +4,7 @@ date: 2019-02-28T15:15:34+10:00
 weight: 5
 ---
 
-Side projects and learning goals come with their own pile of tutorials, reference links, tools and examples. MgonnacrushT gives you a dedicated space to gather everything you need to stay motivated.
+Side projects and learning goals come with their own pile of tutorials, reference links, tools and examples. SaveT gives you a dedicated space to gather everything you need to stay motivated.
 <!--more-->
 
 - Save docs, videos, repos, podcasts or quick text notes related to a goal.

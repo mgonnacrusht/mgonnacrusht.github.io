@@ -4,7 +4,7 @@ date: 2019-01-28T15:15:26+10:00
 weight: 3
 ---
 
-Forty open tabs, endless “read later” lists and DM’d links make it easy to lose great content. MgonnacrushT becomes your single inbox for anything you want to read, watch or listen to when you actually have time.
+Forty open tabs, endless “read later” lists and DM’d links make it easy to lose great content. SaveT becomes your single inbox for anything you want to read, watch or listen to when you actually have time.
 <!--more-->
 
 - Save from mobile share sheets, desktop bookmarklets (planned) or plain copy/paste.

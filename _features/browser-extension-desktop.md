@@ -4,7 +4,7 @@ date: 2019-04-18T12:33:46+10:00
 weight: 7
 ---
 
-Saving from your phone is critical, but desktop browsing still accounts for a huge portion of online discovery. MgonnacrushT has a browser extension and full web app on the roadmap so you can capture and organise things wherever you are.
+Saving from your phone is critical, but desktop browsing still accounts for a huge portion of online discovery. SaveT has a browser extension and full web app on the roadmap so you can capture and organise things wherever you are.
 <!--more-->
 
 Planned improvements include:

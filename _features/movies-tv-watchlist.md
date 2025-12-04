@@ -4,7 +4,7 @@ date: 2018-11-18T12:33:46+10:00
 weight: 1
 ---
 
-Movies, series and documentaries end up scattered across Letterboxd lists, streaming watchlists, text messages and screenshots. MgonnacrushT gives you one calm space to keep track of everything you want to watch next.
+Movies, series and documentaries end up scattered across Letterboxd lists, streaming watchlists, text messages and screenshots. SaveT gives you one calm space to keep track of everything you want to watch next.
 <!--more-->
 
 - Save titles from any link, trailer or conversation in a couple of taps.

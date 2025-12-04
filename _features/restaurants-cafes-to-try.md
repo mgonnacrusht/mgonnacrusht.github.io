@@ -4,7 +4,7 @@ date: 2018-12-28T15:14:39+10:00
 weight: 2
 ---
 
-Map pins, bookmarked TikToks and random notes are not a reliable way to remember where you want to eat next. MgonnacrushT keeps all of your food and coffee ideas in one tidy list.
+Map pins, bookmarked TikToks and random notes are not a reliable way to remember where you want to eat next. SaveT keeps all of your food and coffee ideas in one tidy list.
 <!--more-->
 
 - Save places straight from Google Maps links, articles, socials or plain text.
