@@ -19,8 +19,6 @@ Instead of splitting your memory across multiple single‑purpose tools, Mgonnac
 - One place to save things.
 - One way to organise them.
 - One interface to search and revisit them.
-
-
 ## Pricing & future plans
 * The app will be free and contain minimal, non-disturbing advertising in its initial release.
 * Afterwards, we plan to generate affiliate income from sales sites like Amazon by fetching product prices and tracking price features.
