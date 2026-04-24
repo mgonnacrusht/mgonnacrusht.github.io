@@ -1,0 +1,150 @@
+---
+layout: default
+bodyClass: "page-savet"
+---
+
+<section class="savet-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 text-center">
+        {% if page.hero_logo %}
+        <img
+          class="savet-hero-logo"
+          src="{{ page.hero_logo | relative_url }}"
+          alt="{{ page.title }} logo"
+          width="280"
+          height="280"
+        />
+        {% endif %}
+        <h1 class="savet-hero-title">{{ page.hero_title | default: page.title | default: "SaveT" }}</h1>
+        {% if page.tagline %}
+        <p class="savet-hero-tagline">{{ page.tagline }}</p>
+        {% endif %}
+        {% if page.lead %}
+        <p class="savet-hero-lead">{{ page.lead }}</p>
+        {% endif %}
+        {% if page.cta and page.cta.label %}
+        <div class="savet-hero-cta">
+          <a class="button button-primary" href="{{ page.cta.url | relative_url }}">{{ page.cta.label }}</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if page.capabilities and page.capabilities.size > 0 %}
+<section class="strip strip-grey savet-capabilities-strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="savet-section-title">Core capabilities</h2>
+        <ul class="savet-capabilities">
+          {% for item in page.capabilities %}
+          <li class="savet-capability">
+            <span class="savet-capability-icon" aria-hidden="true"></span>
+            <span class="savet-capability-text">{{ item }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if page.steps and page.steps.size > 0 %}
+<section class="savet-steps-section">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="savet-section-title text-center">How SaveT works</h2>
+        {% if page.steps_intro %}
+        <p class="savet-section-lead text-center">{{ page.steps_intro }}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    {% for step in page.steps %}
+    <div class="row align-items-center savet-step {% cycle 'imgleft', 'imgright' %}">
+      <div class="col-12 col-md-5 savet-step-media">
+        <img
+          class="savet-step-image"
+          src="{{ step.image | relative_url }}"
+          alt="{{ step.alt | default: step.title }}"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-12 col-md-7 savet-step-body">
+        {% if step.number %}<div class="savet-step-number">{{ step.number }}</div>{% endif %}
+        <h3 class="savet-step-title">{{ step.title }}</h3>
+        <p class="savet-step-text">{{ step.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.video_id %}
+<section class="strip strip-grey savet-video-strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="savet-section-title text-center">How to use SaveT</h2>
+        {% if page.video_caption %}
+        <p class="savet-section-lead text-center">{{ page.video_caption }}</p>
+        {% endif %}
+        <div class="savet-video-wrap">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/{{ page.video_id }}"
+              title="How to use SaveT"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if site.features and site.features.size > 0 %}
+<section class="savet-features-section">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 text-center">
+        <h2 class="savet-section-title">Use cases &amp; planned features</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for feature in site.features %}
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <div class="service service-summary savet-feature-card">
+          <div class="service-content">
+            <h3 class="service-title">
+              <a href="{{ feature.url | relative_url }}">{{ feature.title }}</a>
+            </h3>
+            <p>{{ feature.excerpt | markdownify | strip_html | truncate: 140 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="strip strip-grey savet-extra-strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 savet-extra">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,339 @@
+.page-savet {
+  .savet-hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .savet-hero-logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 110px;
+    margin: 0 auto 24px;
+    @include media-breakpoint-up(md) {
+      max-width: 140px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .savet-hero-title {
+    font-family: $font-family-heading;
+    color: $black;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      font-size: 48px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 54px;
+    }
+  }
+
+  .savet-hero-tagline {
+    font-family: $font-family-heading;
+    color: $primary;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+  }
+
+  .savet-hero-lead {
+    color: $steel;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 auto 28px;
+    max-width: 680px;
+    @include media-breakpoint-up(md) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .savet-hero-cta {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .savet-section-title {
+    font-family: $font-family-heading;
+    color: $black;
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      font-size: 34px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .savet-section-lead {
+    color: $steel;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    max-width: 720px;
+    margin: -8px auto 32px;
+  }
+
+  .savet-capabilities-strip {
+    .savet-section-title {
+      text-align: center;
+    }
+  }
+
+  .savet-capabilities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px 24px;
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .savet-capability {
+    display: flex;
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid darken($white-offset, 3%);
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: $black;
+    font-size: 0.98rem;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(47, 47, 65, 0.04);
+  }
+
+  .savet-capability-icon {
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background: $primary;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      width: 11px;
+      height: 6px;
+      border-left: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .savet-capability-text {
+    color: $steel;
+    line-height: 1.45;
+  }
+
+  .savet-steps-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .savet-step {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    @include media-breakpoint-up(md) {
+      margin-top: 72px;
+      margin-bottom: 72px;
+    }
+    &.imgright {
+      @include media-breakpoint-up(md) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .savet-step-media {
+    text-align: center;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .savet-step-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    margin: 0 auto;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(47, 47, 65, 0.14);
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 340px;
+    }
+  }
+
+  .savet-step-body {
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  .savet-step.imgright .savet-step-body {
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+
+  .savet-step-number {
+    font-family: $font-family-heading;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+    color: lighten($secondary, 5%);
+    margin-bottom: 8px;
+    @include media-breakpoint-up(md) {
+      font-size: 64px;
+    }
+  }
+
+  .savet-step-title {
+    font-family: $font-family-heading;
+    color: $black;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 12px;
+    @include media-breakpoint-up(md) {
+      font-size: 34px;
+    }
+  }
+
+  .savet-step-text {
+    color: $steel;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 1.15rem;
+    }
+  }
+
+  .savet-video-strip {
+    .savet-section-title {
+      text-align: center;
+    }
+  }
+
+  .savet-video-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(47, 47, 65, 0.15);
+    background: #000;
+    iframe {
+      border: 0;
+    }
+  }
+
+  .savet-features-section {
+    .savet-section-title {
+      text-align: center;
+    }
+  }
+
+  .savet-feature-card {
+    height: 100%;
+    border: 1px solid darken($white-offset, 3%);
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 22px 22px 18px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(47, 47, 65, 0.04);
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(47, 47, 65, 0.08);
+    }
+    .service-title {
+      font-family: $font-family-heading;
+      font-size: 20px;
+      line-height: 1.3;
+      margin-top: 0;
+      margin-bottom: 10px;
+      a {
+        color: $black;
+        text-decoration: none;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    p {
+      color: $steel;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+
+  .savet-extra-strip {
+    .savet-extra {
+      color: $steel;
+      h1,
+      h2,
+      h3 {
+        font-family: $font-family-heading;
+        color: $black;
+      }
+      h2 {
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      h3 {
+        font-size: 20px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 16px;
+      }
+      li {
+        margin-bottom: 6px;
+        line-height: 1.5;
+      }
+      p {
+        line-height: 1.55;
+      }
+      a {
+        color: $primary;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
