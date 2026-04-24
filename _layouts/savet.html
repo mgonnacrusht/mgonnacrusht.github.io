@@ -16,7 +16,7 @@ bodyClass: "page-savet"
           height="280"
         />
         {% endif %}
-        <h1 class="savet-hero-title">{{ page.hero_title | default: page.title | default: "SaveT" }}</h1>
+        <h1 class="savet-hero-title{% if page.hide_hero_title %} visually-hidden{% endif %}">{{ page.hero_title | default: page.title | default: "SaveT" }}</h1>
         {% if page.tagline %}
         <p class="savet-hero-tagline">{{ page.tagline }}</p>
         {% endif %}
