@@ -30,4 +30,4 @@ Pricing: Contact for pricing.
 
 ### Email
 
-For all SaveT and service requests: **mgonnacrusht@gmail.com**
+For all SaveT and service requests: **support@mgonnacrusht.co.uk**

@@ -47,4 +47,4 @@ For SaveT and client work, we follow straightforward data principles:
 
 ## Get in touch
 
-If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, contact us at **mgonnacrusht@gmail.com**.
+If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, contact us at **support@mgonnacrusht.co.uk**.

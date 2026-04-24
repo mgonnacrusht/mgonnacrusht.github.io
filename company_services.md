@@ -35,5 +35,5 @@ MgonnacrushT provides remote, end-to-end software delivery for startups, founder
 
 ## Need a development partner?
 
-Email **mgonnacrusht@gmail.com** with your product goal, timeline, and current stack.  
+Email **support@mgonnacrusht.co.uk** with your product goal, timeline, and current stack.  
 For our flagship product, visit [SaveT](/savet/).  

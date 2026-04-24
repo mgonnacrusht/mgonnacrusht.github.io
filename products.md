@@ -24,4 +24,4 @@ SaveT is our flagship bookmarking and organization app for links, places, media,
 
 Additional products are in development and will be listed here as they are announced.
 
-If you want updates, contact **mgonnacrusht@gmail.com**.
+If you want updates, contact **support@mgonnacrusht.co.uk**.
