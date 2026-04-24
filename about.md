@@ -1,63 +1,50 @@
 ---
 title: About
 layout: page
-description: About MgonnacrushT
+description: MgonnacrushT builds SaveT and delivers mobile and SaaS product engineering services.
 bodyClass: page-about
 ---
 
 # About MgonnacrushT Limited
 
-MgonnacrushT Limited is a small UK company focused on building a simple, honest tool for people who collect a lot of inspiration, ideas and recommendations online — and don’t want them to disappear into forgotten tabs and screenshots.
+MgonnacrushT Limited is a UK-based product company focused on practical software with long-term value.
 
-The product is still in active development. The aim is not to be the loudest app in your life, but to quietly keep track of the things you actually care about.
+Our primary product is **SaveT**, a bookmarking and organization app designed for people who collect links, media, places, and ideas across many platforms.
 
-## Why this app exists
+## What we build
 
-I’m a 28‑year‑old software developer who has always saved way too many things across too many apps: movies on Letterboxd, board games on BoardGameGeek, restaurants in Google Maps, articles in notes, videos in playlists, and “someday” ideas in half‑finished documents.
+We work across the full delivery lifecycle:
 
-Over time I realised I was spending more effort **remembering where I saved things** than actually using them.
+- Mobile Application Development
+- Android Development
+- Cloud Application Development
+- Custom Software Development
+- Database Development
+- SaaS Development
 
-MgonnacrushT started as a tool I wanted for myself: one inbox where I can send all of this, tag it, and come back to it later without thinking “which app did I put that in?”.
+Our technical scope includes Flutter apps, Spring Boot APIs, cloud infrastructure (AWS/GCP/VPS), PostgreSQL, CI/CD, deployment, and Google Play publishing.
 
-Once I started sketching it out, it became obvious that other people with similar habits might want the same thing — especially anyone who loves recommendations, side projects, learning new skills or planning trips and experiences.
+**Availability:** Remote  
+**Pricing:** Contact for pricing
 
-## Small, independent, long‑term
+## Product philosophy
 
-This is not a “move fast and break everything” project. It’s a **small, focused product** that I plan to build and improve over the long term.
+We prioritize clear UX, stable architecture, and sustainable product decisions over short-term hype.
 
 That means:
 
-- No pressure to chase every trend.
-- A clear, opinionated scope instead of trying to do everything.
-- Time to get the core experience right before adding lots of extras.
+- Solving real user problems with focused scope.
+- Shipping maintainable systems with sensible defaults.
+- Improving products through iteration and feedback.
 
-The business model is straightforward: a generous free tier, a fair paid plan for people who get real value from the app, and optional future revenue from things like affiliate links and APIs — always with clear disclosure.
+## Privacy and trust
 
-## Privacy, trust and respect
+For SaveT and client work, we follow straightforward data principles:
 
-Your saved items are **your data**, not content to be quietly resold.
-
-Before public launch, there will be:
-
-- A clear **Privacy Policy**.
-- Easy‑to‑understand **Terms of Service**.
-
-The product is being designed to respect **GDPR / UK GDPR**, including data subject rights and sensible data retention.
-
-If affiliate links or in‑app ads are used in the future, they will be:
-
-- Clearly **labelled and disclosed**.
-- Kept **reasonable**, not overwhelming the experience.
-- Always paired with real editorial context, not dark patterns.
+- User data should remain user-first.
+- Security and reliability should be built in, not patched in later.
+- Policies and disclosures should be clear and readable.
 
 ## Get in touch
 
-If you:
-
-- Struggle with too many lists and tabs,
-- Want to try an early version of the app, or
-- Are interested in partnering or integrating with a future API,
-
-I’d love to hear from you.
-
-You can reach me at **mgonnacrusht@gmail.com**.
+If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, contact us at **mgonnacrusht@gmail.com**.

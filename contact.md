@@ -1,28 +1,33 @@
 ---
 title: Contact
 layout: contact
-description: Contact and early access
+description: Contact MgonnacrushT for SaveT early access, partnerships, and software development services.
 ---
 
 ## Get in touch
 
-If you’re interested in MgonnacrushT, have feedback, or want to hear when the early access version is ready, you’re very welcome to reach out.
+If you want SaveT updates or need a product engineering partner, we would be happy to hear from you.
 
-### Reasons to contact
+### SaveT inquiries
 
-- You have specific **use cases or workflows** you’d like the app to support.
-- You’re curious about **partnerships or future API access**.
-- Or you simply want to say “this is a problem I have too”.
+- Early access requests
+- Product feedback and feature suggestions
+- Partnership or API collaboration ideas
+
+### Service inquiries
+
+We provide remote software delivery for:
+
+- Mobile Application Development
+- Android Development
+- Cloud Application Development
+- Custom Software Development
+- Database Development
+- SaaS Development
+
+Technology focus: Flutter, Spring Boot, AWS/GCP/VPS, PostgreSQL, end-to-end deployment, and Google Play publishing.  
+Pricing: Contact for pricing.
 
 ### Email
 
-For now, the simplest way to get in touch is email:
-
-**mgonnacrusht@gmail.com**
-
-### newsletter
-
-Until a dedicated signup is live, just send a short email if you’d like to:
-
-- Be notified when the first test versions are available.
-- Share how you currently keep track of movies, places, links and ideas.
+For all SaveT and service requests: **mgonnacrusht@gmail.com**

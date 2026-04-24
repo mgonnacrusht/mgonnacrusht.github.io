@@ -2,20 +2,38 @@ main:
   - name: "SaveT"
     url: "/savet/"
     weight: 2
-  - name: "Team"
-    url: "/team/"
+  - name: "Services"
+    url: "/services/"
     weight: 3
+  - name: "Products"
+    url: "/products/"
+    weight: 4
   - name: "About"
     url: "/about/"
-    weight: 4
+    weight: 5
   - name: "Contact"
     url: "/contact/"
-    weight: 5
+    weight: 6
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
+  - name: "SaveT"
+    url: "/savet/"
+    weight: 2
+  - name: "Services"
+    url: "/services/"
+    weight: 3
+  - name: "Products"
+    url: "/products/"
+    weight: 4
   - name: "Contact"
     url: "/contact/"
-    weight: 2
+    weight: 5
+  - name: "Privacy Policy"
+    url: "/legal/privacy/"
+    weight: 6
+  - name: "Terms of Use"
+    url: "/legal/terms/"
+    weight: 7
