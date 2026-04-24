@@ -3,67 +3,121 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<section class="page-hero">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 text-center">
+        {% if page.hero_illustration %}
+        <img
+          class="page-hero-illustration"
+          src="{{ page.hero_illustration | relative_url }}"
+          alt=""
+        />
+        {% endif %}
+        <h1 class="page-hero-title">{{ page.hero_title | default: page.title }}</h1>
+        {% if page.lead %}<p class="page-hero-lead">{{ page.lead }}</p>{% endif %}
+        {% if page.primary_cta or page.secondary_cta %}
+        <div class="page-hero-cta">
+          {% if page.primary_cta %}
+          <a class="button button-primary" href="{{ page.primary_cta.url | relative_url }}">{{ page.primary_cta.label }}</a>
+          {% endif %}
+          {% if page.secondary_cta %}
+          <a class="button" href="{{ page.secondary_cta.url | relative_url }}">{{ page.secondary_cta.label }}</a>
+          {% endif %}
+        </div>
         {% endif %}
       </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
-      </div>
-      {% endif %}
     </div>
   </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for feature in site.features limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ feature.url | relative_url }}">{{ feature.title }}</a>
-            </h2>
-            <p>{{ feature.excerpt | markdownify | strip_html | truncate: 100 }}</p>
-          </div>
+<section class="strip strip-grey page-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+        <img
+          class="home-savet-logo"
+          src="{{ 'images/savet/Savet_logo_light_dark_1500_1500.png' | relative_url }}"
+          alt="SaveT logo"
+        />
+      </div>
+      <div class="col-12 col-md-7">
+        <span class="page-section-eyebrow">Our flagship product</span>
+        <h2 class="page-section-title">SaveT — See it. SaveT. Sort it.</h2>
+        <p class="page-section-lead text-start m-0">SaveT is a cross-platform bookmarking and organization app that replaces scattered tabs, screenshots, and notes with a single, searchable workspace for links, places, media, and ideas.</p>
+        <div class="mt-3">
+          <a class="button button-primary" href="{{ '/savet/' | relative_url }}">Explore SaveT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.data.services %}
+<section class="page-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 text-center">
+        <span class="page-section-eyebrow">For product teams</span>
+        <h2 class="page-section-title">Product engineering services</h2>
+        <p class="page-section-lead">MgonnacrushT also helps teams ship mobile and SaaS products end-to-end, from Flutter apps to Spring Boot APIs and cloud deployment.</p>
+      </div>
+    </div>
+    <div class="row">
+      {% for service in site.data.services %}
+      <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex">
+        <div class="service-card">
+          <span class="service-card-icon">{{ service.icon_label }}</span>
+          <h3 class="service-card-title">{{ service.name }}</h3>
+          <p class="service-card-text">{{ service.summary }}</p>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-3">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "savet" | relative_url }}">See all features</a>
+        <a class="button button-primary" href="{{ '/services/' | relative_url }}">See full services</a>
       </div>
     </div>
   </div>
-</div>
+</section>
+{% endif %}
 
 {% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+<section class="strip strip-grey page-section">
+  <div class="container">
     <div class="row justify-content-center">
-
+      <div class="col-12 col-lg-10 text-center">
+        <h2 class="page-section-title">Why SaveT</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
       {% for feature in site.data.features %}
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           {% if feature.image %}
           <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
           {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
+          <h3 class="feature-title">{{ feature.title }}</h3>
           <div class="feature-content">{{ feature.description }}</div>
         </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
-</div>
+</section>
 {% endif %}
+
+{% if page.show_call_box %}
+<section class="page-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        {% include call.html show_button=true %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{{ content }}

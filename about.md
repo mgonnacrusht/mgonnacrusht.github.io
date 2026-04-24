@@ -1,26 +1,33 @@
 ---
-title: About
+title: About MgonnacrushT
 layout: page
 description: MgonnacrushT builds SaveT and delivers mobile and SaaS product engineering services.
 bodyClass: page-about
+hero_title: "About MgonnacrushT Limited"
+lead: "A UK-based product company focused on practical software with long-term value. Our primary product is SaveT, and we also ship mobile and SaaS products for other teams."
+cta:
+  label: "Talk to us"
+  url: "mailto:support@mgonnacrusht.co.uk"
+cta_secondary:
+  label: "Explore SaveT"
+  url: "/savet/"
 ---
-
-# About MgonnacrushT Limited
-
-MgonnacrushT Limited is a UK-based product company focused on practical software with long-term value.
-
-Our primary product is **SaveT**, a bookmarking and organization app designed for people who collect links, media, places, and ideas across many platforms.
 
 ## What we build
 
-We work across the full delivery lifecycle:
+We work across the full delivery lifecycle — from product design to deployment.
 
-- Mobile Application Development
-- Android Development
-- Cloud Application Development
-- Custom Software Development
-- Database Development
-- SaaS Development
+<div class="row">
+{% for service in site.data.services %}
+  <div class="col-12 col-md-6 mb-3 d-flex">
+    <div class="service-card">
+      <span class="service-card-icon">{{ service.icon_label }}</span>
+      <h3 class="service-card-title">{{ service.name }}</h3>
+      <p class="service-card-text">{{ service.summary }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
 
 Our technical scope includes Flutter apps, Spring Boot APIs, cloud infrastructure (AWS/GCP/VPS), PostgreSQL, CI/CD, deployment, and Google Play publishing.
 
@@ -30,8 +37,6 @@ Our technical scope includes Flutter apps, Spring Boot APIs, cloud infrastructur
 ## Product philosophy
 
 We prioritize clear UX, stable architecture, and sustainable product decisions over short-term hype.
-
-That means:
 
 - Solving real user problems with focused scope.
 - Shipping maintainable systems with sensible defaults.
@@ -47,4 +52,4 @@ For SaveT and client work, we follow straightforward data principles:
 
 ## Get in touch
 
-If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, contact us at **support@mgonnacrusht.co.uk**.
+If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, email **support@mgonnacrusht.co.uk**.

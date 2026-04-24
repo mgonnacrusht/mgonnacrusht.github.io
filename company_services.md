@@ -3,20 +3,30 @@ title: Services
 layout: page
 description: Remote product engineering services by MgonnacrushT for mobile apps, SaaS platforms, APIs, cloud infrastructure, and deployment.
 permalink: "/services/"
+hero_title: "Product engineering services"
+eyebrow: "For startups & product teams"
+lead: "MgonnacrushT provides remote, end-to-end software delivery for startups, founders, and product teams — from mobile apps to SaaS backends and cloud deployment."
+cta:
+  label: "Email support@mgonnacrusht.co.uk"
+  url: "mailto:support@mgonnacrusht.co.uk"
+cta_secondary:
+  label: "About the team"
+  url: "/about/"
 ---
-
-# Product engineering services
-
-MgonnacrushT provides remote, end-to-end software delivery for startups, founders, and product teams.
 
 ## Services provided
 
-- Mobile Application Development
-- Android Development
-- Cloud Application Development
-- Custom Software Development
-- Database Development
-- SaaS Development
+<div class="row">
+{% for service in site.data.services %}
+  <div class="col-12 col-md-6 mb-3 d-flex">
+    <div class="service-card">
+      <span class="service-card-icon">{{ service.icon_label }}</span>
+      <h3 class="service-card-title">{{ service.name }}</h3>
+      <p class="service-card-text">{{ service.summary }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
 
 ## Delivery scope
 
@@ -36,4 +46,4 @@ MgonnacrushT provides remote, end-to-end software delivery for startups, founder
 ## Need a development partner?
 
 Email **support@mgonnacrusht.co.uk** with your product goal, timeline, and current stack.  
-For our flagship product, visit [SaveT](/savet/).  
+For our flagship product, visit [SaveT](/savet/).

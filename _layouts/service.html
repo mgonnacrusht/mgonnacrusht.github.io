@@ -3,13 +3,39 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-  <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="service service-single">
-        <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
+<section class="page-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 text-center">
+        <span class="page-hero-eyebrow">SaveT use case</span>
+        <h1 class="page-hero-title">{{ page.title }}</h1>
+        {% assign excerpt_text = page.excerpt | markdownify | strip_html | strip %}
+        {% if excerpt_text != "" %}
+        <p class="page-hero-lead">{{ excerpt_text }}</p>
+        {% endif %}
       </div>
     </div>
   </div>
-</div>
+</section>
+
+{% assign excerpt_html = page.excerpt | strip %}
+{% assign body_html = content | replace: excerpt_html, "" %}
+<section class="page-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ body_html }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip strip-grey page-section-compact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <a class="page-back-link" href="{{ '/savet/' | relative_url }}">Back to SaveT features</a>
+      </div>
+    </div>
+  </div>
+</section>

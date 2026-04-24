@@ -1,17 +1,68 @@
 ---
-title: Contact
 layout: default
 bodyClass: "page-contact"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-start">
-        <div class="col-12 col-md-8">
-            <div class="service service-single">
-                <h1 class="title">{{page.title}}</h1>
-                {% include call.html show_button=false %}
-                <div class="content mt-4">{{content}}</div>
-            </div>
-        </div>
+<section class="page-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 text-center">
+        <h1 class="page-hero-title">{{ page.hero_title | default: page.title }}</h1>
+        {% if page.lead %}<p class="page-hero-lead">{{ page.lead }}</p>{% endif %}
+      </div>
     </div>
-</div>
+  </div>
+</section>
+
+<section class="strip strip-grey page-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="contact-email-card">
+          <span class="page-section-eyebrow">Email</span>
+          <h2 class="contact-email-heading">
+            {% if site.data.contact.email %}
+              <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+            {% else %}
+              support@mgonnacrusht.co.uk
+            {% endif %}
+          </h2>
+          <p class="contact-email-sub">For SaveT early access, product feedback, partnerships, and engineering services.</p>
+          {% if site.data.contact.email %}
+          <a class="button button-primary" href="mailto:{{ site.data.contact.email }}">Send a message</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% if page.buckets %}
+    <div class="row justify-content-center mt-4">
+      {% for bucket in page.buckets %}
+      <div class="col-12 col-md-6 mb-3 d-flex">
+        <div class="service-card">
+          {% if bucket.eyebrow %}<span class="page-section-eyebrow">{{ bucket.eyebrow }}</span>{% endif %}
+          <h3 class="service-card-title">{{ bucket.title }}</h3>
+          <p class="service-card-text">{{ bucket.description }}</p>
+          {% if bucket.link %}
+          <a class="service-card-link" href="{{ bucket.link.url | relative_url }}">{{ bucket.link.label }} &rarr;</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% assign extra = content | strip %}
+{% if extra != "" %}
+<section class="page-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

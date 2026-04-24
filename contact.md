@@ -2,32 +2,19 @@
 title: Contact
 layout: contact
 description: Contact MgonnacrushT for SaveT early access, partnerships, and software development services.
+hero_title: "Get in touch"
+lead: "Whether you want SaveT updates or a product engineering partner for your app or SaaS, we would be happy to hear from you."
+buckets:
+  - eyebrow: "SaveT"
+    title: "SaveT inquiries"
+    description: "Early access requests, product feedback, feature suggestions, partnership and API collaboration ideas."
+    link:
+      label: "Explore SaveT"
+      url: "/savet/"
+  - eyebrow: "Services"
+    title: "Service inquiries"
+    description: "Remote software delivery across Flutter, Spring Boot, AWS/GCP/VPS, PostgreSQL, CI/CD, and Google Play publishing."
+    link:
+      label: "See all services"
+      url: "/services/"
 ---
-
-## Get in touch
-
-If you want SaveT updates or need a product engineering partner, we would be happy to hear from you.
-
-### SaveT inquiries
-
-- Early access requests
-- Product feedback and feature suggestions
-- Partnership or API collaboration ideas
-
-### Service inquiries
-
-We provide remote software delivery for:
-
-- Mobile Application Development
-- Android Development
-- Cloud Application Development
-- Custom Software Development
-- Database Development
-- SaaS Development
-
-Technology focus: Flutter, Spring Boot, AWS/GCP/VPS, PostgreSQL, end-to-end deployment, and Google Play publishing.  
-Pricing: Contact for pricing.
-
-### Email
-
-For all SaveT and service requests: **support@mgonnacrusht.co.uk**

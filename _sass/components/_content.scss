@@ -20,26 +20,31 @@
     color: $steel;
   }
   h1 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
+    color: $black;
     font-size: 34px;
     line-height: 1.26;
-    font-weight: normal;
+    font-weight: 700;
     margin-top: 30px;
     margin-bottom: 20px;
   }
   h2 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
+    color: $black;
     font-size: 26px;
-    font-weight: normal;
+    font-weight: 700;
     line-height: 1.4;
     margin-top: 30px;
+    margin-bottom: 14px;
   }
   h3 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
+    color: $black;
     font-size: 20px;
     line-height: 1.4;
-    font-weight: normal;
-    margin-top: 30px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 10px;
   }
   ul,
   ol {

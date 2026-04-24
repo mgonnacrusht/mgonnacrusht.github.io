@@ -1,2 +1,12 @@
 .page-home {
+  .home-savet-logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      max-width: 200px;
+    }
+  }
 }

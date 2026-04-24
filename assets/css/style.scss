@@ -97,6 +97,9 @@ $sub-footer-text-color: $white;
 @import "components/content";
 @import "components/intro";
 @import "components/intro-image";
+@import "components/page-hero";
+@import "components/page-section";
+@import "components/service-card";
 @import "components/strip";
 @import "components/feature";
 @import "components/social";
@@ -104,9 +107,9 @@ $sub-footer-text-color: $white;
 
 // Pages
 @import "pages/page-home";
-@import "pages/page-teams";
 @import "pages/page-service";
 @import "pages/page-savet";
+@import "pages/page-contact";
 
 body {
   font-size: 16px;

@@ -1,0 +1,109 @@
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid darken($white-offset, 3%);
+  border-radius: 10px;
+  padding: 22px 22px 18px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 12px rgba(47, 47, 65, 0.04);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(47, 47, 65, 0.08);
+  }
+}
+
+.service-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: lighten($secondary, 25%);
+  color: $primary;
+  font-family: $font-family-base;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.service-card-title {
+  font-family: $font-family-heading;
+  color: $black;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.service-card-text {
+  color: $steel;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.service-card-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: $primary;
+  font-size: 0.95rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.service-card-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid darken($white-offset, 3%);
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(47, 47, 65, 0.06);
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    padding: 32px;
+  }
+}
+
+.service-card-featured-media {
+  flex: 0 0 auto;
+  text-align: center;
+  img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.service-card-featured-body {
+  flex: 1 1 auto;
+  .service-card-title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .service-card-text {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+}
