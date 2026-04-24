@@ -1,0 +1,20 @@
+---
+description: Session communication preferences and open-source security guardrails
+alwaysApply: true
+---
+
+# Session Preferences and Security
+
+- Keep responses concise and summary-first by default.
+- If any requirement is uncertain, ask a short clarification question before proceeding.
+- At the end of each session, ask: "Do you want me to add what we learned in this session to Cursor Rules?"
+
+## Open-source repository safety
+
+This website is publicly available on GitHub. Never add or expose security-sensitive information in repository files, including:
+
+- secrets, tokens, API keys, passwords, private endpoints
+- internal infrastructure details that increase attack surface
+- sensitive operational or personal data
+
+When editing content, prefer safe placeholders and environment-based configuration references instead of real credentials.
