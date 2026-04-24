@@ -1,0 +1,55 @@
+# SaveT Project Summary
+
+## Project Name
+**SaveT**
+
+## What It Is
+SaveT is a Flutter-based bookmarking and content organization app.  
+It helps users save links, media, and resources into nested lists, then enrich and manage that content with AI-supported metadata.
+
+## Core Purpose
+- Quickly capture useful content from the web
+- Organize items in hierarchical (nested) lists
+- Improve saved content quality with AI enrichment
+- Make personal knowledge collections easier to search and manage
+
+## Main Features
+- **Quick Save flow** for fast item collection
+- **Nested list structure** (parent/child lists)
+- **Search across lists** with breadcrumb-style path hints
+- **Edit form for saved items** (title, description, tags, etc.)
+- **Soft delete model** for safer data handling
+- **Third-party embed support** (with user consent flow)
+- **Premium settings** for AI-related capabilities (stub-based in current stage)
+
+## AI / Enrichment Capabilities
+- Multi-provider LLM architecture:
+  - xAI (Grok)
+  - Google Gemini
+- Enrichment generates/improves:
+  - title
+  - description
+  - tags
+  - category
+  - content type
+  - reading time
+  - quality score
+- Language-aware behavior with “original language” option
+- Fail-safe behavior: if enrichment fails, existing data remains usable
+
+## Tech Stack
+- **Frontend:** Flutter / Dart
+- **Backend Services:** Firebase (Firestore, Auth)
+- **State Management:** Provider + BLoC (by feature complexity)
+- **Localization:** English + Turkish
+- **Architecture:** Repository pattern, service-oriented modules
+
+## Data & Safety Principles
+- Null-safe Dart practices
+- Async operations protected with try/catch
+- No hardcoded secrets (env-based config expected)
+- Firestore queries default to non-deleted items
+- User-facing error handling over app crashes
+
+## Product Positioning (Short)
+SaveT is a practical “save now, organize later” productivity tool that combines structured bookmarking with AI-assisted metadata enrichment for better personal knowledge management.
