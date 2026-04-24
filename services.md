@@ -4,7 +4,7 @@ layout: savet
 description: SaveT helps you capture, organize, and enrich links, media, places, and ideas in one personal knowledge space.
 permalink: "/savet/"
 hero_title: "SaveT"
-hero_logo: "images/savet/Savet_logo_light_dark_1500_1500.png"
+hero_logo: "images/savet/Savet_logo_dark_big_1500_1500.png"
 tagline: "See it. SaveT. Sort it."
 lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing important links, media, places, and ideas across multiple tools."
 cta:
