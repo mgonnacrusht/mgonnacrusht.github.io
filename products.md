@@ -11,7 +11,7 @@ lead: "We build focused software products that solve practical, repeatable probl
 
 <div class="service-card-featured">
   <div class="service-card-featured-media">
-    <img src="{{ 'images/savet/Savet_logo_light_dark_1500_1500.png' | relative_url }}" alt="SaveT logo" />
+    <img src="{{ 'images/savet/Savet_logo_dark_big_1500_1500.png' | relative_url }}" alt="SaveT logo" />
   </div>
   <div class="service-card-featured-body">
     <h3 class="service-card-title">SaveT</h3>
