@@ -29,4 +29,4 @@ lead: "We build focused software products that solve practical, repeatable probl
 
 Additional products are in development and will be listed here as they are announced.
 
-If you want updates, email **support@mgonnacrusht.co.uk**.
+If you want updates, email **hello@mgonnacrusht.co.uk**.

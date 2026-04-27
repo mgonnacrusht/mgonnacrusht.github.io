@@ -7,8 +7,8 @@ hero_title: "Product engineering services"
 eyebrow: "For startups & product teams"
 lead: "MgonnacrushT provides remote, end-to-end software delivery for startups, founders, and product teams — from mobile apps to SaaS backends and cloud deployment."
 cta:
-  label: "Email support@mgonnacrusht.co.uk"
-  url: "mailto:support@mgonnacrusht.co.uk"
+  label: "Email hello@mgonnacrusht.co.uk"
+  url: "mailto:hello@mgonnacrusht.co.uk"
 cta_secondary:
   label: "About the team"
   url: "/about/"
@@ -45,5 +45,5 @@ cta_secondary:
 
 ## Need a development partner?
 
-Email **support@mgonnacrusht.co.uk** with your product goal, timeline, and current stack.  
+Email **hello@mgonnacrusht.co.uk** with your product goal, timeline, and current stack.  
 For our flagship product, visit [SaveT](/savet/).

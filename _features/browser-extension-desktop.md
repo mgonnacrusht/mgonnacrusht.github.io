@@ -14,4 +14,4 @@ Planned improvements include:
 - A responsive web experience for browsing, tagging and reorganising from larger screens.
 - Context-aware fields that auto-fill details from the page you’re saving.
 
-If you live in tabs all day and want to help test these features, send a note to support@mgonnacrusht.co.uk. Early testers will directly influence how the extension works.
+If you live in tabs all day and want to help test these features, send a note to hello@mgonnacrusht.co.uk. Early testers will directly influence how the extension works.

@@ -7,7 +7,7 @@ hero_title: "About MgonnacrushT Limited"
 lead: "A UK-based product company focused on practical software with long-term value. Our primary product is SaveT, and we also ship mobile and SaaS products for other teams."
 cta:
   label: "Talk to us"
-  url: "mailto:support@mgonnacrusht.co.uk"
+  url: "mailto:hello@mgonnacrusht.co.uk"
 cta_secondary:
   label: "Explore SaveT"
   url: "/savet/"
@@ -52,4 +52,4 @@ For SaveT and client work, we follow straightforward data principles:
 
 ## Get in touch
 
-If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, email **support@mgonnacrusht.co.uk**.
+If you want early access to SaveT, product collaboration, or engineering support for your app/SaaS, email **hello@mgonnacrusht.co.uk**.

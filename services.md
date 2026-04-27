@@ -45,5 +45,7 @@ video_caption: "A short walkthrough of the Quick Save flow and nested lists."
 - Later stage: optional premium features (for example, advanced organization and no-ads experience).
 - Future experiments: affiliate-supported discovery features with clear disclosure.
 
+For SaveT early access and product questions, email **hello@mgonnacrusht.co.uk**.
+
 For company engineering services, visit [Services](/services/).  
 [About MgonnacrushT](/about/) | [Contact us](/contact/) | [SaveT Privacy Policy](/savet/legal/privacy/) | [SaveT Terms of Use](/savet/legal/terms/)
