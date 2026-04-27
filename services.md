@@ -7,7 +7,7 @@ hero_title: "SaveT"
 hide_hero_title: true
 hero_logo: "images/savet/Savet_logo_dark_big_1500_1500.png"
 tagline: "See it. SaveT. Sort it."
-lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing useful links, social posts, short videos, articles, map POIs, and career-focused finds."
+lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing useful links, social posts, short videos, articles, map POIs, and career opportunities and insights."
 cta:
   label: "Get early access"
   url: "/contact/"
@@ -16,7 +16,7 @@ capabilities:
   - "Nested lists for clean organization."
   - "Search with list-path context to find items faster."
   - "Edit support for title, description, tags, and metadata."
-  - "AI-assisted enrichment for better item quality."
+  - "Smart metadata enrichment for better item quality."
   - "Safer data handling with soft-delete behavior."
 steps_intro: "Three simple moves, one calm workflow."
 steps:
@@ -42,7 +42,7 @@ video_caption: "A short walkthrough of the Quick Save flow and nested lists."
 ## Pricing roadmap
 
 - Initial release: free plan with minimal, non-intrusive ads.
-- Later stage: optional premium features (for example, advanced AI and no-ads experience).
+- Later stage: optional premium features (for example, advanced organization and no-ads experience).
 - Future experiments: affiliate-supported discovery features with clear disclosure.
 
 For company engineering services, visit [Services](/services/).  
