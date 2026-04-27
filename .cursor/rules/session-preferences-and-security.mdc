@@ -13,6 +13,7 @@ alwaysApply: true
 ## Content and Copy Preferences
 
 - SaveT slogan is: "See it. SaveT. Sort it." Keep SaveT messaging consistent with this 3-step flow.
+- Keep `assets/savet_prompt_agent_summary.txt` synchronized with website messaging updates and include a `Last updated: YYYY-MM-DD` line at the bottom.
 - Prefer natural, human-sounding copy over technical wording when editing website text.
 - Avoid long dash style in marketing copy unless explicitly requested.
 - Avoid naming third-party platforms/brands in product examples; use generic categories instead (for example: social posts, short videos, map links, watchlists, career posts).
