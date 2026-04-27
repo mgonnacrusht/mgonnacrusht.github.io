@@ -9,6 +9,16 @@ alwaysApply: true
 - If any requirement is uncertain, ask a short clarification question before proceeding.
 - At the end of each session, ask: "Do you want me to add what we learned in this session to Cursor Rules?"
 
+## Content and Copy Preferences
+
+- SaveT slogan is: "See it. SaveT. Sort it." Keep SaveT messaging consistent with this 3-step flow.
+- Prefer natural, human-sounding copy over technical wording when editing website text.
+- Avoid long dash style in marketing copy unless explicitly requested.
+- Avoid naming third-party platforms/brands in product examples; use generic categories instead (for example: social posts, short videos, map links, watchlists, career posts).
+- Keep SEO-friendly "AI" wording where helpful, but avoid repetitive AI phrasing across nearby sections.
+- Do not edit template-origin files (for example `README.md`) unless explicitly requested by the user.
+- Preserve brand/story-driven slogans or phrases when the user says they are intentional.
+
 ## Open-source repository safety
 
 This website is publicly available on GitHub. Never add or expose security-sensitive information in repository files, including:
