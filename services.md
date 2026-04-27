@@ -7,7 +7,7 @@ hero_title: "SaveT"
 hide_hero_title: true
 hero_logo: "images/savet/Savet_logo_dark_big_1500_1500.png"
 tagline: "See it. SaveT. Sort it."
-lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing important links, media, places, and ideas across multiple tools."
+lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing useful links, social posts, short videos, articles, map POIs, and career-focused finds."
 cta:
   label: "Get early access"
   url: "/contact/"

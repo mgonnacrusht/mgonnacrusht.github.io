@@ -17,7 +17,7 @@ lead: "We build focused software products that solve practical, repeatable probl
     <h3 class="service-card-title">SaveT</h3>
     <p class="service-card-text">Our flagship bookmarking and organization app for links, places, media, and ideas. It is built for people who collect too much online and lose it across tabs, screenshots, and notes.</p>
     <ul>
-      <li>Cross-platform capture and organization</li>
+      <li>Save and organize content from websites, social posts, short videos, articles, map POIs, and career-focused posts</li>
       <li>Nested list structure and search</li>
       <li>AI-powered metadata enrichment and smart organization</li>
     </ul>
