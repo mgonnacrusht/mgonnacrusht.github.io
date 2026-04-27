@@ -8,7 +8,7 @@ Side projects and learning goals come with their own pile of tutorials, referenc
 <!--more-->
 
 - Save docs, videos, repos, podcasts or quick text notes related to a goal.
-- Tag by project (e.g. “app redesign”, “Spanish practice”, “D&D campaign”).
+- Tag by project (e.g. “app redesign”, “Spanish practice”, “tabletop campaign”).
 - Create focused lists for each project so you always know the next resource to open.
 - Keep progress notes or “next steps” right alongside the materials you’ve saved.
 

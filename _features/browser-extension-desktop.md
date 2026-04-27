@@ -9,9 +9,9 @@ Saving from your phone is critical, but desktop browsing still accounts for a hu
 
 Planned improvements include:
 
-- A lightweight browser button for Chrome/Brave/Edge/Firefox so you can save in one click.
+- A lightweight browser button for major browsers so you can save in one click.
 - Keyboard-friendly workflows for power users who live in their browser.
 - A responsive web experience for browsing, tagging and reorganising from larger screens.
 - Context-aware fields that auto-fill details from the page you’re saving.
 
-If you live in tabs all day and want to help test these features, send a note to support@mgonnacrusht.co.uk — early testers will directly influence how the extension works.
+If you live in tabs all day and want to help test these features, send a note to support@mgonnacrusht.co.uk. Early testers will directly influence how the extension works.
