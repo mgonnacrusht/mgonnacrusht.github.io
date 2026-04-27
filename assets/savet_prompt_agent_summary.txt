@@ -1,16 +1,25 @@
 # SaveT Project Summary
 
+## AI Agent Sync Note (Important)
+- This file is the source-of-truth summary for external AI agents.
+- If SaveT website copy, positioning, features, steps, legal/contact routing, or product messaging changes, update this file in the same task.
+- Keep wording aligned with website language and avoid outdated platform-specific references.
+
 ## Project Name
 **SaveT**
 
 ## What It Is
 SaveT is a Flutter-based bookmarking and content organization app.  
-It helps users save links, media, and resources into nested lists, then enrich and manage that content with AI-supported metadata.
+It helps users save links, media, places, and ideas into nested lists, then enrich and manage that content with smart metadata.
+
+## Tagline and Messaging Anchor
+- Official SaveT tagline: **"See it. SaveT. Sort it."**
+- Messaging should follow this 3-step flow in user-facing copy.
 
 ## Core Purpose
 - Quickly capture useful content from the web
 - Organize items in hierarchical (nested) lists
-- Improve saved content quality with AI enrichment
+- Improve saved content quality with metadata enrichment
 - Make personal knowledge collections easier to search and manage
 
 ## Main Features
@@ -21,6 +30,18 @@ It helps users save links, media, and resources into nested lists, then enrich a
 - **Soft delete model** for safer data handling
 - **Third-party embed support** (with user consent flow)
 - **Premium settings** for AI-related capabilities (stub-based in current stage)
+
+## Website-Aligned User Journey (Current)
+- **01 See it:** Spot a useful link, place, video, article, or idea worth keeping.
+- **02 SaveT:** When you find something worth keeping, tap Share and send it to SaveT in seconds.
+- **03 Sort it:** Add what you saved to the right list so it stays organized and easy to find later.
+
+## Website-Aligned Content Types (Current)
+- Websites and links
+- Social posts and short videos
+- Articles and media
+- Map POIs / places
+- Career opportunities and insights
 
 ## AI / Enrichment Capabilities
 - Multi-provider LLM architecture:
@@ -51,5 +72,12 @@ It helps users save links, media, and resources into nested lists, then enrich a
 - Firestore queries default to non-deleted items
 - User-facing error handling over app crashes
 
+## Contact Alias Routing (Website-Current)
+- **hello@mgonnacrusht.co.uk**: general contact, early access, product questions, partnerships, updates, and service inquiries
+- **support@mgonnacrusht.co.uk**: explicit product/app support and troubleshooting flows
+- **legal@mgonnacrusht.co.uk**: terms, privacy, legal requests, and policy-related questions
+
 ## Product Positioning (Short)
-SaveT is a practical “save now, organize later” productivity tool that combines structured bookmarking with AI-assisted metadata enrichment for better personal knowledge management.
+SaveT is a practical "save now, organize later" productivity tool that combines structured bookmarking with AI-powered metadata enrichment for better personal knowledge management.
+
+Last updated: 2026-04-27
