@@ -35,7 +35,7 @@ steps:
     description: "Add what you saved to the right list so it stays organized and easy to find later."
     image: "images/savet/screenshots/boarding3_sortit.jpg"
     alt: "SaveT onboarding step 3: Sort it"
-video_id: "H98Z6c8uutc"
+video_id: "MIZyjpa7Yk4"
 video_caption: "A short walkthrough of the Quick Save flow and nested lists."
 ---
 
