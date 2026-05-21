@@ -4,7 +4,7 @@ layout: page
 description: Privacy Policy for SaveT, including product data handling, account data, and user rights.
 permalink: "/savet/legal/privacy/"
 hero_title: "SaveT Privacy Policy"
-lead: "Draft policy page, subject to legal review."
+lead: ""
 cta:
   label: "Back to SaveT"
   url: "/savet/"
@@ -13,7 +13,7 @@ cta_secondary:
   url: "/savet/legal/terms/"
 ---
 
-<p>Last updated: May 18, 2026</p>
+<p>Last updated: May 21, 2026</p>
 
 <p>This policy explains how SaveT handles personal data and saved content.</p>
 
@@ -24,7 +24,7 @@ cta_secondary:
 <ul>
   <li>Account data, including email address handled through Firebase Authentication.</li>
   <li>User-generated content, including saved links, notes, tags, and related metadata.</li>
-  <li>Technical logs used for reliability, security, diagnostics, and service operation.</li>
+  <li>Technical logs and anonymous analytics events used for reliability, security, diagnostics, and product improvement.</li>
 </ul>
 
 <h2>How SaveT uses data</h2>
@@ -37,30 +37,34 @@ cta_secondary:
 <h2>Third Party Services</h2>
 <p>SaveT may use the following third party services to provide app functionality:</p>
 <ul>
-  <li>Firebase Authentication and Firestore by Google: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>Firebase Authentication, Firestore, and Remote Config by Google: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
   <li>Gemini API by Google for AI enrichment with user consent: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
   <li>Grok API by xAI for AI enrichment with user consent: <a href="https://x.ai/privacy">xAI Privacy Policy</a></li>
   <li>Iframely for URL metadata and embeds: <a href="https://iframely.com/privacy">Iframely Privacy Policy</a></li>
+  <li>MicroLink for URL metadata on selected link types: <a href="https://microlink.io/privacy">MicroLink Privacy Policy</a></li>
   <li>Google Places API for map data: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
   <li>YouTube Data API for video metadata: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
   <li>Google AdMob for advertising: <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li>Umami Analytics for anonymous usage analytics: <a href="https://umami.is/privacy">Umami Privacy Policy</a></li>
+  <li>Umami Analytics (cloud.umami.is) for anonymous usage analytics: <a href="https://umami.is/privacy">Umami Privacy Policy</a></li>
 </ul>
 
 <h2>Advertising</h2>
 <ul>
-  <li>SaveT displays ads provided by Google AdMob.</li>
+  <li>SaveT displays ads provided by Google AdMob on supported free-tier experiences.</li>
   <li>AdMob may collect device identifiers and IP address to serve non-personalized ads.</li>
   <li>SaveT does not use personalized advertising.</li>
+  <li>Paid premium plans may disable ads where that feature is included in your subscription.</li>
   <li>For more information, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
 </ul>
 
 <h2>Analytics</h2>
 <ul>
-  <li>SaveT uses Umami Analytics to collect anonymous usage data.</li>
-  <li>No cookies are used. No personal identifiers are stored.</li>
-  <li>Collected data includes: anonymous event names, language, and country derived from IP address. IP addresses are not stored by Umami.</li>
-  <li>Screen resolution and referrer fields are not collected.</li>
+  <li>SaveT uses Umami Analytics (hosted at cloud.umami.is) to collect anonymous usage and reliability data.</li>
+  <li>No cookies are used in the app analytics flow. SaveT does not send your email address or Firebase user ID to Umami.</li>
+  <li>Umami may receive: event names (for example app opened, login, list actions), device language, and country derived from IP. Umami does not store IP addresses in its standard analytics processing.</li>
+  <li>Some events include limited technical metadata (for example error codes, provider names, or short diagnostic messages) to monitor API limits, outages, and app stability. These events are not used to identify you personally.</li>
+  <li>Referrer is not collected. A fixed placeholder screen size may be sent for Umami API compatibility; your actual device screen resolution is not collected for analytics.</li>
+  <li>Analytics supports product improvement and service reliability under legitimate interests where applicable. You may object to this processing where GDPR applies by contacting us.</li>
 </ul>
 
 <h2>AI Enrichment</h2>
@@ -93,7 +97,7 @@ cta_secondary:
 <p>SaveT is not directed to children under 13 and is not intended for use by children under 13, consistent with COPPA requirements.</p>
 
 <h2>International Data Transfer</h2>
-<p>Your data may be processed on servers based in the United States or other countries through providers such as Google and xAI.</p>
+<p>Your data may be processed on servers based in the United States or other countries through providers such as Google, xAI, and Umami (cloud.umami.is).</p>
 
 <h2>Contact</h2>
 <p>For SaveT privacy requests, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
