@@ -1,0 +1,49 @@
+---
+layout: default
+bodyClass: "page-savet page-savet-roadmap"
+---
+
+<section class="savet-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 text-center">
+        {% if page.eyebrow %}<span class="savet-roadmap-eyebrow">{{ page.eyebrow }}</span>{% endif %}
+        <h1 class="savet-hero-title">{{ page.hero_title | default: page.title }}</h1>
+        {% if page.lead %}<p class="savet-hero-lead">{{ page.lead }}</p>{% endif %}
+        {% if page.cta and page.cta.label %}
+        <div class="savet-hero-cta">
+          <a class="button button-primary" href="{{ page.cta.url | relative_url }}">{{ page.cta.label }}</a>
+          {% if page.cta_secondary and page.cta_secondary.label %}
+          <a class="button" href="{{ page.cta_secondary.url | relative_url }}">{{ page.cta_secondary.label }}</a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip strip-grey savet-roadmap-strip">
+  <div class="container pt-6 pb-6">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        {% if page.canva_embed_url %}
+        <div class="savet-canva-wrap">
+          <iframe
+            loading="lazy"
+            src="{{ page.canva_embed_url }}"
+            allowfullscreen="allowfullscreen"
+            allow="fullscreen"
+            title="{{ page.canva_title | default: 'SaveT roadmap' }}"
+          ></iframe>
+        </div>
+        {% endif %}
+        {% if page.canva_title %}
+        <p class="savet-canva-attribution">
+          <a href="{{ page.canva_view_url }}" target="_blank" rel="noopener">{{ page.canva_title }}</a>{% if page.canva_author %} by {{ page.canva_author }}{% endif %}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

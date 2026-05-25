@@ -337,3 +337,58 @@
     }
   }
 }
+
+.page-savet-roadmap {
+  .savet-roadmap-eyebrow {
+    display: inline-block;
+    font-family: $font-family-base;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 16px;
+  }
+
+  .savet-roadmap-strip {
+    .savet-canva-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 20px 45px rgba(47, 47, 65, 0.15);
+      aspect-ratio: 100 / 141.4286;
+
+      iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .savet-canva-attribution {
+      text-align: center;
+      color: $steel;
+      font-size: 0.9rem;
+      margin-top: 1.2em;
+      margin-bottom: 0;
+
+      a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
