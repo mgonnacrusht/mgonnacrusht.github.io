@@ -1,0 +1,32 @@
+---
+description: SaveT subpage routing, layouts, and Canva roadmap embed conventions
+globs: savet-*.html,services.md,_layouts/savet*.html,_sass/pages/_page-savet.scss,sitemap.xml
+alwaysApply: false
+---
+
+# SaveT Site Structure
+
+## Subpage routing
+
+SaveT URLs are **not** in a `savet/` content folder. Use root-level files with explicit `permalink`:
+
+| Page | File | URL |
+|------|------|-----|
+| Main | `services.md` | `/savet/` |
+| Roadmap | `savet-roadmap.html` | `/savet/roadmap/` |
+| Privacy | `savet-legal-privacy.html` | `/savet/legal/privacy/` |
+| Terms | `savet-legal-terms.html` | `/savet/legal/terms/` |
+
+When adding a new SaveT subpage, also update `sitemap.xml`.
+
+## Roadmap page
+
+- **Layout:** `_layouts/savet-roadmap.html` with `bodyClass: page-savet page-savet-roadmap`
+- **Front matter:** `canva_embed_url`, `canva_view_url`, `canva_title`, `canva_author` drive the embed and attribution
+- **Styles:** scoped under `.page-savet-roadmap` in `_sass/pages/_page-savet.scss` (`.savet-canva-wrap`, `.savet-canva-attribution`)
+- **Embed ratio:** portrait `aspect-ratio: 100 / 141.4286`; move Canva inline styles into SCSS, not raw HTML
+- **Copy:** page hero/lead/CTAs in English; Canva attribution text as set in front matter
+
+## Navigation
+
+Roadmap is linked from `/savet/` **hero CTA only** (`cta` in `services.md` front matter). Do not add a footer link for roadmap. Not in main nav (`_data/menus.yml`) unless explicitly requested.
