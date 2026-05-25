@@ -61,6 +61,13 @@
   .savet-hero-cta {
     margin-top: 8px;
     margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    .button + .button {
+      margin-left: 0;
+    }
   }
 
   .savet-section-title {

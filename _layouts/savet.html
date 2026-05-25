@@ -26,6 +26,9 @@ bodyClass: "page-savet"
         {% if page.cta and page.cta.label %}
         <div class="savet-hero-cta">
           <a class="button button-primary" href="{{ page.cta.url | relative_url }}">{{ page.cta.label }}</a>
+          {% if page.cta_secondary and page.cta_secondary.label %}
+          <a class="button" href="{{ page.cta_secondary.url | relative_url }}">{{ page.cta_secondary.label }}</a>
+          {% endif %}
         </div>
         {% endif %}
       </div>

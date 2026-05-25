@@ -1,6 +1,6 @@
 ---
 description: SaveT subpage routing, layouts, and Canva roadmap embed conventions
-globs: savet-*.html,services.md,_layouts/savet*.html,_sass/pages/_page-savet.scss,sitemap.xml
+globs: savet.md,savet-*.html,_layouts/savet*.html,_sass/pages/_page-savet.scss,sitemap.xml
 alwaysApply: false
 ---
 
@@ -12,7 +12,7 @@ SaveT URLs are **not** in a `savet/` content folder. Use root-level files with e
 
 | Page | File | URL |
 |------|------|-----|
-| Main | `services.md` | `/savet/` |
+| Main | `savet.md` | `/savet/` |
 | Roadmap | `savet-roadmap.html` | `/savet/roadmap/` |
 | Privacy | `savet-legal-privacy.html` | `/savet/legal/privacy/` |
 | Terms | `savet-legal-terms.html` | `/savet/legal/terms/` |
@@ -29,4 +29,4 @@ When adding a new SaveT subpage, also update `sitemap.xml`.
 
 ## Navigation
 
-Roadmap is linked from `/savet/` **hero CTA only** (`cta` in `services.md` front matter). Do not add a footer link for roadmap. Not in main nav (`_data/menus.yml`) unless explicitly requested.
+Roadmap is linked from `/savet/` **hero CTA only** (`cta` in `savet.md` front matter). Do not add a footer link for roadmap. Not in main nav (`_data/menus.yml`) unless explicitly requested.
