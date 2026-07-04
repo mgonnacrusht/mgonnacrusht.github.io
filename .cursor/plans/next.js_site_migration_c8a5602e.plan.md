@@ -156,7 +156,15 @@ Eski `/features/*` URL'leri yeni `sitemap.xml`'de **olmayacak** (GSC'de manuel g
 
 ## 3. Tasarım sistemi ve 21st.dev
 
-Önceki plandan değişmedi: light-only, bold typography, Framer Motion micro-interactions, 21st.dev registry via `npx shadcn@latest add`.
+Önceki plandan değişmedi: light-only, bold typography, Framer Motion micro-interactions.
+
+**21st.dev kurulum (düzeltme):** Her blok için 21st.dev'in verdiği tam URL'li komutu kullan — uydurma `--registry` flag'i yok:
+
+```bash
+npx shadcn@latest add "https://21st.dev/r/<author>/<component>"
+```
+
+Önce `components.json`'u `npx shadcn@latest init` ile oluştur; her section için 21st.dev'de uygun blok ara, yoksa en yakın shadcn primitive ile compose et.
 
 ---
 
@@ -208,10 +216,12 @@ GitHub Actions deploy'dan **önce veya sonra** yapılabilir; DNS propagasyonu be
 | b | Cloudflare'e site ekle (`mgonnacrusht.co.uk`), otomatik DNS taramasını doğrula |
 | c | Taranan kayıtları manuel kontrol et — **özellikle MX ve SPF/DKIM TXT** eksiksiz aktarıldı mı |
 | d | Hostinger'da nameserver'ları Cloudflare'inkilerle değiştir (domain kaydı Hostinger'da kalır) |
-| e | Cloudflare DNS'te GitHub Pages kayıtlarını doğrula: `@` → GitHub Pages A kayıtları veya CNAME flattening; `www` → `mgonnacrusht.github.io` |
-| f | SSL/TLS modu: **Full (strict)** |
-| g | Redirect Rule: URI Path starts with `/features/` → 301 dynamic redirect → `https://mgonnacrusht.co.uk/savet/` |
-| h | Propagasyon sonrası (birkaç saat – 48 saat): 8 eski URL + MX/e-posta akışını manuel test et |
+| e | Cloudflare DNS'te GitHub Pages kayıtlarını doğrula: `@` → GitHub Pages A kayıtları (`185.199.108-111.153`) veya CNAME flattening; `www` → `mgonnacrusht.github.io` |
+| f | **İlk aşamada `@` ve `www` kayıtlarını "DNS only" (gri bulut) bırak** — GitHub Pages'in Let's Encrypt sertifikasını üretebilmesi için (proxy açıkken HTTP-01 challenge başarısız olur) |
+| g | GitHub repo Settings → Pages → custom domain `mgonnacrusht.co.uk`, sertifika üretilene ve **Enforce HTTPS** aktif olana kadar bekle |
+| h | Sertifika hazır olunca kayıtları **"Proxied" (turuncu bulut)** yap; SSL/TLS modu: **Full (strict)** |
+| i | Redirect Rule: URI Path starts with `/features/` → 301 dynamic redirect → `https://mgonnacrusht.co.uk/savet/` (**yalnızca proxied kayıtlarda çalışır**) |
+| j | Propagasyon sonrası (birkaç saat – 48 saat): 8 eski URL + HTTPS + MX/e-posta akışını manuel test et |
 
 ### Faz 5B — SEO, redirect fallback, deploy (kod)
 
@@ -220,7 +230,7 @@ GitHub Actions deploy'dan **önce veya sonra** yapılabilir; DNS propagasyonu be
 13. JSON-LD components
 14. `generate-legacy-redirects.mjs` — 8 `/features/*` fallback HTML (Cloudflare yedek)
 15. GitHub Actions workflow
-16. Jekyll cleanup, `netlify.toml` kaldır
+16. Jekyll cleanup: `_layouts/`, `_includes/`, `_sass/`, `_features/`, `_config.yml`, `Gemfile*`, `netlify.toml`, root `*.md`/`*.html`, **ve elle yazılmış eski [`sitemap.xml`](sitemap.xml)** kaldır (yeni `app/sitemap.ts` ile çakışmasın)
 17. `savet_prompt_agent_summary.txt` + cursor rules güncelle
 
 ### Faz 6 — QA ve merge
@@ -241,6 +251,8 @@ GitHub Actions deploy'dan **önce veya sonra** yapılabilir; DNS propagasyonu be
 ## Riskler ve notlar
 
 - **MX kaydı kaybı riski:** Nameserver değişikliği sırasında e-posta kesilebilir — geçiş öncesi Hostinger DNS yedeği şart; Cloudflare import sonrası MX/SPF/DKIM manuel doğrulama zorunlu
+- **HTTPS sertifika sırası (kritik):** GitHub Pages custom domain sertifikası, kayıtlar Cloudflare'de "proxied" (turuncu) iken üretilemez. Önce "DNS only" (gri) ile sertifikayı ürettir + Enforce HTTPS aç, sonra proxy'yi aç. Aksi halde canlıda SSL kırılır.
+- **Redirect Rule proxy bağımlılığı:** Cloudflare 301 kuralı yalnızca **proxied (turuncu bulut)** kayıtlarda çalışır. Gri bulutta sadece meta-refresh fallback devrededir.
 - **Propagasyon süresi:** Birkaç saat boyunca hem meta-refresh fallback hem Cloudflare kuralı aktif olabilir; çakışma yaratmaz (Cloudflare önce yakalar)
 - **True HTTP 301:** Cloudflare Redirect Rule birincil çözüm; meta-refresh yalnızca fallback
 - **Formspree:** Honeypot field ekle (spam)
