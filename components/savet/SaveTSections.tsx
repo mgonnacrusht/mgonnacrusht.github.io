@@ -63,34 +63,60 @@ export function SaveTSteps({
   return (
     <div>
       <p className="mx-auto mb-10 max-w-2xl text-center text-muted">{intro}</p>
-      <div className="space-y-12">
-        {steps.map((step, index) => (
-          <FadeIn key={step.number} delay={index * 0.05}>
+      <div className="space-y-12 lg:space-y-16">
+        {steps.map((step, index) => {
+          const imageRight = index % 2 === 1;
+
+          const image = (
             <div
-              className={`grid items-center gap-8 lg:grid-cols-2 ${
-                index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-              }`}
+              className={cn(
+                "mx-auto w-full max-w-[240px] overflow-hidden rounded-2xl border border-border bg-surface shadow-sm sm:max-w-[280px] lg:mx-0 lg:max-w-[320px]",
+              )}
             >
-              <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
-                <Image
-                  src={step.image}
-                  alt={step.alt}
-                  width={640}
-                  height={480}
-                  className="h-auto w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-accent">{step.number}</p>
-                <h3 className="mt-2 text-2xl font-bold">{step.title}</h3>
-                <p className="mt-3 leading-relaxed text-muted">
-                  {step.description}
-                </p>
-              </div>
+              <Image
+                src={step.image}
+                alt={step.alt}
+                width={390}
+                height={844}
+                className="h-auto w-full object-contain"
+                loading="lazy"
+              />
             </div>
-          </FadeIn>
-        ))}
+          );
+
+          const text = (
+            <div className="text-left">
+              <p className="text-sm font-semibold text-accent">{step.number}</p>
+              <h3 className="mt-2 text-2xl font-bold">{step.title}</h3>
+              <p className="mt-3 leading-relaxed text-muted">
+                {step.description}
+              </p>
+            </div>
+          );
+
+          return (
+            <FadeIn key={step.number} delay={index * 0.05}>
+              <div
+                className={cn(
+                  "grid items-center gap-8 lg:gap-x-10",
+                  imageRight ? "lg:grid-cols-[1fr_auto]" : "lg:grid-cols-[auto_1fr]",
+                )}
+              >
+                {imageRight ? (
+                  <>
+                    {text}
+                    {image}
+                  </>
+                ) : (
+                  <>
+                    {image}
+                    {text}
+                  </>
+                )}
+              </div>
+            </FadeIn>
+          );
+        })}
       </div>
     </div>
   );
