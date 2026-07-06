@@ -1,8 +1,14 @@
-# NPM
+# NPM / Next.js
 node_modules
-npm-debug.log
+.next
+out
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tsbuildinfo
 
-# Jekyll
+# Jekyll (legacy, remove after migration)
 _site
 _site/
 .sass-cache/
@@ -17,6 +23,33 @@ tmp
 Desktop.ini
 ._*
 Thumbs.db
+ehthumbs.db
 .Spotlight-V100
 .Trashes
-.idea
+
+# Env and secrets
+.env
+.env.local
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# IDE and editor (local workspace — do not publish)
+.cursor/
+.vscode/
+.idea/
+
+# Internal / operational docs (infra, DNS, redirect rules)
+docs/
+
+# Template / tooling metadata (not part of the site)
+builtatlightspeed.json
+
+# Deploy platforms (local config only)
+.vercel
+
+# Test coverage
+coverage/
