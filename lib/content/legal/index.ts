@@ -3,7 +3,7 @@ export const companyPrivacyHtml = `<p>This Privacy Policy explains how Mgonnacru
 <h2>Scope</h2>
 <p>This policy applies to:</p>
 <ul>
-  <li>Website usage data for <code>mgonnacrusht.github.io</code></li>
+  <li>Website usage data for <code>mgonnacrusht.co.uk</code></li>
   <li>Contact and service inquiry submissions</li>
   <li>Business communication records</li>
 </ul>
