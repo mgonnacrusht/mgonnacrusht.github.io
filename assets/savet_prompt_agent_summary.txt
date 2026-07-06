@@ -9,8 +9,8 @@
 **SaveT**
 
 ## What It Is
-SaveT is a Flutter-based bookmarking and content organization app.  
-It helps users save links, media, places, and ideas into nested lists, then enrich and manage that content with smart metadata.
+SaveT is a Flutter bookmarking app.  
+Save links, posts, videos, articles, places, and job posts now; sort them into nested lists when you have time.
 
 ## Tagline and Messaging Anchor
 - Official SaveT tagline: **"See it. SaveT. Sort it."**
@@ -84,6 +84,6 @@ It helps users save links, media, places, and ideas into nested lists, then enri
 - **No early-access CTA** on public site copy
 
 ## Product Positioning (Short)
-SaveT is a practical "save now, organize later" productivity tool that combines structured bookmarking with AI-powered metadata enrichment for better personal knowledge management.
+SaveT is a save-now, sort-later app: structured bookmarking with automatic titles, tags, and details where they help.
 
 Last updated: 2026-07-06

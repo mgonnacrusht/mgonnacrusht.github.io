@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="For startups & product teams"
         title="Product engineering services"
-        lead="MgonnacrushT provides remote, end-to-end software delivery for startups, founders, and product teams — from mobile apps to SaaS backends and cloud deployment."
+        lead="Remote software delivery for startups, founders, and product teams: mobile apps, SaaS backends, and cloud deployment."
       >
         <Button href={`mailto:${siteConfig.emails.hello}`}>
           Email {siteConfig.emails.hello}
@@ -57,7 +57,7 @@ export default function ServicesPage() {
               <li>Pricing: Contact for pricing</li>
             </ul>
             <p className="mt-6 text-sm text-muted">
-              For our flagship product, visit{" "}
+              Our own product:{" "}
               <a href="/savet/" className="text-accent underline">
                 SaveT
               </a>

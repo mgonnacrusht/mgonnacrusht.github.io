@@ -20,7 +20,7 @@ export default function ProductsPage() {
     <>
       <PageHero
         title="Portfolio"
-        lead="We build focused software products that solve practical, repeatable problems."
+        lead="Software we build and use ourselves, plus selected client projects in the same vein."
       />
 
       <Section>

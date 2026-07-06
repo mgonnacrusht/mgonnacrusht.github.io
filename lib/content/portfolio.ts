@@ -13,7 +13,7 @@ export const savetFeatured = {
   slug: "savet",
   title: "SaveT",
   description:
-    "Our flagship bookmarking and organization app for links, places, media, and ideas. Built for people who collect too much online and lose it across tabs, screenshots, and notes.",
+    "Bookmarking app for links, places, media, and ideas. For people who save too much online and lose it across tabs, screenshots, and notes.",
   tags: ["Flutter", "Firebase", "RevenueCat"],
   image: "/images/savet/Savet_logo_dark_big_1500_1500.png",
   href: "/savet/",
@@ -21,7 +21,7 @@ export const savetFeatured = {
   bullets: [
     "Save and organize content from websites, social posts, short videos, articles, map POIs, and career-focused posts",
     "Nested list structure and search",
-    "AI-powered metadata enrichment and smart organization",
+    "Automatic titles, tags, and sorting hints",
   ],
 };
 
@@ -30,7 +30,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "project-alpha",
     title: "Project Alpha",
     description:
-      "Placeholder — lightweight integration tool for small teams syncing data between services.",
+      "Placeholder. Lightweight integration tool for small teams syncing data between services.",
     tags: ["Flutter", "Firebase"],
     image: "/images/portfolio/placeholder.svg",
     href: null,
@@ -40,7 +40,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "project-beta",
     title: "Project Beta",
     description:
-      "Placeholder — internal workflow dashboard with custom reporting and export.",
+      "Placeholder. Internal workflow dashboard with custom reporting and export.",
     tags: ["Next.js", "PostgreSQL"],
     image: "/images/portfolio/placeholder.svg",
     href: null,
@@ -50,7 +50,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "project-gamma",
     title: "Project Gamma",
     description:
-      "Placeholder — API bridge connecting legacy systems to modern cloud services.",
+      "Placeholder. API bridge connecting legacy systems to modern cloud services.",
     tags: ["Spring Boot", "AWS"],
     image: "/images/portfolio/placeholder.svg",
     href: null,

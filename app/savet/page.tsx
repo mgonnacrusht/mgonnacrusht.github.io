@@ -16,7 +16,7 @@ import { siteConfig } from "@/lib/config/site";
 export const metadata = buildMetadata({
   title: "SaveT",
   description:
-    "SaveT helps you capture, organize, and enrich links, media, places, and ideas in one personal knowledge space.",
+    "SaveT helps you save and sort links, media, places, and ideas in one place.",
   path: "/savet/",
   ogImage: "/og/savet.svg",
 });

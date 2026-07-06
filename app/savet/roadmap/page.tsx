@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata = buildMetadata({
   title: "SaveT Roadmap",
   description:
-    "SaveT product roadmap — planned features, milestones, and what comes next.",
+    "SaveT product roadmap: planned features, milestones, and what comes next.",
   path: "/savet/roadmap/",
   noIndex: !siteConfig.showRoadmap,
 });
@@ -26,14 +26,14 @@ export default function SaveTRoadmapPage() {
     <>
       {!siteConfig.showRoadmap ? (
         <div className="border-b border-amber-200 bg-amber-50 px-5 py-2 text-center text-sm text-amber-900">
-          Preview only — not linked in navigation. Set showRoadmap to true to publish.
+          Preview only. Not linked in navigation. Set showRoadmap to true to publish.
         </div>
       ) : null}
 
       <PageHero
         eyebrow="SaveT"
         title="Roadmap"
-        lead="A look at where SaveT is headed — planned features, milestones, and what comes next."
+        lead="Where SaveT is headed next: planned features, milestones, and timing."
       >
         <Button href="/savet/">Back to SaveT</Button>
         <Button href="/contact/" variant="secondary">

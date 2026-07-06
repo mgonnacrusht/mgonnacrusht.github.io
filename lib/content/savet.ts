@@ -14,16 +14,16 @@ export type UseCase = {
 
 export const savetContent = {
   tagline: "See it. SaveT. Sort it.",
-  lead: "SaveT is a cross-platform app by MgonnacrushT that helps you save now and organize later, without losing useful links, social posts, short videos, articles, map POIs, and career opportunities and insights.",
+  lead: "SaveT lets you save links, posts, videos, articles, places, and job posts now, then sort them into lists when you have a minute. Nothing gets lost in tabs or screenshots.",
   capabilities: [
     "Quick Save flow for fast capture.",
     "Nested lists for clean organization.",
     "Search with list-path context to find items faster.",
     "Edit support for title, description, tags, and metadata.",
-    "Smart metadata enrichment for better item quality.",
+    "Auto-filled titles, tags, and details where it helps.",
     "Safer data handling with soft-delete behavior.",
   ],
-  stepsIntro: "Three simple moves, one calm workflow.",
+  stepsIntro: "Three steps. Save now, sort later.",
   steps: [
     {
       number: "01",
@@ -57,12 +57,12 @@ export const savetContent = {
     problem:
       "Links, social posts, short videos, and ideas end up scattered across tabs, screenshots, notes, and half-forgotten watchlists. Finding something later takes longer than saving it.",
     solution:
-      "SaveT gives you one calm inbox with nested lists, fast search, and smart metadata so saved content stays useful instead of buried.",
+      "SaveT puts everything in one inbox with nested lists, search, and useful metadata so you can actually find it again.",
     results: [
       { label: "Platforms", value: "Android" },
       { label: "Workflow", value: "See → Save → Sort" },
       { label: "Organization", value: "Nested lists" },
-      { label: "Enrichment", value: "AI metadata" },
+      { label: "Enrichment", value: "Auto metadata" },
     ],
   },
   pricing: [
@@ -104,20 +104,20 @@ export const savetContent = {
     {
       title: "Collaboration & shared lists (planned)",
       excerpt:
-        "SaveT is starting as a personal inbox, but collaboration is on the roadmap.",
-      body: "Ideas under exploration include shared lists for friends and families, public lists you can publish, invite-only lists, and lightweight comments. Nothing ships until it feels helpful and respectful.",
+        "SaveT starts as a personal inbox. Shared lists are on the roadmap.",
+      body: "Ideas under exploration include shared lists for friends and families, public lists you can publish, invite-only lists, and lightweight comments. Nothing ships until it feels useful.",
     },
     {
       title: "Browser extension & desktop (planned)",
       excerpt:
-        "Saving from your phone is critical, but desktop browsing still accounts for a huge portion of online discovery.",
+        "Saving from your phone matters, but plenty of discovery still happens on desktop.",
       body: "Planned improvements include a lightweight browser button, keyboard-friendly workflows, a responsive web experience, and context-aware fields that auto-fill details from the page you are saving.",
     },
     {
       title: "API, integrations & discovery (planned)",
       excerpt:
-        "Looking further out, SaveT could become a platform other tools can hook into.",
-      body: "Concepts on the horizon include a secure API, integrations with tools you already use, optional affiliate link helpers with clear disclosure, and recommendation features that surface your own forgotten gems.",
+        "Further out, SaveT could open up to other tools.",
+      body: "On the list: a secure API, integrations with tools you already use, optional affiliate link helpers with clear disclosure, and recommendations that surface things you saved and forgot about.",
     },
   ] satisfies UseCase[],
 };

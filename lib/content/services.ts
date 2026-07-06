@@ -8,7 +8,7 @@ export const services: Service[] = [
   {
     name: "Mobile Application Development",
     summary:
-      "Native-feeling iOS and Android apps with Flutter, built end-to-end.",
+      "Native-feeling iOS and Android apps with Flutter, from first screen to store release.",
     iconLabel: "MOB",
   },
   {
@@ -38,7 +38,7 @@ export const services: Service[] = [
   {
     name: "SaaS Development",
     summary:
-      "Multi-tenant SaaS platforms with pragmatic architecture choices.",
+      "Multi-tenant SaaS platforms with architecture that fits the budget and timeline.",
     iconLabel: "SAAS",
   },
 ];

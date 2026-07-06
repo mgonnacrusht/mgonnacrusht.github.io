@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About MgonnacrushT Limited"
-        lead="A UK-based product company focused on practical software with long-term value. Our primary product is SaveT, and we also ship mobile and SaaS products for other teams."
+        lead="UK software company. We build SaveT and ship mobile and SaaS work for other teams when the fit is right."
       >
         <Button href={`mailto:${siteConfig.emails.hello}`}>Talk to us</Button>
         <Button href="/savet/" variant="secondary">
@@ -40,14 +40,14 @@ export default function AboutPage() {
           <FadeIn delay={0.1}>
             <h2 className="text-2xl font-bold">Solo founder story</h2>
             <p className="mt-4 leading-relaxed text-muted">
-              I am Alihan, the founder of MgonnacrushT Limited — a UK-registered
-              software company built around shipping practical products and helping
-              small teams move from idea to launch without unnecessary complexity.
+              I&apos;m Alihan. I run MgonnacrushT Limited, a UK software company.
+              Most of my time goes into SaveT; the rest is client work for startups
+              and founders who need mobile apps, SaaS backends, or cloud deployment
+              done properly.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              SaveT is our flagship product. Alongside it, I take on focused
-              engineering engagements for startups and founders who need mobile
-              apps, SaaS backends, and cloud deployment done properly.
+              I prefer small scopes, clear communication, and shipping something
+              you can actually use.
             </p>
           </FadeIn>
         </Container>
@@ -70,20 +70,20 @@ export default function AboutPage() {
         <Container className="max-w-3xl">
           <h2 className="text-2xl font-bold">Product philosophy</h2>
           <p className="mt-4 text-muted">
-            We prioritize clear UX, stable architecture, and sustainable product
-            decisions over short-term hype.
+            We build things we would want to maintain ourselves: clear UX, stable
+            architecture, and room to improve after launch.
           </p>
           <ul className="mt-5 space-y-2 text-muted">
-            <li>Solving real user problems with focused scope.</li>
-            <li>Shipping maintainable systems with sensible defaults.</li>
-            <li>Improving products through iteration and feedback.</li>
+            <li>Fix a real problem before adding features.</li>
+            <li>Ship code you can hand over to someone else.</li>
+            <li>Listen to users and adjust.</li>
           </ul>
 
           <h2 className="mt-10 text-2xl font-bold">Privacy and trust</h2>
           <ul className="mt-5 space-y-2 text-muted">
-            <li>User data should remain user-first.</li>
-            <li>Security and reliability should be built in, not patched in later.</li>
-            <li>Policies and disclosures should be clear and readable.</li>
+            <li>Your data stays yours.</li>
+            <li>Security and reliability belong in v1, not a later patch.</li>
+            <li>Policies should be plain English, not legalese wallpaper.</li>
           </ul>
         </Container>
       </Section>

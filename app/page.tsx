@@ -48,9 +48,8 @@ export default function HomePage() {
               Remote software delivery from idea to launch
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              MgonnacrushT helps startups and founders ship mobile apps, SaaS
-              backends, and cloud infrastructure — with SaveT as our flagship
-              product proof point.
+              We help startups and founders ship mobile apps, SaaS backends, and
+              cloud setup. SaveT is the app we built to show how we work.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button href="/services/">See services</Button>
@@ -83,10 +82,11 @@ export default function HomePage() {
         <Container>
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <FadeIn>
-              <Eyebrow>Flagship case study</Eyebrow>
-              <h2 className="text-3xl font-bold">
-                SaveT — {savetContent.tagline}
-              </h2>
+              <Eyebrow>Case study</Eyebrow>
+              <h2 className="text-3xl font-bold">SaveT</h2>
+              <p className="mt-2 text-xl font-semibold text-accent">
+                {savetContent.tagline}
+              </p>
               <p className="mt-4 leading-relaxed text-muted">
                 {savetContent.caseStudy.problem}
               </p>
@@ -168,9 +168,9 @@ export default function HomePage() {
             <Eyebrow>Founder</Eyebrow>
             <h2 className="text-2xl font-bold">Built by a solo UK founder</h2>
             <p className="mt-3 max-w-2xl text-muted">
-              MgonnacrushT Limited is a UK-registered company focused on
-              practical software — shipping SaveT and helping small teams deliver
-              focused products without unnecessary complexity.
+              MgonnacrushT Limited is registered in the UK. We ship SaveT and
+              take on client work for small teams who want working software, not
+              a six-month slide deck.
             </p>
           </div>
           <Button href="/about/" variant="secondary">
@@ -183,7 +183,7 @@ export default function HomePage() {
         <Container className="rounded-3xl border border-border bg-surface px-8 py-12 text-center shadow-sm sm:px-12">
           <h2 className="text-3xl font-bold">Ready to talk about your product?</h2>
           <p className="mx-auto mt-4 max-w-xl text-muted">
-            Tell us about your app, SaaS idea, or timeline. We will reply by email.
+            Tell us about your app, SaaS idea, or timeline. We reply by email.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact/">Get in touch</Button>
