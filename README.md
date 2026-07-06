@@ -1,103 +1,80 @@
-# Jekyll Serif Theme
+# MgonnacrushT Website
 
-Serif is a modern business theme for Jekyll. It contains multiple content types for a typical brochure/marketing website. The theme is fully responsive, blazing fast and artfully illustrated.
+Marketing site for [MgonnacrushT Limited](https://mgonnacrusht.co.uk) — product engineering services and the SaveT flagship app.
 
-[Live Demo](https://jekyll-serif.netlify.app/) |
-[Zerostatic Themes](https://www.zerostatic.io)
+**Live:** [mgonnacrusht.co.uk](https://mgonnacrusht.co.uk)
 
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+## Stack
 
-![Jekyll Serif Theme screenshot](https://www.zerostatic.io/theme/jekyll-serif/jekyll-serif-screenshot.png)
+- [Next.js 15](https://nextjs.org/) (App Router, static export)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Formspree](https://formspree.io/) (contact form)
+- [Umami](https://umami.is/) (analytics)
 
-### Theme features
+Static output is deployed to **GitHub Pages** via GitHub Actions. DNS and edge redirects are managed in **Cloudflare**.
 
-- Jekyll 4.2+
-- Netlify & Github Pages ready
-- Services (Collection)
-- Team (Collection)
-- Features (Data)
-- SCSS
-- 100% Responsive design, animated hamburger and mobile slide in menu
-- Bootstrap 4.6 - _Only the bootstrap grid and utilites are imported by default. If you want to use more of the Boostrap library you can uncomment the `@import` in `style.scss`_
-- 100/100 Google Lighthouse speed score
-- 100/100 Google Lighthouse seo score
-- 100/100 Google Lighthouse accessibility score
-- 100/100 Google Lighthouse best practices score
-- Under 50KB without images or 80KB with images and illustrations ⚡
-- Under 20KB without Google fonts ⚡⚡⚡
-- Robust example content included
-- Royalty free illustrations included
+## Local development
 
-## Installation
-
-### Installing Ruby & Jekyll
-
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
-
-### Installing Theme
-
-Download or clone the theme.
-
-To run the theme locally, navigate to the theme directory and run:
-
-```
-bundle install
+```bash
+npm install
+npm run dev
 ```
 
-To start the Jekyll local development server.
+Open [http://localhost:3000](http://localhost:3000).
+
+Production build preview:
+
+```bash
+npm run build
+npx serve out
+```
+
+## Project structure
 
 ```
-bundle exec jekyll serve
+app/              # Pages (App Router)
+components/       # UI, layout, sections
+lib/
+  config/         # site.ts — flags, emails, integrations
+  content/        # Copy and data (i18n-ready)
+  seo/            # Metadata helpers
+public/           # Static assets, CNAME, legacy redirect HTML
+scripts/          # Build helpers (redirects, CNAME copy)
+docs/             # Operational docs (Cloudflare, etc.)
 ```
 
-To build the theme.
+Key pages: `/`, `/services/`, `/products/` (portfolio), `/savet/`, `/about/`, `/contact/`, plus company and SaveT legal pages.
 
-```
-bundle exec jekyll build
-```
+## Environment variables
+
+Optional GitHub Actions secrets (build-time):
+
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_FORMSPREE_FORM_ID` | Contact form (default: `mwvdyvkr`) |
+| `NEXT_PUBLIC_PLAY_STORE_URL` | SaveT Google Play link when live |
+
+Do not commit `.env` files.
 
 ## Deployment
 
-### Netlify
+1. Push to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+2. GitHub repo **Settings → Pages** → source: **GitHub Actions**.
+3. Custom domain: `mgonnacrusht.co.uk` (`public/CNAME`).
 
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+## Cloudflare & legacy redirects
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-serif-theme)
+Old `/features/*` URLs redirect to `/savet/` via a Cloudflare 301 rule. Full rule details, test commands, and fallback behaviour:
 
-### Github Pages
+→ [`docs/cloudflare-config.md`](docs/cloudflare-config.md)
 
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
+Code fallback: `scripts/generate-legacy-redirects.mjs` writes meta-refresh pages under `public/features/`.
 
-For example the site https://zerostaticthemes.github.io/jekyll-serif-theme would have `baseurl: "/jekyll-serif-theme/"`
+## Content sync
 
-## Extras
+When SaveT or site messaging changes, update [`assets/savet_prompt_agent_summary.txt`](assets/savet_prompt_agent_summary.txt) and include `Last updated: YYYY-MM-DD` at the bottom.
 
-### License
+## License
 
-- You cannot create ports of this theme
-- You cannot re-sell this theme
-
-### Credits
-
-- Beautiful royalty free Illustrations by Icons8 - https://icons8.com/illustrations/style--pixeltrue
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-## Support My Work
-
-I've been building open source themes for all the main static site generators for over 4 years now. My premium themes allow me to continue to allocate time to maintain, improve and build new open source themes.
-
-1. Leave a star ⭐🙏🏻
-2. Make a contribution to this theme, add a feature, fix a bug, nothing is to small 
-2. Mention this theme on twitter [@zerostaticio](https://twitter.com/zerostaticio) 📢
-3. Purchase a premium theme 🔥
-
-### All Jekyll Themes by Zerostatic
-
-- [Jekyll Serif (Open Source)](https://www.zerostatic.io/theme/jekyll-serif/)
-- [Jekyll Atlantic (Open Source)](https://www.zerostatic.io/theme/jekyll-atlantic/)
-- [Jekyll Advance (Premium)](https://www.zerostatic.io/theme/jekyll-advance/)
-- [Jekyll Origin (Premium)](https://www.zerostatic.io/theme/jekyll-origin/)
-- [Jekyll Curate (Premium)](https://www.zerostatic.io/theme/jekyll-curate/)
-
-🇦🇺 **Made in Australia** by Robert Austin
+Site content and branding © MgonnacrushT Limited. This repository is private company material; do not redistribute without permission.
