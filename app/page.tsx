@@ -112,7 +112,7 @@ export default function HomePage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <Image
-                src="/images/savet/Savet_logo_dark_big_1500_1500.png"
+                src="/images/savet/savet_logodark.svg"
                 alt="SaveT logo"
                 width={400}
                 height={400}
@@ -158,7 +158,7 @@ export default function HomePage() {
       <Section className="bg-surface">
         <Container className="grid items-center gap-8 lg:grid-cols-[200px_1fr_auto]">
           <Image
-            src="/images/team/alihan-ersoy-pp.jpg"
+            src="/images/team/alihan-ersoy-pp.webp"
             alt="Alihan Ersoy"
             width={160}
             height={160}

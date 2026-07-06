@@ -29,7 +29,7 @@ export default function SaveTPage() {
       <Section className="border-b border-border bg-surface pb-16 pt-12 sm:pt-16">
         <Container className="max-w-3xl text-center">
           <Image
-            src="/images/savet/Savet_logo_dark_big_1500_1500.png"
+            src="/images/savet/savet_logodark.svg"
             alt="SaveT logo"
             width={200}
             height={200}

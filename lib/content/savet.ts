@@ -30,7 +30,7 @@ export const savetContent = {
       title: "See it",
       description:
         "Spot a useful link, place, video, article, or idea worth keeping.",
-      image: "/images/savet/screenshots/boarding1_seeit.jpg",
+      image: "/images/savet/screenshots/boarding1_seeit.webp",
       alt: "SaveT onboarding step 1: See it",
     },
     {
@@ -38,7 +38,7 @@ export const savetContent = {
       title: "SaveT",
       description:
         "When you find something worth keeping, tap Share and send it to SaveT in seconds.",
-      image: "/images/savet/screenshots/boarding2_savet.jpg",
+      image: "/images/savet/screenshots/boarding2_savet.webp",
       alt: "SaveT onboarding step 2: SaveT",
     },
     {
@@ -46,7 +46,7 @@ export const savetContent = {
       title: "Sort it",
       description:
         "Add what you saved to the right list so it stays organized and easy to find later.",
-      image: "/images/savet/screenshots/boarding3_sortit.jpg",
+      image: "/images/savet/screenshots/boarding3_sortit.webp",
       alt: "SaveT onboarding step 3: Sort it",
     },
   ] satisfies SaveTStep[],

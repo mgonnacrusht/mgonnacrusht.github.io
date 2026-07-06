@@ -30,7 +30,7 @@ export default function AboutPage() {
         <Container className="grid items-center gap-10 lg:grid-cols-[240px_1fr]">
           <FadeIn>
             <Image
-              src="/images/team/alihan-ersoy-pp.jpg"
+              src="/images/team/alihan-ersoy-pp.webp"
               alt="Alihan Ersoy, founder of MgonnacrushT"
               width={240}
               height={240}

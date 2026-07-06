@@ -1,11 +1,6 @@
 import { buildMetadata } from "@/lib/seo/metadata";
 import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
-import {
-  companyPrivacyHtml,
-  companyTermsHtml,
-  savetPrivacyHtml,
-  savetTermsHtml,
-} from "@/lib/content/legal";
+import { companyPrivacyHtml } from "@/lib/content/legal";
 
 export const metadata = buildMetadata({
   title: "Privacy Policy",

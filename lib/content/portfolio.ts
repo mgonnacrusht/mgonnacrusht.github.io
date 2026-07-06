@@ -15,7 +15,7 @@ export const savetFeatured = {
   description:
     "Bookmarking app for links, places, media, and ideas. For people who save too much online and lose it across tabs, screenshots, and notes.",
   tags: ["Flutter", "Firebase", "RevenueCat"],
-  image: "/images/savet/Savet_logo_dark_big_1500_1500.png",
+  image: "/images/savet/savet_logodark.svg",
   href: "/savet/",
   status: "live" as const,
   bullets: [

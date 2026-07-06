@@ -4,6 +4,7 @@ import Script from "next/script";
 import { siteConfig } from "@/lib/config/site";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { MotionProvider } from "@/components/motion/MotionProvider";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -46,9 +47,11 @@ export default function RootLayout({
         className="min-h-screen bg-background text-foreground antialiased"
         suppressHydrationWarning
       >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </MotionProvider>
         <Script
           defer
           src="https://cloud.umami.is/script.js"
