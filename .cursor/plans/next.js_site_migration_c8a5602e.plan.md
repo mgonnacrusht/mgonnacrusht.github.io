@@ -12,7 +12,7 @@ todos:
     content: Navbar, Footer, site config, Umami, fonts, LegalPageLayout
     status: pending
   - id: core-pages
-    content: /services, /about (founder), /contact (Formspree), /products (portfolio placeholders)
+    content: "/services, /about (founder), /contact (Formspree @formspree/react mwvdyvkr), /products (portfolio placeholders)"
     status: pending
   - id: savet-flagship
     content: /savet case study (problem/solution/result, steps, use cases, video, Play Store CTA env-gated)
@@ -178,6 +178,81 @@ npx shadcn@latest add "https://21st.dev/r/<author>/<component>"
 
 [`lib/config/site.ts`](lib/config/site.ts): `showRoadmap`, `playStoreUrl`, `formspreeFormId`, Umami ID, email alias'ları.
 
+```ts
+export const siteConfig = {
+  domain: 'https://mgonnacrusht.co.uk',
+  showRoadmap: false,
+  playStoreUrl: process.env.NEXT_PUBLIC_PLAY_STORE_URL ?? '',
+  formspreeFormId: process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? 'mwvdyvkr',
+  formspreeEndpoint: 'https://formspree.io/f/mwvdyvkr',
+  umamiWebsiteId: '957b7146-060b-40e6-8ee1-4f8dec3ad333',
+  emails: {
+    hello: 'hello@mgonnacrusht.co.uk',
+    support: 'support@mgonnacrusht.co.uk',
+    legal: 'legal@mgonnacrusht.co.uk',
+  },
+}
+```
+
+### Formspree (hazır — domain-restricted)
+
+| Alan | Değer |
+|------|--------|
+| Form ID | `mwvdyvkr` |
+| Endpoint | `https://formspree.io/f/mwvdyvkr` |
+| Güvenlik | Formspree panelinde domain kısıtlaması aktif (`mgonnacrusht.co.uk`) |
+
+**Stack seçimi:** Next.js + React → **`@formspree/react`** (Formspree'nin önerdiği React guide).
+
+```bash
+npm install @formspree/react
+```
+
+**Bileşen:** [`components/contact/ContactForm.tsx`](components/contact/ContactForm.tsx) — `"use client"` (hook kullanımı için).
+
+```tsx
+import { useForm, ValidationError } from '@formspree/react';
+import { siteConfig } from '@/lib/config/site';
+
+export function ContactForm() {
+  const [state, handleSubmit] = useForm(siteConfig.formspreeFormId);
+
+  if (state.succeeded) {
+    return <p>Thanks — we will get back to you soon.</p>;
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="name" required />
+      <input type="email" name="email" required />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <input type="text" name="company" />
+      <select name="intent" required>
+        <option value="savet">SaveT</option>
+        <option value="services">Services</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea name="message" required />
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      {/* Honeypot — spam koruması */}
+      <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+      <button type="submit" disabled={state.submitting}>Send message</button>
+    </form>
+  );
+}
+```
+
+**Davranış:**
+- `state.submitting` → buton disabled
+- `state.succeeded` → teşekkür mesajı (sayfa yenilemeden)
+- `ValidationError` → alan bazlı hata gösterimi
+- Domain restriction Formspree tarafında; localhost test için panelde `localhost` ekle veya geçici olarak restriction gevşet
+
+**GitHub Actions secret (opsiyonel ama önerilir):**
+- `NEXT_PUBLIC_FORMSPREE_FORM_ID=mwvdyvkr` — build-time inject; hardcode fallback `mwvdyvkr` config'te
+
+**Kullanılmayacak:** Vanilla `@formspree/ajax` CDN veya raw HTML `action` POST — static export + React stack'te `@formspree/react` daha temiz.
+
 **GitHub Actions:** push to `main` → build → export → legacy redirect script → deploy. Pages source = GitHub Actions.
 
 **Cloudflare (senin yapacağın, kodla paralel):** aşağıdaki Faz 5A.
@@ -255,6 +330,6 @@ GitHub Actions deploy'dan **önce veya sonra** yapılabilir; DNS propagasyonu be
 - **Redirect Rule proxy bağımlılığı:** Cloudflare 301 kuralı yalnızca **proxied (turuncu bulut)** kayıtlarda çalışır. Gri bulutta sadece meta-refresh fallback devrededir.
 - **Propagasyon süresi:** Birkaç saat boyunca hem meta-refresh fallback hem Cloudflare kuralı aktif olabilir; çakışma yaratmaz (Cloudflare önce yakalar)
 - **True HTTP 301:** Cloudflare Redirect Rule birincil çözüm; meta-refresh yalnızca fallback
-- **Formspree:** Honeypot field ekle (spam)
+- **Formspree:** `@formspree/react` + form ID `mwvdyvkr`; domain restriction panelde aktif; honeypot `_gotcha` ekle; localhost geliştirme için panelde izin gerekebilir
 - **YouTube embed:** Facade pattern Lighthouse için düşün
 - **Cursor rules:** SaveT slogan, email alias map, agent summary sync korunmalı
