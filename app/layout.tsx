@@ -37,8 +37,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${sora.variable}`}>
-      <body className="min-h-screen bg-background text-foreground antialiased">
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${sora.variable}`}
+      suppressHydrationWarning
+    >
+      <body
+        className="min-h-screen bg-background text-foreground antialiased"
+        suppressHydrationWarning
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />
