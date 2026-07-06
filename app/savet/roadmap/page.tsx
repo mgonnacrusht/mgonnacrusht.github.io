@@ -37,7 +37,7 @@ export default function SaveTRoadmapPage() {
       >
         <Button href="/savet/">Back to SaveT</Button>
         <Button href="/contact/" variant="secondary">
-          Contact
+          Get in touch
         </Button>
       </PageHero>
 

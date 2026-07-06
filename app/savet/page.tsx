@@ -47,7 +47,7 @@ export default function SaveTPage() {
             <Button href="/services/" variant="secondary">
               Company services
             </Button>
-            <Button href="/contact/">Contact</Button>
+            <Button href="/contact/">Get in touch</Button>
           </div>
         </Container>
       </Section>
@@ -163,7 +163,7 @@ export default function SaveTPage() {
             </Link>
             {" · "}
             <Link href="/contact/" className="text-accent underline">
-              Contact
+              Get in touch
             </Link>
             {" · "}
             <Link href="/savet/legal/privacy/" className="text-accent underline">

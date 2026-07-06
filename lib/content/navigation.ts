@@ -8,7 +8,6 @@ export const mainNav: NavItem[] = [
   { name: "Services", href: "/services/" },
   { name: "Portfolio", href: "/products/" },
   { name: "About", href: "/about/" },
-  { name: "Contact", href: "/contact/" },
 ];
 
 export const footerNav: NavItem[] = [
@@ -16,7 +15,7 @@ export const footerNav: NavItem[] = [
   { name: "SaveT", href: "/savet/" },
   { name: "Services", href: "/services/" },
   { name: "Portfolio", href: "/products/" },
-  { name: "Contact", href: "/contact/" },
+  { name: "Get in touch", href: "/contact/" },
   { name: "Privacy Policy", href: "/legal/privacy/" },
   { name: "Terms of Use", href: "/legal/terms/" },
 ];

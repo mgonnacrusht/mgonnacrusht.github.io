@@ -67,9 +67,15 @@ export function ContactForm() {
         <label htmlFor="intent" className="mb-2 block text-sm font-medium">
           What is this about?
         </label>
-        <select id="intent" name="intent" required className={fieldClass}>
-          <option value="savet">SaveT</option>
+        <select
+          id="intent"
+          name="intent"
+          required
+          defaultValue="services"
+          className={fieldClass}
+        >
           <option value="services">Services</option>
+          <option value="savet">SaveT</option>
           <option value="other">Other</option>
         </select>
       </div>
