@@ -1,8 +1,10 @@
-# NPM
+# NPM / Next.js
 node_modules
+.next
+out
 npm-debug.log
 
-# Jekyll
+# Jekyll (legacy, remove after migration)
 _site
 _site/
 .sass-cache/
@@ -20,3 +22,8 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 .idea
+
+# Env
+.env
+.env.local
+.env*.local

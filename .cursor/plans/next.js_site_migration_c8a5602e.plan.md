@@ -4,37 +4,37 @@ overview: Mevcut Jekyll sitesini Next.js static export ile yeniden kurma planı 
 todos:
   - id: scaffold-nextjs
     content: Next.js static export scaffold + Tailwind + shadcn/21st.dev registry + next.config (trailingSlash, export)
-    status: pending
+    status: completed
   - id: migrate-content
     content: Jekyll içeriğini lib/content/ ve lib/content/legal/ altına verbatim taşı; images → public/images
-    status: pending
+    status: completed
   - id: layout-shell
     content: Navbar, Footer, site config, Umami, fonts, LegalPageLayout
-    status: pending
+    status: completed
   - id: core-pages
-    content: "/services, /about (founder), /contact (Formspree @formspree/react mwvdyvkr), /products (portfolio placeholders)"
-    status: pending
+    content: /services, /about (founder), /contact (Formspree @formspree/react mwvdyvkr), /products (portfolio placeholders)
+    status: completed
   - id: savet-flagship
     content: /savet case study (problem/solution/result, steps, use cases, video, Play Store CTA env-gated)
-    status: pending
+    status: completed
   - id: savet-roadmap-hidden
     content: /savet/roadmap gizli sayfa + noindex + agent yorumları
-    status: pending
+    status: completed
   - id: home-page
     content: "Agency-first home: hero → services → SaveT teaser → portfolio preview → founder → CTA"
-    status: pending
+    status: completed
   - id: cloudflare-setup
     content: "Cloudflare DNS kurulumu (sen): nameserver taşı, SSL Full strict, /features/* 301 rule, MX/e-posta test"
-    status: pending
+    status: cancelled
   - id: seo-redirects
     content: Metadata, sitemap, robots, JSON-LD, 8x /features/* meta-refresh fallback (generate-legacy-redirects.mjs)
-    status: pending
+    status: completed
   - id: github-actions
     content: deploy.yml workflow + CNAME + Jekyll cleanup + cursor rules güncelle
-    status: pending
+    status: completed
   - id: qa-merge
     content: Lighthouse 90+ QA, 301 redirect + legal URL doğrulama, version2 → main merge
-    status: pending
+    status: completed
 isProject: false
 ---
 

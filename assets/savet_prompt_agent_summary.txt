@@ -73,11 +73,17 @@ It helps users save links, media, places, and ideas into nested lists, then enri
 - User-facing error handling over app crashes
 
 ## Contact Alias Routing (Website-Current)
-- **hello@mgonnacrusht.co.uk**: general contact, early access, product questions, partnerships, updates, and service inquiries
+- **hello@mgonnacrusht.co.uk**: general contact, product questions, partnerships, updates, and service inquiries
 - **support@mgonnacrusht.co.uk**: explicit product/app support and troubleshooting flows
 - **legal@mgonnacrusht.co.uk**: terms, privacy, legal requests, and policy-related questions
+
+## Website Stack (Current)
+- **Site:** Next.js static export on GitHub Pages (`mgonnacrusht.co.uk`)
+- **Contact:** Formspree at `/contact/` (form ID `mwvdyvkr`, domain-restricted)
+- **Play Store CTA:** env-gated via `NEXT_PUBLIC_PLAY_STORE_URL` (hidden until set)
+- **No early-access CTA** on public site copy
 
 ## Product Positioning (Short)
 SaveT is a practical "save now, organize later" productivity tool that combines structured bookmarking with AI-powered metadata enrichment for better personal knowledge management.
 
-Last updated: 2026-04-27
+Last updated: 2026-07-06
