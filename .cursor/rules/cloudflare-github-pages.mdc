@@ -18,8 +18,10 @@ Proxied records before cert issuance will break GitHub Pages Let's Encrypt.
 
 ## Redirect Rule (301)
 
+Full operational reference: [`docs/cloudflare-config.md`](../docs/cloudflare-config.md) — rule name `features-to-savet-redirect`.
+
 - Condition: URI Path starts with `/features/`
-- Action: 301 → `https://mgonnacrusht.co.uk/savet/` (single hop, no chain)
+- Action: 301 → `https://mgonnacrusht.co.uk/savet/` (static target, preserve query string)
 - Works only on **proxied** records; grey cloud falls back to meta-refresh HTML in `public/features/`
 
 ## DNS checklist

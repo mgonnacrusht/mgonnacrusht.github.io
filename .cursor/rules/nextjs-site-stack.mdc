@@ -36,7 +36,7 @@ npm run build   # legacy redirects → next build → copy CNAME to out/
 
 - Deploy: GitHub Actions on push to `main` (`.github/workflows/deploy.yml`); Pages source = GitHub Actions
 - `CNAME` lives in `public/CNAME` only
-- Legacy `/features/*` → `/savet/`: Cloudflare 301 (primary) + `scripts/generate-legacy-redirects.mjs` fallback HTML
+- Legacy `/features/*` → `/savet/`: Cloudflare 301 (primary) — see `docs/cloudflare-config.md`; fallback: `scripts/generate-legacy-redirects.mjs`
 
 ## UI components
 
