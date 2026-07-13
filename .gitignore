@@ -45,6 +45,9 @@ ehthumbs.db
 # Internal / operational docs (infra, DNS, redirect rules)
 docs/
 
+# Agent sync (local AI context, not published)
+assets/savet_prompt_agent_summary.txt
+
 # Template / tooling metadata (not part of the site)
 builtatlightspeed.json
 
