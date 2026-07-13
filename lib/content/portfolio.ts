@@ -36,7 +36,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Palia Clock is a native Java Android companion for the Palia community, built and published solo through Google Play Console.",
     tags: ["Java", "Android", "Material Design"],
-    image: "/images/portfolio/palia-clock.svg",
+    image: "/images/portfolio/palia_clock_icon.webp",
     href: "https://play.google.com/store/apps/details?id=com.alihan98ersoy.paliaclock",
     status: "live",
     cta: {
