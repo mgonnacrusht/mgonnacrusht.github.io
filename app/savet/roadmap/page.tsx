@@ -1,5 +1,5 @@
 /**
- * ROADMAP PAGE — hidden from navigation and sitemap while showRoadmap is false.
+ * ROADMAP PAGE: hidden from navigation and sitemap while showRoadmap is false.
  *
  * To publish in production:
  * 1. Set showRoadmap: true in lib/config/site.ts

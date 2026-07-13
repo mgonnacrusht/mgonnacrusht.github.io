@@ -34,7 +34,7 @@ export default function AboutPage() {
             <p className="mt-4 leading-relaxed text-muted">
               MgonnacrushT Limited is registered in England and Wales (Company
               No. {siteConfig.companyNumber}). The company builds in-house
-              products — including SaveT — and takes on client work for founders
+              products, including SaveT, and takes on client work for founders
               who need working software, not slide decks.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
@@ -49,7 +49,7 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn — MgonnacrushT Ltd
+                MgonnacrushT Ltd on LinkedIn
               </a>
             </p>
           </FadeIn>
@@ -71,7 +71,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold">Alihan Ersoy, Director</h2>
             <p className="mt-4 leading-relaxed text-muted">
               I lead MgonnacrushT as Director. Most of my time goes into SaveT
-              and shipping client projects end to end — from architecture to store
+              and shipping client projects end to end, from architecture to store
               release.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn — Alihan Ersoy
+                Alihan Ersoy on LinkedIn
               </a>
             </p>
           </FadeIn>

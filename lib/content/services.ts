@@ -20,7 +20,7 @@ export const services: Service[] = [
   {
     name: "Cloud Application Development",
     summary:
-      "Cloud-native services on AWS, GCP, or a lean VPS — sized to the project, not enterprise theatre.",
+      "Cloud-native services on AWS, GCP, or a lean VPS, sized to the project rather than enterprise scale.",
     iconLabel: "CLD",
   },
   {
@@ -38,7 +38,7 @@ export const services: Service[] = [
   {
     name: "SaaS Development",
     summary:
-      "Small SaaS MVPs and fixed-scope backends — pragmatic architecture for solo or small-team products.",
+      "Small SaaS MVPs and fixed-scope backends with pragmatic architecture for solo or small-team products.",
     iconLabel: "SAAS",
   },
 ];

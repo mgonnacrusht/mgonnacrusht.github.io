@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/config/site";
 export const metadata = buildMetadata({
   title: "Portfolio",
   description:
-    "Software MgonnacrushT builds and ships — in-house products, a published Android app, and this website.",
+    "Product engineering and practical software for startups and small teams.",
   path: "/products/",
 });
 
@@ -20,7 +20,7 @@ export default function ProductsPage() {
     <>
       <PageHero
         title="Portfolio"
-        lead="Software MgonnacrushT builds and ships — in-house products, a published Android app, and this website."
+        lead="Product engineering and practical software for startups and small teams."
       />
 
       <Section>

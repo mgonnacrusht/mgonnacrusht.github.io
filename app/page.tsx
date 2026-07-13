@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/config/site";
 
 export const metadata = buildMetadata({
-  title: "MgonnacrushT – Product engineering for startups",
+  title: "Product engineering for startups",
   description:
     "MgonnacrushT delivers mobile apps, SaaS backends, and cloud infrastructure for startups. SaveT is the flagship in-house product.",
   path: "/",

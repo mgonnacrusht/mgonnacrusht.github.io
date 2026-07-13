@@ -15,7 +15,7 @@ export type UseCase = {
 export const savetContent = {
   tagline: "See it. SaveT. Sort it.",
   statusLine:
-    "Flagship product in closed beta — case study and development preview. Not publicly listed on Google Play.",
+    "Flagship product in closed beta. Case study and development preview only. Not publicly listed on Google Play.",
   lead: "SaveT lets you save links, posts, videos, articles, places, and job posts now, then sort them into lists when you have a minute. Nothing gets lost in tabs or screenshots.",
   capabilities: [
     "Quick Save flow for fast capture.",

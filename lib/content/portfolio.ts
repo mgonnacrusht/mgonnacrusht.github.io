@@ -49,7 +49,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "mgonnacrusht-website",
     title: "MgonnacrushT Website",
     description:
-      "This site — agency positioning, product showcase, and legal pages linked from mobile apps. Rebuilt from Jekyll to Next.js 15 static export with SEO and legacy URL preservation.",
+      "This site covers agency positioning, product showcase, and legal pages linked from mobile apps. Rebuilt from Jekyll to Next.js 15 static export with SEO and legacy URL preservation.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     image: "/images/logo/MgonnacrushT_logo.webp",
     href: "/",
