@@ -24,7 +24,7 @@ const buckets = [
     eyebrow: "Services",
     title: "Service inquiries",
     description:
-      "Remote software delivery across Flutter, Spring Boot, AWS/GCP/VPS, PostgreSQL, CI/CD, and Google Play publishing.",
+      "Mobile apps, Java Spring Boot APIs, Linux VPS deployment, PostgreSQL, CI/CD, and Google Play publishing.",
     href: "/services/",
     label: "See all services",
   },

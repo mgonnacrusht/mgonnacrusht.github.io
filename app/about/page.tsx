@@ -19,7 +19,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About MgonnacrushT Limited"
-        lead="MgonnacrushT is a UK-registered software company delivering mobile apps, APIs, and web work for startups when the fit is right."
+        lead="MgonnacrushT is a UK-registered software company delivering mobile apps, Java backends, Linux VPS deployment, and web work for startups when the fit is right."
       >
         <Button href={`mailto:${siteConfig.emails.hello}`}>Get in touch</Button>
         <Button href="/savet/" variant="secondary">
@@ -38,9 +38,9 @@ export default function AboutPage() {
               who need working software, not slide decks.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              Technical scope includes Flutter apps, Spring Boot APIs, cloud
-              deployment (AWS, GCP, or VPS), PostgreSQL, CI/CD, and Google Play
-              publishing. Remote worldwide.
+              Technical scope includes Flutter and native Java Android apps,
+              Java Spring Boot REST APIs, PostgreSQL, Linux VPS deployment with
+              Docker, CI/CD, and Google Play publishing. Remote worldwide.
             </p>
             <p className="mt-4">
               <a
@@ -97,10 +97,10 @@ export default function AboutPage() {
           <h2 className="mb-8 text-2xl font-bold">What MgonnacrushT builds</h2>
           <ServiceCardGrid />
           <p className="mt-8 text-sm text-muted">
-            Technical scope includes Flutter apps, Spring Boot APIs, cloud
-            infrastructure (AWS/GCP/VPS), PostgreSQL, CI/CD, deployment, and
-            Google Play publishing. Availability: Remote. Pricing: Contact for
-            pricing.
+            Technical scope includes Flutter and native Java Android apps, Java
+            Spring Boot APIs, PostgreSQL, Linux VPS deployment with Docker,
+            CI/CD, and Google Play publishing. Availability: Remote. Pricing:
+            Contact for pricing.
           </p>
         </Container>
       </Section>

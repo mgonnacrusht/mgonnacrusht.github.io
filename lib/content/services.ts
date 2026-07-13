@@ -4,6 +4,11 @@ export type Service = {
   iconLabel: string;
 };
 
+export type TechnicalScopeGroup = {
+  label: string;
+  items: string[];
+};
+
 export const services: Service[] = [
   {
     name: "Mobile Application Development",
@@ -14,20 +19,20 @@ export const services: Service[] = [
   {
     name: "Android Development",
     summary:
-      "Native and Flutter Android builds with Google Play publishing and release support.",
+      "Native Java and Flutter Android builds with Google Play publishing and release support.",
     iconLabel: "AND",
   },
   {
-    name: "Cloud Application Development",
+    name: "Backend API Development",
     summary:
-      "Cloud-native services on AWS, GCP, or a lean VPS, sized to the project rather than enterprise scale.",
-    iconLabel: "CLD",
+      "Java and Spring Boot REST APIs with PostgreSQL, Docker, and production-ready deployment on a Linux VPS.",
+    iconLabel: "API",
   },
   {
-    name: "Custom Software Development",
+    name: "Cloud & VPS Deployment",
     summary:
-      "Bespoke product and internal tools built around how the team actually works.",
-    iconLabel: "CST",
+      "Self-hosted Linux VPS setup, Docker, CI/CD, and cloud options on AWS or GCP when the project calls for it.",
+    iconLabel: "OPS",
   },
   {
     name: "Database Development",
@@ -43,12 +48,31 @@ export const services: Service[] = [
   },
 ];
 
+export const technicalScope: TechnicalScopeGroup[] = [
+  {
+    label: "Mobile",
+    items: ["Flutter", "Native Android (Java)"],
+  },
+  {
+    label: "Backend",
+    items: ["Java", "Spring Boot", "REST APIs", "PostgreSQL"],
+  },
+  {
+    label: "Deploy",
+    items: ["Linux VPS", "Docker", "CI/CD", "AWS", "GCP"],
+  },
+  {
+    label: "Web",
+    items: ["Next.js", "TypeScript"],
+  },
+];
+
 export const deliveryScope = [
-  "Flutter app development",
-  "Spring Boot API and backend engineering",
-  "Fixed-scope SaaS backends",
-  "AWS, GCP, and VPS deployment",
+  "Flutter and native Java Android apps",
+  "Java Spring Boot REST APIs and backend engineering",
   "PostgreSQL schema design and optimization",
+  "Linux VPS deployment with Docker",
   "CI/CD and release pipeline setup",
+  "AWS and GCP when the project needs cloud scale",
   "Google Play publishing and launch support",
 ];

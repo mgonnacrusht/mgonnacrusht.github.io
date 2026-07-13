@@ -52,7 +52,7 @@ export default function HomePage() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
               MgonnacrushT helps startups and founders ship mobile apps, SaaS
-              backends, and cloud infrastructure. SaveT is the flagship
+              backends, and Linux VPS deployments. SaveT is the flagship
               in-house product and a detailed case study of how the company
               builds.
             </p>
@@ -72,8 +72,8 @@ export default function HomePage() {
             <Eyebrow>For product teams</Eyebrow>
             <h2 className="text-3xl font-bold">Product engineering services</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted">
-              End-to-end delivery across Flutter apps, Spring Boot APIs, cloud
-              deployment, and Google Play publishing.
+              Mobile apps, Java Spring Boot APIs, Linux VPS deployment, and
+              Google Play publishing.
             </p>
           </div>
           <ServiceCardGrid limit={6} />
