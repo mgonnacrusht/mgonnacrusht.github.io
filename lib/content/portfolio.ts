@@ -51,7 +51,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "This site — agency positioning, product showcase, and legal pages linked from mobile apps. Rebuilt from Jekyll to Next.js 15 static export with SEO and legacy URL preservation.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    image: "/images/logo/logo.svg",
+    image: "/images/logo/MgonnacrushT_logo.webp",
     href: "/",
     status: "live",
     cta: { label: "View site", href: "/" },

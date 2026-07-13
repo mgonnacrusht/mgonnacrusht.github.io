@@ -153,8 +153,8 @@ export default function HomePage() {
       <Section className="bg-surface">
         <Container className="grid items-center gap-8 lg:grid-cols-[200px_1fr_auto]">
           <Image
-            src="/images/team/alihan-ersoy-pp.webp"
-            alt="Alihan Ersoy, Director of MgonnacrushT"
+            src="/images/logo/MgonnacrushT_logo.webp"
+            alt={siteConfig.name}
             width={160}
             height={160}
             className="rounded-2xl border border-border object-cover"
