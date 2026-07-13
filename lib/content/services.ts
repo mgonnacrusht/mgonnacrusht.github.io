@@ -8,25 +8,25 @@ export const services: Service[] = [
   {
     name: "Mobile Application Development",
     summary:
-      "Native-feeling iOS and Android apps with Flutter, from first screen to store release.",
+      "Flutter mobile apps from first screen to store release, with proven Android delivery. iOS can be scoped per project when requirements fit.",
     iconLabel: "MOB",
   },
   {
     name: "Android Development",
     summary:
-      "Android-first builds with Google Play publishing and release support.",
+      "Native and Flutter Android builds with Google Play publishing and release support.",
     iconLabel: "AND",
   },
   {
     name: "Cloud Application Development",
     summary:
-      "Cloud-native services deployed on AWS, GCP, or a lean VPS.",
+      "Cloud-native services on AWS, GCP, or a lean VPS — sized to the project, not enterprise theatre.",
     iconLabel: "CLD",
   },
   {
     name: "Custom Software Development",
     summary:
-      "Bespoke product and internal tools built to fit the real workflow.",
+      "Bespoke product and internal tools built around how the team actually works.",
     iconLabel: "CST",
   },
   {
@@ -38,7 +38,7 @@ export const services: Service[] = [
   {
     name: "SaaS Development",
     summary:
-      "Multi-tenant SaaS platforms with architecture that fits the budget and timeline.",
+      "Small SaaS MVPs and fixed-scope backends — pragmatic architecture for solo or small-team products.",
     iconLabel: "SAAS",
   },
 ];
@@ -46,6 +46,7 @@ export const services: Service[] = [
 export const deliveryScope = [
   "Flutter app development",
   "Spring Boot API and backend engineering",
+  "Fixed-scope SaaS backends",
   "AWS, GCP, and VPS deployment",
   "PostgreSQL schema design and optimization",
   "CI/CD and release pipeline setup",

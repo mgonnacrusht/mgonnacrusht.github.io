@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Container, PageHero, Section } from "@/components/layout/Section";
 import { ServiceCardGrid } from "@/components/sections/ServiceCardGrid";
@@ -9,7 +10,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 export const metadata = buildMetadata({
   title: "About",
   description:
-    "MgonnacrushT builds SaveT and delivers mobile and SaaS product engineering services.",
+    "MgonnacrushT Limited is a UK-registered software company delivering mobile apps, APIs, and web work for startups.",
   path: "/about/",
 });
 
@@ -18,47 +19,85 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About MgonnacrushT Limited"
-        lead="UK software company. We build SaveT and ship mobile and SaaS work for other teams when the fit is right."
+        lead="MgonnacrushT is a UK-registered software company delivering mobile apps, APIs, and web work for startups when the fit is right."
       >
-        <Button href={`mailto:${siteConfig.emails.hello}`}>Talk to us</Button>
+        <Button href={`mailto:${siteConfig.emails.hello}`}>Get in touch</Button>
         <Button href="/savet/" variant="secondary">
           Explore SaveT
         </Button>
       </PageHero>
 
       <Section>
-        <Container className="grid items-center gap-10 lg:grid-cols-[240px_1fr]">
+        <Container className="max-w-3xl">
           <FadeIn>
-            <Image
-              src="/images/team/alihan-ersoy-pp.webp"
-              alt="Alihan Ersoy, founder of MgonnacrushT"
-              width={240}
-              height={240}
-              className="mx-auto rounded-2xl border border-border object-cover shadow-sm"
-            />
-          </FadeIn>
-          <FadeIn delay={0.1}>
-            <h2 className="text-2xl font-bold">Solo founder story</h2>
+            <h2 className="text-2xl font-bold">The company</h2>
             <p className="mt-4 leading-relaxed text-muted">
-              I&apos;m Alihan. I run MgonnacrushT Limited, a UK software company.
-              Most of my time goes into SaveT; the rest is client work for startups
-              and founders who need mobile apps, SaaS backends, or cloud deployment
-              done properly.
+              MgonnacrushT Limited is registered in England and Wales (Company
+              No. {siteConfig.companyNumber}). The company builds in-house
+              products — including SaveT — and takes on client work for founders
+              who need working software, not slide decks.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              I prefer small scopes, clear communication, and shipping something
-              you can actually use.
+              Technical scope includes Flutter apps, Spring Boot APIs, cloud
+              deployment (AWS, GCP, or VPS), PostgreSQL, CI/CD, and Google Play
+              publishing. Remote worldwide.
+            </p>
+            <p className="mt-4">
+              <a
+                href={siteConfig.linkedIn.company}
+                className="text-sm font-semibold text-accent underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn — MgonnacrushT Ltd
+              </a>
             </p>
           </FadeIn>
         </Container>
       </Section>
 
       <Section className="bg-surface">
+        <Container className="grid items-center gap-10 lg:grid-cols-[240px_1fr]">
+          <FadeIn>
+            <Image
+              src="/images/team/alihan-ersoy-pp.webp"
+              alt="Alihan Ersoy, Director of MgonnacrushT"
+              width={240}
+              height={240}
+              className="mx-auto rounded-2xl border border-border object-cover shadow-sm"
+            />
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <h2 className="text-2xl font-bold">Alihan Ersoy, Director</h2>
+            <p className="mt-4 leading-relaxed text-muted">
+              I lead MgonnacrushT as Director. Most of my time goes into SaveT
+              and shipping client projects end to end — from architecture to store
+              release.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted">
+              I prefer small scopes, clear communication, and software you can
+              actually use and hand over.
+            </p>
+            <p className="mt-4">
+              <a
+                href={siteConfig.linkedIn.director}
+                className="text-sm font-semibold text-accent underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn — Alihan Ersoy
+              </a>
+            </p>
+          </FadeIn>
+        </Container>
+      </Section>
+
+      <Section>
         <Container>
-          <h2 className="mb-8 text-2xl font-bold">What we build</h2>
+          <h2 className="mb-8 text-2xl font-bold">What MgonnacrushT builds</h2>
           <ServiceCardGrid />
           <p className="mt-8 text-sm text-muted">
-            Our technical scope includes Flutter apps, Spring Boot APIs, cloud
+            Technical scope includes Flutter apps, Spring Boot APIs, cloud
             infrastructure (AWS/GCP/VPS), PostgreSQL, CI/CD, deployment, and
             Google Play publishing. Availability: Remote. Pricing: Contact for
             pricing.
@@ -66,11 +105,11 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="bg-surface">
         <Container className="max-w-3xl">
           <h2 className="text-2xl font-bold">Product philosophy</h2>
           <p className="mt-4 text-muted">
-            We build things we would want to maintain ourselves: clear UX, stable
+            MgonnacrushT builds software worth maintaining: clear UX, stable
             architecture, and room to improve after launch.
           </p>
           <ul className="mt-5 space-y-2 text-muted">

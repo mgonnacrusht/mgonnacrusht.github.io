@@ -4,7 +4,6 @@ export type NavItem = {
 };
 
 export const mainNav: NavItem[] = [
-  { name: "SaveT", href: "/savet/" },
   { name: "Services", href: "/services/" },
   { name: "Portfolio", href: "/products/" },
   { name: "About", href: "/about/" },
@@ -20,15 +19,26 @@ export const footerNav: NavItem[] = [
   { name: "Terms of Use", href: "/legal/terms/" },
 ];
 
-export const socialLinks = [
+export type SocialLink = {
+  name: string;
+  href: string;
+  icon: "github" | "email" | "linkedin";
+};
+
+export const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
     href: "https://github.com/alihan98ersoy",
-    icon: "github" as const,
+    icon: "github",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/mgonnacrusht",
+    icon: "linkedin",
   },
   {
     name: "Email",
     href: "mailto:hello@mgonnacrusht.co.uk",
-    icon: "email" as const,
+    icon: "email",
   },
 ];

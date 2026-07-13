@@ -1,3 +1,5 @@
+export type PortfolioStatus = "closed-beta" | "live" | "coming-soon";
+
 export type PortfolioProject = {
   slug: string;
   title: string;
@@ -5,19 +7,21 @@ export type PortfolioProject = {
   tags: string[];
   image: string;
   href: string | null;
-  status: "live" | "coming-soon";
+  status: PortfolioStatus;
   featured?: boolean;
+  cta?: { label: string; href: string; external?: boolean };
 };
 
-export const savetFeatured = {
+export const savetFeatured: PortfolioProject & { bullets: string[] } = {
   slug: "savet",
   title: "SaveT",
   description:
-    "Bookmarking app for links, places, media, and ideas. For people who save too much online and lose it across tabs, screenshots, and notes.",
+    "SaveT is a Flutter bookmarking app for links, places, media, and ideas. The flagship product is in closed beta and documented as a full case study.",
   tags: ["Flutter", "Firebase", "RevenueCat"],
   image: "/images/savet/savet_logodark.svg",
   href: "/savet/",
-  status: "live" as const,
+  status: "closed-beta",
+  cta: { label: "Case study", href: "/savet/" },
   bullets: [
     "Save and organize content from websites, social posts, short videos, articles, map POIs, and career-focused posts",
     "Nested list structure and search",
@@ -27,33 +31,32 @@ export const savetFeatured = {
 
 export const portfolioProjects: PortfolioProject[] = [
   {
-    slug: "project-alpha",
-    title: "Project Alpha",
+    slug: "palia-clock",
+    title: "Palia Clock",
     description:
-      "Placeholder. Lightweight integration tool for small teams syncing data between services.",
-    tags: ["Flutter", "Firebase"],
-    image: "/images/portfolio/placeholder.svg",
-    href: null,
-    status: "coming-soon",
+      "Palia Clock is a native Java Android companion for the Palia community, built and published solo through Google Play Console.",
+    tags: ["Java", "Android", "Material Design"],
+    image: "/images/portfolio/palia-clock.svg",
+    href: "https://play.google.com/store/apps/details?id=com.alihan98ersoy.paliaclock",
+    status: "live",
+    cta: {
+      label: "Get on Play",
+      href: "https://play.google.com/store/apps/details?id=com.alihan98ersoy.paliaclock",
+      external: true,
+    },
   },
   {
-    slug: "project-beta",
-    title: "Project Beta",
+    slug: "mgonnacrusht-website",
+    title: "MgonnacrushT Website",
     description:
-      "Placeholder. Internal workflow dashboard with custom reporting and export.",
-    tags: ["Next.js", "PostgreSQL"],
-    image: "/images/portfolio/placeholder.svg",
-    href: null,
-    status: "coming-soon",
-  },
-  {
-    slug: "project-gamma",
-    title: "Project Gamma",
-    description:
-      "Placeholder. API bridge connecting legacy systems to modern cloud services.",
-    tags: ["Spring Boot", "AWS"],
-    image: "/images/portfolio/placeholder.svg",
-    href: null,
-    status: "coming-soon",
+      "This site — agency positioning, product showcase, and legal pages linked from mobile apps. Rebuilt from Jekyll to Next.js 15 static export with SEO and legacy URL preservation.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    image: "/images/logo/logo.svg",
+    href: "/",
+    status: "live",
+    cta: { label: "View site", href: "/" },
   },
 ];
+
+/** All portfolio items for homepage preview (SaveT + others). */
+export const homepagePortfolio = [savetFeatured, ...portfolioProjects];

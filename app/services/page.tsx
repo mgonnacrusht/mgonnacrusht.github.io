@@ -19,13 +19,13 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="For startups & product teams"
         title="Product engineering services"
-        lead="Remote software delivery for startups, founders, and product teams: mobile apps, SaaS backends, and cloud deployment."
+        lead="Remote product engineering for startups and founders: mobile apps, APIs, SaaS backends, and cloud deployment."
       >
         <Button href={`mailto:${siteConfig.emails.hello}`}>
           Email {siteConfig.emails.hello}
         </Button>
         <Button href="/about/" variant="secondary">
-          About the team
+          About the company
         </Button>
       </PageHero>
 
@@ -57,11 +57,11 @@ export default function ServicesPage() {
               <li>Pricing: Contact for pricing</li>
             </ul>
             <p className="mt-6 text-sm text-muted">
-              Our own product:{" "}
+              In-house product:{" "}
               <a href="/savet/" className="text-accent underline">
                 SaveT
-              </a>
-              .
+              </a>{" "}
+              (closed beta).
             </p>
           </FadeIn>
         </Container>

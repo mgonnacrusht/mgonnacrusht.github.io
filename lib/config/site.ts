@@ -8,6 +8,11 @@ export const siteConfig = {
   formspreeEndpoint: "https://formspree.io/f/mwvdyvkr",
   umamiWebsiteId: "957b7146-060b-40e6-8ee1-4f8dec3ad333",
   copyright: "MgonnacrushT Limited, registered in England and Wales.",
+  companyNumber: "16877439",
+  linkedIn: {
+    company: "https://www.linkedin.com/company/mgonnacrusht",
+    director: "https://www.linkedin.com/in/alihan98ersoy",
+  },
   emails: {
     hello: "hello@mgonnacrusht.co.uk",
     support: "support@mgonnacrusht.co.uk",

@@ -1,8 +1,19 @@
 import Link from "next/link";
-import { Github, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { footerNav, socialLinks } from "@/lib/content/navigation";
 import { siteConfig } from "@/lib/config/site";
 import { Container } from "@/components/layout/Section";
+
+function SocialIcon({ icon }: { icon: (typeof socialLinks)[number]["icon"] }) {
+  switch (icon) {
+    case "github":
+      return <Github className="h-5 w-5" />;
+    case "linkedin":
+      return <Linkedin className="h-5 w-5" />;
+    case "email":
+      return <Mail className="h-5 w-5" />;
+  }
+}
 
 export function Footer() {
   return (
@@ -40,15 +51,11 @@ export function Footer() {
                 key={link.name}
                 href={link.href}
                 className="text-muted transition-colors hover:text-foreground"
-                target={link.icon === "github" ? "_blank" : undefined}
-                rel={link.icon === "github" ? "noopener noreferrer" : undefined}
+                target={link.icon !== "email" ? "_blank" : undefined}
+                rel={link.icon !== "email" ? "noopener noreferrer" : undefined}
                 aria-label={link.name}
               >
-                {link.icon === "github" ? (
-                  <Github className="h-5 w-5" />
-                ) : (
-                  <Mail className="h-5 w-5" />
-                )}
+                <SocialIcon icon={link.icon} />
               </a>
             ))}
           </div>

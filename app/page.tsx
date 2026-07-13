@@ -3,7 +3,8 @@ import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Container, Eyebrow, Section } from "@/components/layout/Section";
 import { ServiceCardGrid } from "@/components/sections/ServiceCardGrid";
-import { portfolioProjects, savetFeatured } from "@/lib/content/portfolio";
+import { homepagePortfolio } from "@/lib/content/portfolio";
+import { ProjectCard } from "@/components/portfolio/ProjectCard";
 import { savetContent } from "@/lib/content/savet";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -11,9 +12,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/config/site";
 
 export const metadata = buildMetadata({
-  title: "MgonnacrushT – Save it. Ship it. Organize it.",
+  title: "MgonnacrushT – Product engineering for startups",
   description:
-    "MgonnacrushT builds SaveT, a cross-platform bookmarking and organization app, and delivers mobile and SaaS product engineering services.",
+    "MgonnacrushT delivers mobile apps, SaaS backends, and cloud infrastructure for startups. SaveT is the flagship in-house product.",
   path: "/",
 });
 
@@ -23,19 +24,21 @@ export default function HomePage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Organization",
-              name: siteConfig.name,
-              url: siteConfig.domain,
-              email: siteConfig.emails.hello,
-            },
-            {
-              "@type": "Person",
-              name: "Alihan Ersoy",
-              jobTitle: "Founder",
-              worksFor: { "@type": "Organization", name: siteConfig.name },
-            },
+          "@type": "Organization",
+          name: siteConfig.name,
+          legalName: "MgonnacrushT Limited",
+          url: siteConfig.domain,
+          email: siteConfig.emails.hello,
+          foundingDate: "2025",
+          founder: {
+            "@type": "Person",
+            name: "Alihan Ersoy",
+            jobTitle: "Director",
+            url: siteConfig.linkedIn.director,
+          },
+          sameAs: [
+            siteConfig.linkedIn.company,
+            "https://github.com/alihan98ersoy",
           ],
         }}
       />
@@ -48,8 +51,10 @@ export default function HomePage() {
               Remote software delivery from idea to launch
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              We help startups and founders ship mobile apps, SaaS backends, and
-              cloud setup. SaveT is the app we built to show how we work.
+              MgonnacrushT helps startups and founders ship mobile apps, SaaS
+              backends, and cloud infrastructure. SaveT is the flagship
+              in-house product and a detailed case study of how the company
+              builds.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button href="/services/">See services</Button>
@@ -86,6 +91,9 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold">SaveT</h2>
               <p className="mt-2 text-xl font-semibold text-accent">
                 {savetContent.tagline}
+              </p>
+              <p className="mt-2 text-sm font-medium text-muted">
+                {savetContent.statusLine}
               </p>
               <p className="mt-4 leading-relaxed text-muted">
                 {savetContent.caseStudy.problem}
@@ -134,23 +142,10 @@ export default function HomePage() {
               View all →
             </Link>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            <article className="rounded-2xl border border-border bg-surface p-6 shadow-sm">
-              <h3 className="text-xl font-bold">{savetFeatured.title}</h3>
-              <p className="mt-2 text-sm text-muted">{savetFeatured.description}</p>
-              <Button href="/savet/" className="mt-5">
-                View SaveT
-              </Button>
-            </article>
-            <article className="rounded-2xl border border-border bg-surface p-6 shadow-sm">
-              <h3 className="text-xl font-bold">{portfolioProjects[0].title}</h3>
-              <p className="mt-2 text-sm text-muted">
-                {portfolioProjects[0].description}
-              </p>
-              <span className="mt-5 inline-block text-sm font-medium text-muted">
-                Coming soon
-              </span>
-            </article>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {homepagePortfolio.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
           </div>
         </Container>
       </Section>
@@ -159,22 +154,21 @@ export default function HomePage() {
         <Container className="grid items-center gap-8 lg:grid-cols-[200px_1fr_auto]">
           <Image
             src="/images/team/alihan-ersoy-pp.webp"
-            alt="Alihan Ersoy"
+            alt="Alihan Ersoy, Director of MgonnacrushT"
             width={160}
             height={160}
             className="rounded-2xl border border-border object-cover"
           />
           <div>
-            <Eyebrow>Founder</Eyebrow>
-            <h2 className="text-2xl font-bold">Built by a solo UK founder</h2>
+            <Eyebrow>Company</Eyebrow>
+            <h2 className="text-2xl font-bold">UK-registered software company</h2>
             <p className="mt-3 max-w-2xl text-muted">
-              MgonnacrushT Limited is registered in the UK. We ship SaveT and
-              take on client work for small teams who want working software, not
-              a six-month slide deck.
+              MgonnacrushT Limited builds SaveT and delivers product engineering
+              for small teams that want shipped software.
             </p>
           </div>
           <Button href="/about/" variant="secondary">
-            About us
+            About the company
           </Button>
         </Container>
       </Section>
@@ -183,7 +177,8 @@ export default function HomePage() {
         <Container className="rounded-3xl border border-border bg-surface px-8 py-12 text-center shadow-sm sm:px-12">
           <h2 className="text-3xl font-bold">Ready to talk about your product?</h2>
           <p className="mx-auto mt-4 max-w-xl text-muted">
-            Tell us about your app, SaaS idea, or timeline. We reply by email.
+            Tell MgonnacrushT about your app, SaaS idea, or timeline. Replies
+            come by email.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact/">Get in touch</Button>

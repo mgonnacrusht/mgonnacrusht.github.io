@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s · MgonnacrushT",
   },
   description:
-    "MgonnacrushT builds SaveT and delivers mobile and SaaS product engineering services for startups and small teams.",
+    "MgonnacrushT delivers mobile apps, SaaS backends, and cloud infrastructure for startups and small teams.",
   icons: {
     icon: "/favicon.svg",
   },

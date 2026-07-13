@@ -40,6 +40,9 @@ export default function SaveTPage() {
           <p className="mt-6 text-2xl font-bold text-accent sm:text-3xl">
             {savetContent.tagline}
           </p>
+          <p className="mx-auto mt-4 max-w-xl text-sm font-medium text-muted">
+            {savetContent.statusLine}
+          </p>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             {savetContent.lead}
           </p>

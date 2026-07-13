@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/config/site";
 export const metadata = buildMetadata({
   title: "Portfolio",
   description:
-    "Products and projects by MgonnacrushT, including SaveT and selected client work.",
+    "Software MgonnacrushT builds and ships — in-house products, a published Android app, and this website.",
   path: "/products/",
 });
 
@@ -20,7 +20,7 @@ export default function ProductsPage() {
     <>
       <PageHero
         title="Portfolio"
-        lead="Software we build and use ourselves, plus selected client projects in the same vein."
+        lead="Software MgonnacrushT builds and ships — in-house products, a published Android app, and this website."
       />
 
       <Section>
@@ -28,8 +28,8 @@ export default function ProductsPage() {
           <ProjectCard project={savetFeatured} featured />
 
           <div>
-            <h2 className="mb-6 text-2xl font-bold">Other projects</h2>
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <h2 className="mb-6 text-2xl font-bold">More shipped work</h2>
+            <div className="grid gap-6 md:grid-cols-2">
               {portfolioProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}

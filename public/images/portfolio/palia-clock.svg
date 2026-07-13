@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="24" fill="#f4f4f5"/>
+  <circle cx="100" cy="100" r="56" stroke="#6366f1" stroke-width="6" fill="none"/>
+  <line x1="100" y1="100" x2="100" y2="62" stroke="#6366f1" stroke-width="5" stroke-linecap="round"/>
+  <line x1="100" y1="100" x2="128" y2="100" stroke="#6366f1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="5" fill="#6366f1"/>
+  <text x="100" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#71717a">Palia Clock</text>
+</svg>

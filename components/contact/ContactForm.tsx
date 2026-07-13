@@ -15,7 +15,7 @@ export function ContactForm() {
       <div className="rounded-2xl border border-border bg-surface p-8 text-center">
         <h3 className="text-xl font-bold">Thanks for reaching out</h3>
         <p className="mt-3 text-muted">
-          We received your message and will get back to you soon.
+          MgonnacrushT received your message and will reply by email soon.
         </p>
       </div>
     );

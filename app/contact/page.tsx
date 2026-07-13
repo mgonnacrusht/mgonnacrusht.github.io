@@ -35,7 +35,7 @@ export default function ContactPage() {
     <>
       <PageHero
         title="Get in touch"
-        lead="Product question, partnership idea, or need someone to build your app? Drop us a line."
+        lead="Product question, partnership idea, or need someone to build your app? Contact MgonnacrushT by email or the form below."
       />
 
       <Section className="bg-surface">
