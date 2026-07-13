@@ -10,18 +10,14 @@ import { siteConfig } from "@/lib/config/site";
 
 export const metadata = buildMetadata({
   title: "Portfolio",
-  description:
-    "Product engineering and practical software for startups and small teams.",
+  description: siteConfig.tagline,
   path: "/products/",
 });
 
 export default function ProductsPage() {
   return (
     <>
-      <PageHero
-        title="Portfolio"
-        lead="Product engineering and practical software for startups and small teams."
-      />
+      <PageHero title="Portfolio" lead={siteConfig.tagline} />
 
       <Section>
         <Container className="space-y-10">

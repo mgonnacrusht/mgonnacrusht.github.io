@@ -23,8 +23,7 @@ export function Footer() {
           <div>
             <p className="text-lg font-bold">{siteConfig.name}</p>
             <p className="mt-2 max-w-sm text-sm text-muted">
-              Product engineering and practical software for startups and small
-              teams.
+              {siteConfig.tagline}
             </p>
           </div>
 

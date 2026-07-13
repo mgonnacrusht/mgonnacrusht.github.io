@@ -25,8 +25,7 @@ export const metadata: Metadata = {
     default: "MgonnacrushT",
     template: "%s · MgonnacrushT",
   },
-  description:
-    "MgonnacrushT delivers mobile apps, SaaS backends, and cloud infrastructure for startups and small teams.",
+  description: siteConfig.tagline,
   icons: {
     icon: "/favicon.svg",
   },
