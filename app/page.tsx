@@ -182,6 +182,9 @@ export default function HomePage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact/">Get in touch</Button>
+            <Button href="/services/#pricing" variant="secondary">
+              See pricing
+            </Button>
             <Button
               href={`mailto:${siteConfig.emails.hello}`}
               variant="secondary"

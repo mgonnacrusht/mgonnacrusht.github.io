@@ -99,8 +99,11 @@ export default function AboutPage() {
           <p className="mt-8 text-sm text-muted">
             Technical scope includes Flutter and native Java Android apps, Java
             Spring Boot APIs, PostgreSQL, Linux VPS deployment with Docker,
-            CI/CD, and Google Play publishing. Availability: Remote. Pricing:
-            Contact for pricing.
+            CI/CD, and Google Play publishing. Availability: Remote.{" "}
+            <Link href="/services/#pricing" className="text-accent underline">
+              See pricing on Services
+            </Link>
+            .
           </p>
         </Container>
       </Section>

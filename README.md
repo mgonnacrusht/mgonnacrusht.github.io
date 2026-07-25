@@ -54,6 +54,9 @@ Optional GitHub Actions secrets (build-time):
 |----------|---------|
 | `NEXT_PUBLIC_FORMSPREE_FORM_ID` | Contact form (default: `mwvdyvkr`) |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | SaveT Google Play link when live |
+| `NEXT_PUBLIC_CAL_LINK` | Cal.com discovery event URL (e.g. `https://cal.com/user/discovery`). Empty = Book CTAs hidden |
+
+Services pricing copy lives in `lib/content/pricing.ts`.
 
 Do not commit `.env` files.
 
