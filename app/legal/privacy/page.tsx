@@ -13,7 +13,7 @@ export default function CompanyPrivacyPage() {
   return (
     <LegalPageLayout
       title="Privacy Policy"
-      lead="Draft policy page, subject to legal review."
+      lead="How MgonnacrushT Limited handles personal data on this website and through business inquiries."
       html={companyPrivacyHtml}
       primaryCta={{ label: "Back home", href: "/" }}
       secondaryCta={{ label: "Terms of Use", href: "/legal/terms/" }}

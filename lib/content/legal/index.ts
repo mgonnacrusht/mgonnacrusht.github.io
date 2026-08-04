@@ -1,35 +1,74 @@
-export const companyPrivacyHtml = `<p>This Privacy Policy explains how MgonnacrushT collects, uses, and protects information on this website and through business communications.</p>
+export const companyPrivacyHtml = `<p>Last updated: August 4, 2026</p>
+
+<p>This Privacy Policy explains how MgonnacrushT Limited collects, uses, and protects personal data on this website and through business communications.</p>
+
+<h2>Who we are</h2>
+<p>The data controller is <strong>MgonnacrushT Limited</strong>, a company registered in England and Wales (company number <strong>16877439</strong>). For privacy requests, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
 
 <h2>Scope</h2>
 <p>This policy applies to:</p>
 <ul>
-  <li>Website usage data for <code>mgonnacrusht.co.uk</code></li>
-  <li>Contact and service inquiry submissions</li>
-  <li>Business communication records</li>
+  <li>Visitors to <code>mgonnacrusht.co.uk</code></li>
+  <li>Contact and service inquiry submissions via this website</li>
+  <li>Related business email and communication records</li>
 </ul>
+<p>Product-specific data for the SaveT mobile app is covered by the separate <a href="/savet/legal/privacy/">SaveT Privacy Policy</a>.</p>
 
-<h2>Information we may collect</h2>
+<h2>Information we collect</h2>
 <ul>
-  <li>Contact details you provide (name, email, company, message)</li>
-  <li>Project and service inquiry information</li>
-  <li>Basic website usage data, including potential future analytics/cookie data</li>
+  <li><strong>Contact form data</strong> you submit: name, email address, optional company name, inquiry type, and message content.</li>
+  <li><strong>Email correspondence</strong> if you write to our published addresses (for example hello@, support@, or legal@).</li>
+  <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing.</li>
 </ul>
+<p>This website does not use advertising pixels, Google Analytics, or marketing cookies.</p>
 
-<h2>How we use information</h2>
+<h2>How we use information and lawful bases</h2>
+<p>Under UK GDPR, we process personal data on these bases:</p>
 <ul>
-  <li>Respond to inquiries and deliver requested services</li>
-  <li>Improve website quality and user experience</li>
-  <li>Maintain business records and legal compliance</li>
+  <li><strong>Contact and service inquiries</strong>: to respond to your message and take steps toward a possible engagement (legitimate interests, and where relevant steps prior to entering a contract).</li>
+  <li><strong>Business records</strong>: to keep records needed for accounting, legal compliance, and dispute handling (legal obligation and legitimate interests).</li>
+  <li><strong>Website analytics</strong>: to understand traffic and improve the site (legitimate interests in operating and improving a public website).</li>
 </ul>
 
-<h2>Data sharing</h2>
-<p>We do not sell personal information. Data may be shared with infrastructure or service providers only when needed to operate the website or deliver services.</p>
+<h2>Service providers</h2>
+<p>We do not sell personal information. We use providers only as needed to run the site and handle inquiries:</p>
+<ul>
+  <li><strong>Formspree</strong> (formspree.io): processes contact form submissions on our behalf. See the <a href="https://formspree.io/legal/privacy-policy/">Formspree Privacy Policy</a>.</li>
+  <li><strong>Umami Cloud</strong> (cloud.umami.is): provides cookieless website analytics. See the <a href="https://umami.is/privacy">Umami Privacy Policy</a>.</li>
+  <li><strong>Hosting and CDN</strong>: GitHub Pages and Cloudflare may process connection data (such as IP address and request logs) to deliver the site securely.</li>
+</ul>
 
-<h2>Retention and security</h2>
-<p>Information is retained only as long as necessary for service delivery, communication, legal obligations, or legitimate business purposes. Reasonable technical and organizational safeguards are applied.</p>
+<h2>International transfers</h2>
+<p>Some providers may process data outside the UK (for example in the United States). Where UK GDPR applies, we rely on appropriate safeguards offered by those providers (such as standard contractual clauses) or other lawful transfer mechanisms they document in their terms.</p>
+
+<h2>Cookies and similar technologies</h2>
+<p>Essential delivery of the site does not require non-essential cookies. Analytics on this site are provided by Umami without cookies. If we add non-essential cookies or similar storage in future, we will update this policy and obtain consent where required by PECR / UK law.</p>
+
+<h2>Retention</h2>
+<ul>
+  <li><strong>Contact form and related emails</strong>: kept for as long as needed to handle the inquiry and ordinary business follow-up, then deleted or archived when no longer required (typically up to 24 months unless a longer period is needed for a live engagement or legal obligation).</li>
+  <li><strong>Analytics</strong>: retained according to our Umami Cloud workspace settings for site-improvement reporting.</li>
+</ul>
+
+<h2>Security</h2>
+<p>We apply reasonable technical and organisational measures appropriate to a small UK company website. No method of transmission or storage is completely secure.</p>
 
 <h2>Your rights</h2>
-<p>Depending on applicable law, you may request access, correction, deletion, or restriction of your personal information.</p>
+<p>Where UK GDPR applies, you may have the right to:</p>
+<ul>
+  <li>Access your personal data</li>
+  <li>Correct inaccurate data</li>
+  <li>Request erasure</li>
+  <li>Restrict or object to certain processing (including analytics based on legitimate interests)</li>
+  <li>Data portability, where applicable</li>
+</ul>
+<p>To exercise these rights, email <strong>legal@mgonnacrusht.co.uk</strong>. You also have the right to complain to the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/">ico.org.uk</a>.</p>
+
+<h2>Children</h2>
+<p>This website is aimed at businesses and adult visitors. We do not knowingly collect personal data from children through the contact form.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy from time to time. The “Last updated” date at the top will change when we do.</p>
 
 <h2>Contact</h2>
 <p>For privacy questions, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>

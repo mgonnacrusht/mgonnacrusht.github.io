@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
 import { siteConfig } from "@/lib/config/site";
 import { cn } from "@/lib/utils";
@@ -106,6 +107,15 @@ export function ContactForm() {
         tabIndex={-1}
         autoComplete="off"
       />
+
+      <p className="text-sm text-muted">
+        Submitting this form sends your details to MgonnacrushT via Formspree so
+        we can reply by email. See the{" "}
+        <Link href="/legal/privacy/" className="text-accent underline">
+          Privacy Policy
+        </Link>{" "}
+        for how inquiry data is handled.
+      </p>
 
       <button
         type="submit"
