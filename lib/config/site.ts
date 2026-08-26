@@ -12,6 +12,8 @@ export const siteConfig = {
   umamiWebsiteId: "957b7146-060b-40e6-8ee1-4f8dec3ad333",
   copyright: "MgonnacrushT Limited, registered in England and Wales.",
   companyNumber: "16877439",
+  companiesHouseUrl:
+    "https://find-and-update.company-information.service.gov.uk/company/16877439",
   linkedIn: {
     company: "https://www.linkedin.com/company/mgonnacrusht",
     director: "https://www.linkedin.com/in/alihan98ersoy",

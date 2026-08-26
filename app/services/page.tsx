@@ -11,9 +11,9 @@ import { siteConfig } from "@/lib/config/site";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 export const metadata = buildMetadata({
-  title: "Services",
+  title: "Mobile App Development Services",
   description:
-    "Remote product engineering by MgonnacrushT: mobile apps, Java Spring Boot APIs, Linux VPS deployment, and Google Play release.",
+    "Custom mobile app development, Android, MVP and SaaS backends for founders who already have a project. UK company, remote delivery, published pricing.",
   path: "/services/",
 });
 
@@ -24,8 +24,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="For startups & product teams"
-        title="Product engineering services"
-        lead="Remote product engineering for startups and founders: mobile apps, Java backends, Linux VPS deployment, and store release."
+        title="App development services"
+        lead="Remote app development for startups and founders: mobile apps, Java backends, Linux VPS deployment, and store release. Marketing websites and ongoing maintenance fit the same engagement when a project needs them."
       >
         {calLink ? (
           <Button href={calLink} external>
@@ -135,7 +135,7 @@ export default function ServicesPage() {
               </Button>
             ) : null}
             <Button href="/contact/" variant={calLink ? "secondary" : "primary"}>
-              Send a brief
+              Get a quote
             </Button>
           </div>
         </Container>

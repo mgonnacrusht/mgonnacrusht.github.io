@@ -17,22 +17,24 @@ export function buildMetadata({
   noIndex = false,
 }: PageMeta): Metadata {
   const url = `${siteConfig.domain}${path}`;
+  const brandedTitle = `${title} · ${siteConfig.name}`;
 
   return {
     title,
     description,
     alternates: { canonical: url },
     openGraph: {
-      title,
+      title: brandedTitle,
       description,
       url,
       siteName: siteConfig.name,
+      locale: "en_GB",
       type: "website",
       images: [{ url: `${siteConfig.domain}${ogImage}` }],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: brandedTitle,
       description,
       images: [`${siteConfig.domain}${ogImage}`],
     },

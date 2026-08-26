@@ -7,17 +7,20 @@ import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/config/site";
 import { contactBlurb } from "@/lib/content/pricing";
 
+const calLink = siteConfig.calLink;
+
 export const metadata = buildMetadata({
-  title: "Contact",
-  description:
-    "Contact MgonnacrushT for SaveT questions, partnerships, and software development services.",
+  title: "App Development Quote",
+  description: calLink
+    ? "Tell MgonnacrushT what you want built. UK app development company. Book a free discovery call or send a brief through the contact form."
+    : "Tell MgonnacrushT what you want built. UK app development company. Send a brief through the contact form and get a scope-based quote in GBP.",
   path: "/contact/",
 });
 
 const buckets = [
   {
     eyebrow: "SaveT",
-    title: "SaveT inquiries",
+    title: "SaveT",
     description:
       "Product feedback, feature suggestions, partnership and API collaboration ideas.",
     href: "/savet/",
@@ -25,25 +28,23 @@ const buckets = [
   },
   {
     eyebrow: "Services",
-    title: "Service inquiries",
+    title: "A project",
     description:
       "Mobile apps, Java Spring Boot APIs, Linux VPS deployment, PostgreSQL, CI/CD, and Google Play publishing.",
     href: "/services/",
-    label: "See all services",
+    label: "App development services",
   },
 ];
 
 export default function ContactPage() {
-  const calLink = siteConfig.calLink;
-
   return (
     <>
       <PageHero
-        title="Get in touch"
+        title="Get a quote for your app"
         lead={
           calLink
-            ? "Prefer a call? Book below. Prefer email? Use the form."
-            : "Product question, partnership idea, or need someone to build your app? Contact MgonnacrushT by email or the form below."
+            ? "Tell MgonnacrushT what you want built. Prefer a call? Book below. Prefer email? Use the form."
+            : "Tell MgonnacrushT what you want built. Quotes are scope-based in GBP, so a short brief is enough to start."
         }
       />
 
@@ -95,7 +96,7 @@ export default function ContactPage() {
                       Send a message
                     </p>
                     <h2 className="mt-2 mb-6 text-xl font-bold">
-                      Written inquiry
+                      Send a brief
                     </h2>
                   </>
                 ) : (

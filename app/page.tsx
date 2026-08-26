@@ -12,9 +12,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/config/site";
 
 export const metadata = buildMetadata({
-  title: "Product engineering for startups",
+  title: "Mobile App Development Company UK",
   description:
-    "MgonnacrushT delivers mobile apps, SaaS backends, and cloud infrastructure for startups. SaveT is the flagship in-house product.",
+    "UK app development company. Mobile apps and the backend behind them. Remote, milestone-based work. Get a quote for your project.",
   path: "/",
 });
 
@@ -24,12 +24,14 @@ export default function HomePage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": ["Organization", "ProfessionalService"],
           name: siteConfig.name,
-          legalName: "MgonnacrushT Limited",
+          legalName: "MGONNACRUSHT LIMITED",
           url: siteConfig.domain,
           email: siteConfig.emails.hello,
           foundingDate: "2025",
+          serviceType: "Mobile app development",
+          areaServed: "GB",
           founder: {
             "@type": "Person",
             name: "Alihan Ersoy",
@@ -48,13 +50,13 @@ export default function HomePage() {
           <FadeIn>
             <Eyebrow>Product engineering for startups</Eyebrow>
             <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Remote software delivery from idea to launch
+              Mobile app development for UK startups
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              MgonnacrushT helps startups and founders ship mobile apps, SaaS
-              backends, and Linux VPS deployments. SaveT is the flagship
-              in-house product and a detailed case study of how the company
-              builds.
+              MgonnacrushT builds mobile apps and the backend behind them, for
+              founders who already have a project. Cross-platform and Android,
+              with clear scope, GBP pricing, and delivery through a UK Limited
+              company.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button href="/services/">See services</Button>
@@ -70,7 +72,7 @@ export default function HomePage() {
         <Container>
           <div className="mb-10 text-center">
             <Eyebrow>For product teams</Eyebrow>
-            <h2 className="text-3xl font-bold">Product engineering services</h2>
+            <h2 className="text-3xl font-bold">App development services</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted">
               Mobile apps, Java Spring Boot APIs, Linux VPS deployment, and
               Google Play publishing.

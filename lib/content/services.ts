@@ -13,7 +13,7 @@ export const services: Service[] = [
   {
     name: "Mobile Application Development",
     summary:
-      "Flutter mobile apps from first screen to store release, with proven Android delivery. iOS can be scoped per project when requirements fit.",
+      "Flutter mobile apps from first screen to store release, including small MVP builds, with proven Android delivery. iOS can be scoped per project when requirements fit.",
     iconLabel: "MOB",
   },
   {
@@ -25,13 +25,13 @@ export const services: Service[] = [
   {
     name: "Backend API Development",
     summary:
-      "Java and Spring Boot REST APIs with PostgreSQL, Docker, and production-ready deployment on a Linux VPS.",
+      "Java and Spring Boot REST APIs with PostgreSQL, Docker, and production-ready deployment on a Linux VPS, including mobile API integrations.",
     iconLabel: "API",
   },
   {
     name: "Cloud & VPS Deployment",
     summary:
-      "Self-hosted Linux VPS setup, Docker, CI/CD, and cloud options on AWS or GCP when the project calls for it.",
+      "Self-hosted Linux VPS setup, Docker, CI/CD, and n8n automation, with cloud options on AWS or GCP when the project calls for it.",
     iconLabel: "OPS",
   },
   {

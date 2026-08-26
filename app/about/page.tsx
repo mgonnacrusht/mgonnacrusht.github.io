@@ -8,9 +8,9 @@ import { siteConfig } from "@/lib/config/site";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 export const metadata = buildMetadata({
-  title: "About",
+  title: "UK App Development Company",
   description:
-    "MgonnacrushT Limited is a UK-registered software company delivering mobile apps, APIs, and web work for startups.",
+    "MgonnacrushT Limited. Solo founder Alihan Ersoy. Mobile apps, Android, and backends. Remote, for UK and English-speaking clients.",
   path: "/about/",
 });
 
@@ -18,8 +18,8 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="About MgonnacrushT Limited"
-        lead="MgonnacrushT is a UK-registered software company delivering mobile apps, Java backends, Linux VPS deployment, and web work for startups when the fit is right."
+        title="A UK-registered app development company"
+        lead="MgonnacrushT Limited delivers mobile apps, Java backends, Linux VPS deployment, and web work for startups when the fit is right. Solo founder, remote delivery, invoiced through the UK company."
       >
         <Button href={`mailto:${siteConfig.emails.hello}`}>Get in touch</Button>
         <Button href="/savet/" variant="secondary">
@@ -33,9 +33,19 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold">The company</h2>
             <p className="mt-4 leading-relaxed text-muted">
               MgonnacrushT Limited is registered in England and Wales (Company
-              No. {siteConfig.companyNumber}). The company builds in-house
-              products, including SaveT, and takes on client work for founders
-              who need working software, not slide decks.
+              No.{" "}
+              <a
+                href={siteConfig.companiesHouseUrl}
+                className="text-accent underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {siteConfig.companyNumber}
+              </a>
+              ). It is run by a solo founder, so the person scoping the work is
+              the person building it. The company builds in-house products,
+              including SaveT, and takes on client work for founders who need
+              working software, not slide decks.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
               Technical scope includes Flutter and native Java Android apps,

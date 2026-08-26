@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-GB"
       className={`${dmSans.variable} ${sora.variable}`}
       suppressHydrationWarning
     >
