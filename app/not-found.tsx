@@ -17,9 +17,13 @@ export default function NotFound() {
           <Button href="/">Back home</Button>
         </div>
         <p className="mt-6 text-sm text-muted">
-          Looking for SaveT?{" "}
+          Looking for SaveT or City Line Map?{" "}
           <Link href="/savet/" className="text-accent underline">
-            Go to SaveT
+            SaveT
+          </Link>
+          {" · "}
+          <Link href="/citylinemap/" className="text-accent underline">
+            City Line Map
           </Link>
         </p>
       </Container>

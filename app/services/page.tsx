@@ -96,11 +96,15 @@ export default function ServicesPage() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-muted">
-              In-house product:{" "}
+              In-house products:{" "}
               <a href="/savet/" className="text-accent underline">
                 SaveT
               </a>{" "}
-              (closed beta).
+              (closed beta) and{" "}
+              <a href="/citylinemap/" className="text-accent underline">
+                City Line Map
+              </a>{" "}
+              (live).
             </p>
           </FadeIn>
         </Container>

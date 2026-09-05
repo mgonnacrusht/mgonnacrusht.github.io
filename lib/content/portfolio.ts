@@ -9,10 +9,32 @@ export type PortfolioProject = {
   href: string | null;
   status: PortfolioStatus;
   featured?: boolean;
+  imageFit?: "contain" | "cover";
+  disclaimer?: string;
   cta?: { label: string; href: string; external?: boolean };
 };
 
-export const savetFeatured: PortfolioProject & { bullets: string[] } = {
+export const cityLineMapFeatured: PortfolioProject & { bullets: string[] } = {
+  slug: "citylinemap",
+  title: "City Line Map",
+  description:
+    "City Line Map is a free geographic map of London public transport on the real street network, not a schematic tube diagram. Underground, buses and river services sit on the city so routes can be compared where they actually run. Independent of TfL.",
+  tags: ["Next.js", "MapLibre", "TfL Open Data"],
+  image: "/images/citylinemap/hero.webp",
+  imageFit: "cover",
+  href: "/citylinemap/",
+  status: "live",
+  cta: { label: "Case study", href: "/citylinemap/" },
+  disclaimer:
+    "Independent of Transport for London. Not an official TfL map. Always check TfL before you travel.",
+  bullets: [
+    "Geographic map on real streets, not a schematic tube diagram",
+    "Underground, buses and river services on one map",
+    "Free public website with no account",
+  ],
+};
+
+export const savetProject: PortfolioProject = {
   slug: "savet",
   title: "SaveT",
   description:
@@ -22,14 +44,10 @@ export const savetFeatured: PortfolioProject & { bullets: string[] } = {
   href: "/savet/",
   status: "closed-beta",
   cta: { label: "Case study", href: "/savet/" },
-  bullets: [
-    "Save and organize content from websites, social posts, short videos, articles, map POIs, and career-focused posts",
-    "Nested list structure and search",
-    "Automatic titles, tags, and sorting hints",
-  ],
 };
 
 export const portfolioProjects: PortfolioProject[] = [
+  savetProject,
   {
     slug: "palia-clock",
     title: "Palia Clock",
@@ -58,5 +76,8 @@ export const portfolioProjects: PortfolioProject[] = [
   },
 ];
 
-/** All portfolio items for homepage preview (SaveT + others). */
-export const homepagePortfolio = [savetFeatured, ...portfolioProjects];
+/** Homepage selected work: three cards, website stays on /products/ only. */
+export const homepagePortfolio = [
+  cityLineMapFeatured,
+  ...portfolioProjects.filter((project) => project.slug !== "mgonnacrusht-website"),
+];

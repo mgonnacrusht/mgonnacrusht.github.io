@@ -44,8 +44,8 @@ export default function AboutPage() {
               </a>
               ). It is run by a solo founder, so the person scoping the work is
               the person building it. The company builds in-house products,
-              including SaveT, and takes on client work for founders who need
-              working software, not slide decks.
+              including SaveT and City Line Map, and takes on client work for
+              founders who need working software, not slide decks.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
               Technical scope includes Flutter and native Java Android apps,
@@ -80,9 +80,9 @@ export default function AboutPage() {
           <FadeIn delay={0.1}>
             <h2 className="text-2xl font-bold">Alihan Ersoy, Director</h2>
             <p className="mt-4 leading-relaxed text-muted">
-              I lead MgonnacrushT as Director. Most of my time goes into SaveT
-              and shipping client projects end to end, from architecture to store
-              release.
+              I lead MgonnacrushT as Director. Most of my time goes into SaveT,
+              City Line Map, and shipping client projects end to end, from
+              architecture to store release.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
               I prefer small scopes, clear communication, and software you can

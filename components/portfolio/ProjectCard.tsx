@@ -42,6 +42,7 @@ export function ProjectCard({
   const ctaLabel =
     project.cta?.label ??
     (project.href ? "View details" : undefined);
+  const cover = project.imageFit === "cover";
 
   const content = (
     <article
@@ -51,17 +52,21 @@ export function ProjectCard({
     >
       <div
         className={`relative bg-background ${
-          featured ? "lg:w-2/5" : "aspect-[16/10]"
+          featured
+            ? "aspect-[16/10] lg:aspect-auto lg:min-h-[280px] lg:w-2/5"
+            : "aspect-[16/10]"
         }`}
       >
         <Image
           src={project.image}
           alt={project.title}
-          width={featured ? 400 : 640}
-          height={featured ? 400 : 400}
-          className={`object-contain p-6 ${
-            featured ? "h-full w-full" : "h-full w-full"
-          }`}
+          width={cover ? 1280 : featured ? 400 : 640}
+          height={cover ? 720 : featured ? 400 : 400}
+          className={
+            cover
+              ? "h-full w-full object-cover"
+              : "h-full w-full object-contain p-6"
+          }
         />
       </div>
       <div className={`flex flex-1 flex-col p-6 ${featured ? "lg:p-8" : ""}`}>
@@ -89,6 +94,11 @@ export function ProjectCard({
             </span>
           ))}
         </div>
+        {project.disclaimer ? (
+          <p className="mt-4 text-xs leading-relaxed text-muted">
+            {project.disclaimer}
+          </p>
+        ) : null}
         {ctaLabel && project.href ? (
           <p className="mt-auto pt-5 text-sm font-semibold text-accent">
             {ctaLabel} →

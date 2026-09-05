@@ -165,8 +165,8 @@ export default function HomePage() {
             <Eyebrow>Company</Eyebrow>
             <h2 className="text-2xl font-bold">UK-registered software company</h2>
             <p className="mt-3 max-w-2xl text-muted">
-              MgonnacrushT Limited builds SaveT and delivers product engineering
-              for small teams that want shipped software.
+              MgonnacrushT Limited builds SaveT and City Line Map, and delivers
+              product engineering for small teams that want shipped software.
             </p>
           </div>
           <Button href="/about/" variant="secondary">

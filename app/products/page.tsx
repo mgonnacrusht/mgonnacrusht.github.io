@@ -1,8 +1,8 @@
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Container, PageHero, Section } from "@/components/layout/Section";
 import {
+  cityLineMapFeatured,
   portfolioProjects,
-  savetFeatured,
 } from "@/lib/content/portfolio";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
 import { Button } from "@/components/ui/Button";
@@ -21,7 +21,7 @@ export default function ProductsPage() {
 
       <Section>
         <Container className="space-y-10">
-          <ProjectCard project={savetFeatured} featured />
+          <ProjectCard project={cityLineMapFeatured} featured />
 
           <div>
             <h2 className="mb-6 text-2xl font-bold">More shipped work</h2>

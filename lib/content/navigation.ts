@@ -12,6 +12,7 @@ export const mainNav: NavItem[] = [
 export const footerNav: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "SaveT", href: "/savet/" },
+  { name: "City Line Map", href: "/citylinemap/" },
   { name: "Services", href: "/services/" },
   { name: "Portfolio", href: "/products/" },
   { name: "Get in touch", href: "/contact/" },
