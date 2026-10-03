@@ -7,6 +7,8 @@ export const dynamic = "force-static";
 
 type Route = { path: string; priority: number; lastModified: string };
 
+const posts = getAllPosts();
+
 // Update `lastModified` (YYYY-MM-DD) when a page's content meaningfully changes.
 const routes: Route[] = [
   { path: "/", priority: 1, lastModified: "2026-10-03" },
@@ -20,14 +22,14 @@ const routes: Route[] = [
   {
     path: "/blog/",
     priority: 0.6,
-    lastModified: getAllPosts()[0]?.updated ?? "2026-10-03",
+    lastModified: posts[0]?.updated ?? "2026-10-03",
   },
   ...landingPages.map((page) => ({
     path: `/services/${page.slug}/`,
     priority: 0.8,
     lastModified: "2026-10-03",
   })),
-  ...getAllPosts().map((post) => ({
+  ...posts.map((post) => ({
     path: `/blog/${post.slug}/`,
     priority: 0.6,
     lastModified: post.updated,

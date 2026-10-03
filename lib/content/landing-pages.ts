@@ -5,6 +5,7 @@ import {
   priceRange,
   timeline,
 } from "@/lib/quiz/prices";
+import { paliaClock } from "@/lib/content/palia-clock";
 
 export type LandingLink = { label: string; href: string; external?: boolean };
 
@@ -45,7 +46,7 @@ export const landingPages: LandingPage[] = [
     slug: "flutter-app-development",
     metaTitle: "Flutter App Development for UK Startups",
     metaDescription:
-      "Freelance Flutter developer for UK startups. From first screen to store release, with a fixed scope, clear milestones and published pricing.",
+      "Flutter apps for UK startups, built by a small UK company. From first screen to store release, with a fixed scope, clear milestones and published pricing.",
     eyebrow: "Flutter app development",
     h1: "Flutter app development for UK startups",
     lead: "One Flutter codebase, built from first screen to store release. We start with a short call, agree a fixed scope in writing and build in milestones, so you know what you are paying for.",
@@ -106,7 +107,7 @@ export const landingPages: LandingPage[] = [
     slug: "android-app-development",
     metaTitle: "Android App Development for UK Startups",
     metaDescription:
-      "Freelance Android app developer in the UK. Native Java and Flutter Android apps, with Google Play publishing and release support.",
+      "Android app development from a small UK company. Native Java and Flutter Android apps, with Google Play publishing and release support.",
     eyebrow: "Android app development",
     h1: "Android app development for UK startups",
     lead: "Native Java or Flutter, depending on what the app needs. We build the app, prepare the release and support you through Google Play publishing.",
@@ -114,16 +115,16 @@ export const landingPages: LandingPage[] = [
     steps: sharedSteps,
     aside: {
       title: "Native Java or Flutter?",
-      text: "Flutter is usually the better fit for a first version: one codebase, quick to iterate, and it can reach iOS later if you need it. Native Java is the better fit when the app needs deep Android features or you already have a native codebase.",
+      text: "Flutter is usually the better fit for a first version: one codebase, quick to iterate, and it can reach iOS later if you need it. Native Android is the better fit when the app is built around specific Android features or you already have a native codebase.",
     },
     proof: {
       title: "Live on Google Play",
-      text: "Palia Clock is a native Java Android app for the Palia player community. It was designed, built and published on Google Play as a solo project, including the store listing, releases and updates. It has passed 1,000 downloads and is rated 4.5+ on Google Play.",
+      text: `Palia Clock is a native Java Android app for the Palia player community. It was designed, built and published on Google Play as a solo project, including the store listing, releases and updates. It has ${paliaClock.downloads} downloads and is rated ${paliaClock.rating} on Google Play.`,
       links: [
         { label: "Read the Palia Clock case study", href: "/palia-clock/" },
         {
           label: "View on Google Play",
-          href: "https://play.google.com/store/apps/details?id=com.alihan98ersoy.paliaclock",
+          href: paliaClock.playUrl,
           external: true,
         },
       ],
@@ -182,7 +183,7 @@ export const landingPages: LandingPage[] = [
     slug: "backend-development",
     metaTitle: "Backend and API Development for UK Startups",
     metaDescription:
-      "Freelance Java Spring Boot developer for UK startups. REST APIs, PostgreSQL and deployment on a Linux VPS, with fixed-scope pricing.",
+      "Java Spring Boot backends for UK startups. REST APIs, PostgreSQL and deployment on a Linux VPS, with fixed-scope pricing.",
     eyebrow: "Backend and API development",
     h1: "Backend and API development for UK startups",
     lead: "The system behind your app or product: data, user accounts and integrations. We build it with Java and Spring Boot, store data in PostgreSQL and deploy it on a Linux server.",
@@ -194,7 +195,7 @@ export const landingPages: LandingPage[] = [
     },
     proof: {
       title: "A past project",
-      text: "An IP geolocation REST API built with Spring Boot and PostgreSQL, packaged with Docker and deployed on a self-managed Ubuntu VPS. We designed, built and hosted it ourselves. It is not an active product today.",
+      text: "An IP geolocation REST API built with Spring Boot and PostgreSQL, packaged with Docker and deployed on a self-managed Ubuntu VPS. We designed, built and hosted it end to end, from the data model to the server.",
       links: [{ label: "See our other work", href: "/products/" }],
     },
     prices: [

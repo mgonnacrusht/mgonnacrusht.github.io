@@ -50,7 +50,11 @@ export default async function BlogPostPage({
           datePublished: post.date,
           dateModified: post.updated,
           mainEntityOfPage: url,
-          author: { "@type": "Organization", name: siteConfig.name },
+          author: {
+            "@type": "Person",
+            name: "Alihan Ersoy",
+            url: siteConfig.linkedIn.director,
+          },
           publisher: {
             "@type": "Organization",
             name: siteConfig.name,
@@ -64,6 +68,10 @@ export default async function BlogPostPage({
           <p className="text-sm text-muted">
             <Link href="/blog/" className="text-accent underline">
               Guides
+            </Link>{" "}
+            · By{" "}
+            <Link href="/about/" className="underline">
+              Alihan Ersoy
             </Link>{" "}
             · {formatPostDate(post.date)}
             {post.updated !== post.date

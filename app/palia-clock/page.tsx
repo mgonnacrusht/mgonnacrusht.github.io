@@ -5,22 +5,21 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { Container, Eyebrow, Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { paliaClock } from "@/lib/content/palia-clock";
 
-const playUrl =
-  "https://play.google.com/store/apps/details?id=com.alihan98ersoy.paliaclock";
+const { playUrl } = paliaClock;
 
 export const metadata = buildMetadata({
   title: "Palia Clock Case Study",
-  description:
-    "Palia Clock is a native Java Android companion app, designed, built and published solo on Google Play. It has passed 1,000 downloads and is rated 4.5+.",
+  description: `Palia Clock is a native Java Android companion app, designed, built and published solo on Google Play. It has ${paliaClock.downloads} downloads and is rated ${paliaClock.rating}.`,
   path: "/palia-clock/",
 });
 
 const facts = [
   { label: "Platform", value: "Android, native Java" },
   { label: "Status", value: "Live on Google Play" },
-  { label: "Reach", value: "1,000+ downloads" },
-  { label: "Rating", value: "4.5+ on Google Play" },
+  { label: "Reach", value: `${paliaClock.downloads} downloads` },
+  { label: "Rating", value: `${paliaClock.rating} on Google Play` },
 ];
 
 const work = [
@@ -148,6 +147,10 @@ export default function PaliaClockPage() {
               portfolio
             </Link>
             .
+          </p>
+          <p className="mt-6 text-xs text-muted">
+            Palia Clock is an unofficial fan-made app. It is not affiliated
+            with or endorsed by the developers of Palia.
           </p>
         </Container>
       </Section>
