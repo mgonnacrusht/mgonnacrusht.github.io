@@ -38,28 +38,28 @@ export const services: Service[] = [
   {
     name: "Backend API Development",
     summary:
-      "Java and Spring Boot REST APIs with PostgreSQL, Docker, and production-ready deployment on a Linux VPS, including mobile API integrations.",
+      "The system behind your app or product: data, user accounts and integrations, built with Java and Spring Boot and deployed to a Linux VPS.",
     icon: "api",
     chips: ["Spring Boot", "REST APIs", "Integrations"],
   },
   {
     name: "Cloud & VPS Deployment",
     summary:
-      "Self-hosted Linux VPS setup, Docker and CI/CD, with cloud options on AWS or GCP when the project calls for it.",
+      "Get your app or tool online and running reliably: Linux VPS setup, Docker and CI/CD, with AWS or GCP when the project needs them.",
     icon: "cloud",
     chips: ["Linux VPS", "Docker", "CI/CD"],
   },
   {
     name: "Database Development",
     summary:
-      "PostgreSQL schema design, migrations, and performance tuning.",
+      "Reliable data storage for your product: PostgreSQL schema design, migrations and performance tuning.",
     icon: "database",
     chips: ["PostgreSQL", "Schema", "Tuning"],
   },
   {
     name: "SaaS Development",
     summary:
-      "Small SaaS MVPs and fixed-scope backends with pragmatic architecture for solo or small-team products.",
+      "Small SaaS first versions and fixed-scope backends, designed pragmatically for solo founders and small teams.",
     icon: "saas",
     chips: ["MVP", "Fixed scope", "Backends"],
   },

@@ -37,10 +37,11 @@ app/              # Pages (App Router)
 components/       # UI, layout, sections
 lib/
   config/         # site.ts — flags, emails, integrations
-  content/        # Copy and data (i18n-ready)
+  content/        # Copy and data (i18n-ready), incl. quiz.json
+  quiz/           # Project estimate engine (reads content/quiz.json)
   seo/            # Metadata helpers
 public/           # Static assets, CNAME, legacy redirect HTML
-scripts/          # Build helpers (redirects, CNAME copy)
+scripts/          # Build helpers (redirects, CNAME copy, quiz validation)
 docs/             # Operational docs (Cloudflare, etc.)
 ```
 
@@ -56,9 +57,17 @@ Optional GitHub Actions secrets (build-time):
 | `NEXT_PUBLIC_PLAY_STORE_URL` | SaveT Google Play link when live |
 | `NEXT_PUBLIC_CAL_LINK` | Cal.com discovery event URL (e.g. `https://cal.com/user/discovery`). Empty = Book CTAs hidden |
 
-Services pricing copy lives in `lib/content/pricing.ts`.
+Services pricing copy lives in `lib/content/pricing.ts`. The small-work and small-MVP ranges must match the project estimate (see below); the build warns when they differ.
 
 Do not commit `.env` files.
+
+## Project estimate (services page)
+
+The estimate on `/services/` is driven entirely by `lib/content/quiz.json`: steps, options, base prices per service and size, add-ons, multipliers, timelines, "what is included" lists and result copy. The engine is `lib/quiz/engine.ts` and the UI is `components/quiz/PriceQuiz.tsx`.
+
+- Edit prices, options or copy in `quiz.json` only; no code change is needed to add a step or an option.
+- `npm run validate:quiz` checks the file (unknown ids, missing prices, inconsistent timelines) and runs automatically as part of `npm run build`.
+- Interactions are sent to Umami as custom events (`quiz_start`, `quiz_step`, `quiz_result`, `quiz_cta_call`, `quiz_cta_brief`, `quiz_submit`, `quiz_restart`). The Umami script loads only in production builds, so local development never records events; they are logged to the browser console instead.
 
 ## Deployment
 

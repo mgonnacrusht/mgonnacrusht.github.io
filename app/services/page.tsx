@@ -11,9 +11,9 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { PriceQuiz } from "@/components/quiz/PriceQuiz";
 
 export const metadata = buildMetadata({
-  title: "Mobile App Development Services",
+  title: "Mobile App Development Services and Cost Estimate",
   description:
-    "Custom mobile app development, Android, MVP and SaaS backends for founders who already have a project. UK company, remote delivery, published pricing.",
+    "Mobile apps, backends, automation, hosting and websites for startups. Published pricing, an instant project estimate, and remote delivery from a UK company.",
   path: "/services/",
 });
 
