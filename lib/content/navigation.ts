@@ -15,6 +15,7 @@ export const footerNav: NavItem[] = [
   { name: "City Line Map", href: "/citylinemap/" },
   { name: "Services", href: "/services/" },
   { name: "Portfolio", href: "/products/" },
+  { name: "Guides", href: "/blog/" },
   { name: "Get in touch", href: "/contact/" },
   { name: "Privacy Policy", href: "/legal/privacy/" },
   { name: "Terms of Use", href: "/legal/terms/" },

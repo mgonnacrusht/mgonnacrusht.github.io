@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
   Cloud,
@@ -42,7 +43,15 @@ export function ServiceCardGrid({ limit }: { limit?: number }) {
               <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
                 <Icon className="h-5 w-5" aria-hidden />
               </span>
-              <h3 className="text-lg font-bold">{service.name}</h3>
+              <h3 className="text-lg font-bold">
+                {service.href ? (
+                  <Link href={service.href} className="hover:text-accent">
+                    {service.name}
+                  </Link>
+                ) : (
+                  service.name
+                )}
+              </h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                 {service.summary}
               </p>

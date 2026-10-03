@@ -35,6 +35,7 @@ npx serve out
 ```
 app/              # Pages (App Router)
 components/       # UI, layout, sections
+content/blog/     # Blog posts as Markdown files
 lib/
   config/         # site.ts — flags, emails, integrations
   content/        # Copy and data (i18n-ready), incl. quiz.json
@@ -68,6 +69,25 @@ The estimate on `/services/` is driven entirely by `lib/content/quiz.json`: step
 - Edit prices, options or copy in `quiz.json` only; no code change is needed to add a step or an option.
 - `npm run validate:quiz` checks the file (unknown ids, missing prices, inconsistent timelines) and runs automatically as part of `npm run build`.
 - Interactions are sent to Umami as custom events (`quiz_start`, `quiz_step`, `quiz_result`, `quiz_cta_call`, `quiz_cta_brief`, `quiz_submit`, `quiz_restart`). The Umami script loads only in production builds, so local development never records events; they are logged to the browser console instead.
+
+## Blog
+
+Posts are Markdown files in `content/blog/`. The file name becomes the URL (`content/blog/my-post.md` is `/blog/my-post/`). Files starting with `_` are ignored.
+
+```md
+---
+title: Post title
+description: One or two sentences for search results.
+date: 2026-10-03
+updated: 2026-10-03
+---
+
+Post text in Markdown.
+```
+
+- `date` is the first publication date. `updated` is optional and sets the order: the index lists posts by `updated` (falling back to `date`), newest first, and the sitemap uses it as the last modified date.
+- Keep prices in sync with the project estimate by using placeholders instead of typing numbers: `{{price:type_new_app.size_s}}`, `{{timeline:type_new_app.size_s}}`, `{{addon:extra_backend}}` and `{{hourly}}`. An unknown placeholder or a missing field fails the build.
+- External links open in a new tab automatically.
 
 ## Deployment
 

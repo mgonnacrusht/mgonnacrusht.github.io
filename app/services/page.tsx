@@ -6,12 +6,13 @@ import {
   engagementNotes,
   pricingBands,
 } from "@/lib/content/pricing";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { PriceQuiz } from "@/components/quiz/PriceQuiz";
 
 export const metadata = buildMetadata({
-  title: "Mobile App Development Services and Cost Estimate",
+  title: "UK App Development Services and Cost Estimate",
   description:
     "Mobile apps, backends, automation, hosting and websites for startups. Published pricing, an instant project estimate, and remote delivery from a UK company.",
   path: "/services/",
@@ -21,21 +22,20 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="For startups & product teams"
-        title="App development services"
-        lead="Remote development for startups and founders: mobile apps, the systems behind them, hosting, and store release. Websites and ongoing maintenance fit the same engagement when a project needs them."
+        eyebrow="UK company, remote delivery"
+        title="App development for startups and small businesses"
+        lead="Mobile apps, the systems behind them, hosting and store release, delivered remotely. Websites and ongoing maintenance fit the same engagement when a project needs them."
       >
         <Button href="/contact/">Get a quote</Button>
       </PageHero>
 
-      <Section id="pricing" className="bg-surface">
+      <Section id="pricing" className="bg-surface pt-12 sm:pt-14">
         <Container>
           <FadeIn>
             <h2 className="text-2xl font-bold">Pricing</h2>
             <p className="mt-3 max-w-2xl text-muted">
               Ranges in GBP. Final quotes are scope-based after a short discovery
-              call or written brief. Not sure what your project will cost? Use
-              the estimator below.
+              call or written brief.
             </p>
           </FadeIn>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -51,7 +51,18 @@ export default function ServicesPage() {
               </FadeIn>
             ))}
           </div>
-          <div id="estimate" className="mt-14 scroll-mt-24">
+          <p className="mt-10 text-center text-muted">
+            Not sure what your project will cost? Use the estimator below, or
+            read our{" "}
+            <Link
+              href="/blog/how-much-does-a-mobile-app-cost-uk/"
+              className="text-accent underline"
+            >
+              guide to app costs
+            </Link>
+            .
+          </p>
+          <div id="estimate" className="mt-6 scroll-mt-24">
             <FadeIn>
               <PriceQuiz />
             </FadeIn>

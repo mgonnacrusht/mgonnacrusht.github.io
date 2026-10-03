@@ -12,6 +12,7 @@ export type Service = {
   name: string;
   summary: string;
   icon: ServiceIcon;
+  href?: string;
   chips: string[];
 };
 
@@ -26,6 +27,7 @@ export const services: Service[] = [
     summary:
       "Flutter apps from first screen to store release, including small MVPs. Proven on Android, with iOS scoped per project.",
     icon: "smartphone",
+    href: "/services/flutter-app-development/",
     chips: ["Flutter", "Android", "MVP"],
   },
   {
@@ -33,6 +35,7 @@ export const services: Service[] = [
     summary:
       "Native Java and Flutter Android builds, with Google Play publishing and release support for your launch.",
     icon: "android",
+    href: "/services/android-app-development/",
     chips: ["Java", "Flutter", "Google Play"],
   },
   {
@@ -40,6 +43,7 @@ export const services: Service[] = [
     summary:
       "The system behind your product: data, accounts and integrations, built in Java and Spring Boot and ready to deploy.",
     icon: "api",
+    href: "/services/backend-development/",
     chips: ["Spring Boot", "REST APIs", "Integrations"],
   },
   {
@@ -47,6 +51,7 @@ export const services: Service[] = [
     summary:
       "Get your app online and running reliably with Linux VPS setup, Docker and CI/CD, plus AWS or GCP when needed.",
     icon: "cloud",
+    href: "/services/automation-and-hosting/",
     chips: ["Linux VPS", "Docker", "CI/CD"],
   },
   {
@@ -68,6 +73,7 @@ export const services: Service[] = [
     summary:
       "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over.",
     icon: "workflow",
+    href: "/services/automation-and-hosting/",
     chips: ["n8n", "Integrations", "Automation"],
   },
   {
