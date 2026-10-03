@@ -1,4 +1,12 @@
-export type ServiceIcon = "smartphone" | "android" | "api" | "cloud" | "database" | "saas";
+export type ServiceIcon =
+  | "smartphone"
+  | "android"
+  | "api"
+  | "cloud"
+  | "database"
+  | "saas"
+  | "workflow"
+  | "website";
 
 export type Service = {
   name: string;
@@ -37,9 +45,9 @@ export const services: Service[] = [
   {
     name: "Cloud & VPS Deployment",
     summary:
-      "Self-hosted Linux VPS setup, Docker, CI/CD, and n8n automation, with cloud options on AWS or GCP when the project calls for it.",
+      "Self-hosted Linux VPS setup, Docker and CI/CD, with cloud options on AWS or GCP when the project calls for it.",
     icon: "cloud",
-    chips: ["Linux VPS", "Docker", "n8n"],
+    chips: ["Linux VPS", "Docker", "CI/CD"],
   },
   {
     name: "Database Development",
@@ -54,6 +62,20 @@ export const services: Service[] = [
       "Small SaaS MVPs and fixed-scope backends with pragmatic architecture for solo or small-team products.",
     icon: "saas",
     chips: ["MVP", "Fixed scope", "Backends"],
+  },
+  {
+    name: "Workflow Automation",
+    summary:
+      "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over with short notes.",
+    icon: "workflow",
+    chips: ["n8n", "Integrations", "Automation"],
+  },
+  {
+    name: "Website Development",
+    summary:
+      "Fast, mobile-friendly company and marketing websites built with Next.js, with search engine basics set up and deployed to your domain.",
+    icon: "website",
+    chips: ["Next.js", "TypeScript", "SEO basics"],
   },
 ];
 
@@ -84,4 +106,6 @@ export const deliveryScope = [
   "CI/CD and release pipeline setup",
   "AWS and GCP when the project needs cloud scale",
   "Google Play publishing and launch support",
+  "Workflow automation and tool integrations with n8n",
+  "Company and marketing websites built with Next.js",
 ];

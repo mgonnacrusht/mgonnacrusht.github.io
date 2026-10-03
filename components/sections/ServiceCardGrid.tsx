@@ -2,10 +2,12 @@ import type { LucideIcon } from "lucide-react";
 import {
   Cloud,
   Database,
+  Globe,
   Layers,
   Server,
   Smartphone,
   TabletSmartphone,
+  Workflow,
 } from "lucide-react";
 import { services, type ServiceIcon } from "@/lib/content/services";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -17,13 +19,19 @@ const serviceIcons: Record<ServiceIcon, LucideIcon> = {
   cloud: Cloud,
   database: Database,
   saas: Layers,
+  workflow: Workflow,
+  website: Globe,
 };
 
 export function ServiceCardGrid({ limit }: { limit?: number }) {
   const items = limit ? services.slice(0, limit) : services;
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div
+      className={`grid gap-4 sm:grid-cols-2 ${
+        items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+      }`}
+    >
       {items.map((service, index) => {
         const Icon = serviceIcons[service.icon];
 

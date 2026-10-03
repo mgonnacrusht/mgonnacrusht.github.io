@@ -1,4 +1,4 @@
-export const companyPrivacyHtml = `<p>Last updated: August 4, 2026</p>
+export const companyPrivacyHtml = `<p>Last updated: October 3, 2026</p>
 
 <p>This Privacy Policy explains how MgonnacrushT Limited collects, uses, and protects personal data on this website and through business communications.</p>
 
@@ -16,9 +16,9 @@ export const companyPrivacyHtml = `<p>Last updated: August 4, 2026</p>
 
 <h2>Information we collect</h2>
 <ul>
-  <li><strong>Contact form data</strong> you submit: name, email address, optional company name, inquiry type, and message content.</li>
+  <li><strong>Contact form data</strong> you submit: name, email address, optional company name, inquiry type, and message content. If you use the project estimate on the services page and then send us your brief, your answers to the estimate questions and the estimated price range are included with your message.</li>
   <li><strong>Email correspondence</strong> if you write to our published addresses (for example hello@, support@, or legal@).</li>
-  <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing.</li>
+  <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing. This includes anonymous interaction events on the project estimate (such as which steps are completed and which options are chosen), which contain no names, email addresses, or free-text input.</li>
 </ul>
 <p>This website does not use advertising pixels, Google Analytics, or marketing cookies.</p>
 
