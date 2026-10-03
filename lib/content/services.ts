@@ -22,58 +22,58 @@ export type TechnicalScopeGroup = {
 
 export const services: Service[] = [
   {
-    name: "Mobile Application Development",
+    name: "Mobile Apps",
     summary:
-      "Flutter mobile apps from first screen to store release, including small MVP builds, with proven Android delivery. iOS can be scoped per project when requirements fit.",
+      "Flutter apps from first screen to store release, including small MVPs. Proven on Android, with iOS scoped per project.",
     icon: "smartphone",
     chips: ["Flutter", "Android", "MVP"],
   },
   {
-    name: "Android Development",
+    name: "Android Apps",
     summary:
-      "Native Java and Flutter Android builds with Google Play publishing and release support.",
+      "Native Java and Flutter Android builds, with Google Play publishing and release support for your launch.",
     icon: "android",
     chips: ["Java", "Flutter", "Google Play"],
   },
   {
-    name: "Backend API Development",
+    name: "Backend & APIs",
     summary:
-      "The system behind your app or product: data, user accounts and integrations, built with Java and Spring Boot and deployed to a Linux VPS.",
+      "The system behind your product: data, accounts and integrations, built in Java and Spring Boot and ready to deploy.",
     icon: "api",
     chips: ["Spring Boot", "REST APIs", "Integrations"],
   },
   {
-    name: "Cloud & VPS Deployment",
+    name: "Hosting & Servers",
     summary:
-      "Get your app or tool online and running reliably: Linux VPS setup, Docker and CI/CD, with AWS or GCP when the project needs them.",
+      "Get your app online and running reliably with Linux VPS setup, Docker and CI/CD, plus AWS or GCP when needed.",
     icon: "cloud",
     chips: ["Linux VPS", "Docker", "CI/CD"],
   },
   {
-    name: "Database Development",
+    name: "Databases",
     summary:
-      "Reliable data storage for your product: PostgreSQL schema design, migrations and performance tuning.",
+      "Reliable data storage for your product, with PostgreSQL schema design, migrations and performance tuning.",
     icon: "database",
     chips: ["PostgreSQL", "Schema", "Tuning"],
   },
   {
-    name: "SaaS Development",
+    name: "SaaS MVPs",
     summary:
       "Small SaaS first versions and fixed-scope backends, designed pragmatically for solo founders and small teams.",
     icon: "saas",
     chips: ["MVP", "Fixed scope", "Backends"],
   },
   {
-    name: "Workflow Automation",
+    name: "Automation",
     summary:
-      "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over with short notes.",
+      "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over.",
     icon: "workflow",
     chips: ["n8n", "Integrations", "Automation"],
   },
   {
-    name: "Website Development",
+    name: "Websites",
     summary:
-      "Fast, mobile-friendly company and marketing websites built with Next.js, with search engine basics set up and deployed to your domain.",
+      "Fast, mobile-friendly company websites built with Next.js, with search basics set up and deployed to your domain.",
     icon: "website",
     chips: ["Next.js", "TypeScript", "SEO basics"],
   },

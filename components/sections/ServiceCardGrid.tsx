@@ -25,11 +25,12 @@ const serviceIcons: Record<ServiceIcon, LucideIcon> = {
 
 export function ServiceCardGrid({ limit }: { limit?: number }) {
   const items = limit ? services.slice(0, limit) : services;
+  const fourColumns = items.length % 4 === 0;
 
   return (
     <div
       className={`grid gap-4 sm:grid-cols-2 ${
-        items.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+        fourColumns ? "lg:grid-cols-4" : "lg:grid-cols-3"
       }`}
     >
       {items.map((service, index) => {
@@ -45,7 +46,11 @@ export function ServiceCardGrid({ limit }: { limit?: number }) {
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                 {service.summary}
               </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
+              <ul
+                className={`mt-4 flex flex-wrap gap-2 ${
+                  fourColumns ? "lg:min-h-16 lg:content-start" : ""
+                }`}
+              >
                 {service.chips.map((chip) => (
                   <li
                     key={chip}
