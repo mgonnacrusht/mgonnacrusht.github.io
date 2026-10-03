@@ -7,8 +7,8 @@ import {
   pricingBands,
 } from "@/lib/content/pricing";
 import { Button } from "@/components/ui/Button";
-import { siteConfig } from "@/lib/config/site";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { PriceQuiz } from "@/components/quiz/PriceQuiz";
 
 export const metadata = buildMetadata({
   title: "Mobile App Development Services",
@@ -18,30 +18,46 @@ export const metadata = buildMetadata({
 });
 
 export default function ServicesPage() {
-  const calLink = siteConfig.calLink;
-
   return (
     <>
       <PageHero
         eyebrow="For startups & product teams"
         title="App development services"
-        lead="Remote app development for startups and founders: mobile apps, Java backends, Linux VPS deployment, and store release. Marketing websites and ongoing maintenance fit the same engagement when a project needs them."
+        lead="Remote development for startups and founders: mobile apps, the systems behind them, hosting, and store release. Websites and ongoing maintenance fit the same engagement when a project needs them."
       >
-        {calLink ? (
-          <Button href={calLink} external>
-            Book a free discovery call
-          </Button>
-        ) : null}
-        <Button
-          href={`mailto:${siteConfig.emails.hello}`}
-          variant={calLink ? "secondary" : "primary"}
-        >
-          Email {siteConfig.emails.hello}
-        </Button>
-        <Button href="/about/" variant="secondary">
-          About the company
-        </Button>
+        <Button href="/contact/">Get a quote</Button>
       </PageHero>
+
+      <Section id="pricing" className="bg-surface">
+        <Container>
+          <FadeIn>
+            <h2 className="text-2xl font-bold">Pricing</h2>
+            <p className="mt-3 max-w-2xl text-muted">
+              Ranges in GBP. Final quotes are scope-based after a short discovery
+              call or written brief. Not sure what your project will cost? Use
+              the estimator below.
+            </p>
+          </FadeIn>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {pricingBands.map((band, index) => (
+              <FadeIn key={band.label} delay={index * 0.05} className="h-full">
+                <article className="h-full rounded-2xl border border-border bg-background p-5">
+                  <h3 className="text-sm font-semibold uppercase tracking-widest text-accent">
+                    {band.label}
+                  </h3>
+                  <p className="mt-2 text-lg font-bold">{band.range}</p>
+                  <p className="mt-2 text-sm text-muted">{band.note}</p>
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+          <div id="estimate" className="mt-14 scroll-mt-24">
+            <FadeIn>
+              <PriceQuiz />
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
 
       <Section>
         <Container>
@@ -51,28 +67,6 @@ export default function ServicesPage() {
       </Section>
 
       <Section className="bg-surface">
-        <Container>
-          <h2 className="mb-8 text-2xl font-bold">Technical scope</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {technicalScope.map((group) => (
-              <FadeIn key={group.label}>
-                <article className="rounded-2xl border border-border bg-background p-5">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-accent">
-                    {group.label}
-                  </h3>
-                  <ul className="mt-3 space-y-1.5 text-sm text-muted">
-                    {group.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </article>
-              </FadeIn>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section>
         <Container className="grid gap-10 lg:grid-cols-2">
           <FadeIn>
             <h2 className="text-2xl font-bold">Delivery scope</h2>
@@ -110,38 +104,21 @@ export default function ServicesPage() {
         </Container>
       </Section>
 
-      <Section id="pricing" className="bg-surface">
+      <Section className="py-12 sm:py-14">
         <Container>
-          <FadeIn>
-            <h2 className="text-2xl font-bold">Pricing</h2>
-            <p className="mt-3 max-w-2xl text-muted">
-              Ranges in GBP. Final quotes are scope-based after a short discovery
-              call or written brief.
-            </p>
-          </FadeIn>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            {pricingBands.map((band, index) => (
-              <FadeIn key={band.label} delay={index * 0.05}>
-                <article className="rounded-2xl border border-border bg-background p-5">
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-accent">
-                    {band.label}
-                  </h3>
-                  <p className="mt-2 text-lg font-bold">{band.range}</p>
-                  <p className="mt-2 text-sm text-muted">{band.note}</p>
-                </article>
-              </FadeIn>
+          <h2 className="text-lg font-bold">Technical scope</h2>
+          <dl className="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
+            {technicalScope.map((group) => (
+              <div key={group.label}>
+                <dt className="text-sm font-semibold uppercase tracking-widest text-accent">
+                  {group.label}
+                </dt>
+                <dd className="mt-1 text-sm text-muted">
+                  {group.items.join(" · ")}
+                </dd>
+              </div>
             ))}
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {calLink ? (
-              <Button href={calLink} external>
-                Book a free discovery call
-              </Button>
-            ) : null}
-            <Button href="/contact/" variant={calLink ? "secondary" : "primary"}>
-              Get a quote
-            </Button>
-          </div>
+          </dl>
         </Container>
       </Section>
     </>

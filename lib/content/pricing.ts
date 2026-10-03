@@ -7,17 +7,17 @@ export type PricingBand = {
 export const pricingBands: PricingBand[] = [
   {
     label: "Hourly",
-    range: "£50–70 / hour",
+    range: "£40–60 / hour",
     note: "Useful for advisory slices and tightly scoped changes.",
   },
   {
     label: "Small scoped work",
-    range: "~£800–£2,000",
+    range: "~£650–£1,700",
     note: "Single feature, focused bug-fix package, or a small Flutter/Android slice.",
   },
   {
     label: "Small Flutter / Android MVP",
-    range: "£3,000–£6,000",
+    range: "£2,400–£5,100",
     note: "Typically 2–4 weeks with a fixed scope and clear milestones.",
   },
   {

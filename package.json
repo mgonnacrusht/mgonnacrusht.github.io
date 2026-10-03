@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-legacy-redirects.mjs && next build && node scripts/copy-cname.mjs",
+    "validate:quiz": "node scripts/validate-quiz.mjs",
+    "build": "node scripts/validate-quiz.mjs && node scripts/generate-legacy-redirects.mjs && next build && node scripts/copy-cname.mjs",
     "build:next": "next build",
     "start": "next start",
     "lint": "next lint"

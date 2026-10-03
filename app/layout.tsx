@@ -51,12 +51,14 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </MotionProvider>
-        <Script
-          defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id={siteConfig.umamiWebsiteId}
-          strategy="afterInteractive"
-        />
+        {process.env.NODE_ENV === "production" ? (
+          <Script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id={siteConfig.umamiWebsiteId}
+            strategy="afterInteractive"
+          />
+        ) : null}
       </body>
     </html>
   );

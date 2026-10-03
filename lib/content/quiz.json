@@ -1,0 +1,254 @@
+{
+  "currency": "£",
+  "rounding": 50,
+  "contactAbove": 12000,
+  "bands": [
+    { "id": "low", "upTo": 2000 },
+    { "id": "mid", "upTo": 6000 },
+    { "id": "high", "upTo": 12000 }
+  ],
+  "pricingLinks": {
+    "type_new_app.size_s": "Small Flutter / Android MVP",
+    "type_features.size_s": "Small scoped work"
+  },
+  "steps": [
+    {
+      "id": "type",
+      "title": "What do you need?",
+      "kind": "single",
+      "columns": 3,
+      "options": [
+        { "id": "type_new_app", "short": "New mobile app", "group": "Apps", "label": "A new mobile app", "hint": "MVP to full app" },
+        { "id": "type_features", "short": "New features", "group": "Apps", "label": "New features for an existing app" },
+        { "id": "type_fix", "short": "Fixes or review", "group": "Apps", "label": "Bug fixes or a code review" },
+        { "id": "type_backend", "short": "Backend system", "group": "Behind the scenes", "label": "System behind an app or website", "hint": "Data, accounts, integrations" },
+        { "id": "type_automation", "short": "Automation", "group": "Behind the scenes", "label": "Automation of repetitive work", "hint": "Connect your tools" },
+        { "id": "type_server", "short": "Hosting setup", "group": "Behind the scenes", "label": "Hosting and server setup", "hint": "Get online and stay reliable" },
+        { "id": "type_website", "short": "Website", "group": "Websites", "label": "A website", "hint": "Company or marketing site" },
+        { "id": "type_unsure", "label": "I am not sure yet", "outcome": "unsure" }
+      ]
+    },
+    {
+      "id": "platform",
+      "title": "Which platform?",
+      "kind": "single",
+      "showIf": { "type": ["type_new_app", "type_features"] },
+      "options": [
+        { "id": "plat_android", "short": "Android", "label": "Android only" },
+        {
+          "id": "plat_flutter", "short": "Android and iOS",
+          "label": "Android and iOS",
+          "effects": [{ "when": { "type": ["type_new_app"] }, "add": [300, 700] }]
+        },
+        { "id": "plat_unsure", "short": "Platform to be advised", "label": "Not sure, please advise" }
+      ]
+    },
+    {
+      "id": "size",
+      "title": "How big is the project?",
+      "kind": "single",
+      "options": [
+        {
+          "id": "size_s",
+          "label": "Small",
+          "labels": {
+            "type_new_app": "Small: 1 to 5 screens, simple flow",
+            "type_features": "Small: 1 to 2 features",
+            "type_fix": "Small: one focused issue or a short review",
+            "type_backend": "Small: simple data storage for one app",
+            "type_automation": "Small: 1 to 3 automations",
+            "type_server": "Small: one app on one server",
+            "type_website": "Small: 1 to 5 pages"
+          }
+        },
+        {
+          "id": "size_m",
+          "label": "Medium",
+          "labels": {
+            "type_new_app": "Medium: 6 to 15 screens, accounts, payments or notifications",
+            "type_features": "Medium: 3 to 5 features",
+            "type_fix": "Medium: several issues or a full review",
+            "type_backend": "Medium: user accounts, several kinds of data and integrations",
+            "type_automation": "Medium: 4 to 10 automations with integrations",
+            "type_server": "Medium: several services with backups and monitoring",
+            "type_website": "Medium: 6 to 15 pages with a blog or CMS"
+          }
+        },
+        {
+          "id": "size_l",
+          "label": "Large",
+          "outcome": "contact",
+          "labels": {
+            "type_new_app": "Large: 16+ screens or complex logic",
+            "type_features": "Large: a major rework",
+            "type_fix": "Large: a whole-product audit",
+            "type_backend": "Large: several connected systems or heavy logic",
+            "type_automation": "Large: a wider automation programme",
+            "type_server": "Large: several servers or high availability",
+            "type_website": "Large: a bigger or custom-built site"
+          }
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "title": "Is anything else included?",
+      "kind": "multi",
+      "showIf": { "type": ["type_new_app", "type_features"] },
+      "options": [
+        {
+          "id": "extra_backend", "short": "Backend included",
+          "label": "I also need the system behind the app",
+          "hint": "For example data storage and user accounts",
+          "effects": [{ "add": [650, 2100] }]
+        },
+        {
+          "id": "extra_design", "short": "Basic design included",
+          "label": "I do not have designs yet",
+          "hint": "Basic interface from your sketches",
+          "effects": [{ "add": [200, 500] }]
+        },
+        { "id": "extra_none", "short": "", "label": "Neither, I am covered", "exclusive": true }
+      ]
+    },
+    {
+      "id": "release",
+      "title": "How will the app be published?",
+      "kind": "single",
+      "showIf": { "type": ["type_new_app"] },
+      "options": [
+        {
+          "id": "rel_own", "short": "Own developer account",
+          "label": "From my own developer account",
+          "hint": "You own the app. We prepare the release and guide you through submission."
+        },
+        {
+          "id": "rel_help", "short": "Account setup help",
+          "label": "I need help setting up developer accounts",
+          "hint": "Google Play and Apple accounts are created in your name.",
+          "effects": [{ "add": [100, 250] }]
+        },
+        {
+          "id": "rel_managed", "short": "We publish it",
+          "label": "Please publish it for me",
+          "hint": "We publish it under our own developer account. Ownership terms are agreed in writing.",
+          "effects": [{ "multiply": 1.1 }]
+        },
+        {
+          "id": "rel_later", "short": "No release yet",
+          "label": "Not needed yet",
+          "hint": "For example a prototype or an internal tool."
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "When would you like to start?",
+      "kind": "single",
+      "options": [
+        { "id": "time_asap", "short": "", "label": "Within a month", "effects": [{ "multiply": 1 }] },
+        { "id": "time_flex", "short": "", "label": "In one to three months", "effects": [{ "multiply": 1 }] },
+        { "id": "time_open", "short": "", "label": "I am flexible", "effects": [{ "multiply": 1 }] }
+      ]
+    }
+  ],
+  "base": {
+    "type_new_app": { "size_s": [2400, 5100], "size_m": [3600, 7300] },
+    "type_features": { "size_s": [650, 1700], "size_m": [1400, 3300] },
+    "type_fix": { "size_s": [300, 950], "size_m": [700, 1700] },
+    "type_backend": { "size_s": [950, 2600], "size_m": [2400, 5100] },
+    "type_automation": { "size_s": [200, 700], "size_m": [650, 1700] },
+    "type_server": { "size_s": [150, 500], "size_m": [500, 1400] },
+    "type_website": { "size_s": [400, 1000], "size_m": [950, 2700] }
+  },
+  "durations": {
+    "type_new_app": { "size_s": "2 to 4 weeks", "size_m": "6 to 10 weeks" },
+    "type_features": { "size_s": "1 to 2 weeks", "size_m": "3 to 6 weeks" },
+    "type_fix": { "size_s": "2 to 5 days", "size_m": "1 to 2 weeks" },
+    "type_backend": { "size_s": "1 to 3 weeks", "size_m": "3 to 6 weeks" },
+    "type_automation": { "size_s": "2 to 5 days", "size_m": "1 to 3 weeks" },
+    "type_server": { "size_s": "1 to 3 days", "size_m": "1 to 2 weeks" },
+    "type_website": { "size_s": "1 to 2 weeks", "size_m": "2 to 5 weeks" }
+  },
+  "includes": {
+    "types": {
+      "type_new_app": [
+        "A working app built to the agreed scope",
+        "Release build prepared for the store",
+        "Basic testing before hand-over",
+        "Hand-over of the code"
+      ],
+      "type_features": [
+        "The agreed features built and tested",
+        "Testing on real devices",
+        "Hand-over of the updated code"
+      ],
+      "type_fix": [
+        "A written summary of findings",
+        "Fixes for the agreed issues"
+      ],
+      "type_backend": [
+        "Data storage and the agreed features built",
+        "Short documentation",
+        "Deployed and running"
+      ],
+      "type_automation": [
+        "Automations built and tested",
+        "Connections to your tools set up",
+        "Short hand-over notes"
+      ],
+      "type_server": [
+        "Server set up and secured",
+        "Your app deployed",
+        "Short notes on how it runs"
+      ],
+      "type_website": [
+        "Pages built and mobile friendly",
+        "Basic search engine setup",
+        "Deployed to your domain"
+      ]
+    },
+    "options": {
+      "plat_flutter": ["The app built for both Android and iOS"],
+      "extra_backend": ["Data storage and user accounts"],
+      "extra_design": ["Basic interface designed from your sketches"],
+      "rel_own": ["Release build and submission guidance"],
+      "rel_help": ["Help creating Google Play and Apple accounts"],
+      "rel_managed": ["Store submission under our developer account"]
+    }
+  },
+  "copy": {
+    "includedTitle": "What is included",
+    "assurancesTitle": "How we work",
+    "eyebrow": "Project estimate",
+    "title": "Estimate your project",
+    "lead": "Answer a few quick questions for an indicative price range. No email is needed to see your result.",
+    "resultTitle": "Your indicative range",
+    "resultNote": "This is a guide, not a quote. Final prices depend on scope and are agreed in writing before work starts.",
+    "basedOn": "Based on",
+    "durationLabel": "Typical timeline",
+    "durationNote": "Timelines depend on scope and start once the written scope is agreed.",
+    "contactTitle": "This one needs a conversation",
+    "contactBody": "Larger projects are scoped individually. Tell us what you have in mind and we will reply with a written quote and a suggested first milestone, so you can start small.",
+    "unsureTitle": "Not sure yet? That is fine.",
+    "unsureBody": "Small projects typically land between £650 and £5,100, depending on scope. A short conversation is the quickest way to find the right starting point.",
+    "assurances": [
+      "Free discovery call, 15 to 30 minutes",
+      "Clear scope and milestones before any work starts",
+      "Milestone or fixed-price work preferred",
+      "No surprise invoices",
+      "UK company, remote delivery"
+    ],
+    "ctaCall": "Book a free discovery call",
+    "ctaBrief": "Send us your brief",
+    "formTitle": "Send us your brief",
+    "formLead": "We have added your answers below. Edit them or add more detail before sending.",
+    "formSuccessTitle": "Thanks for your brief",
+    "formSuccessBody": "MgonnacrushT received your details and will reply by email soon.",
+    "replyNote": "We reply within two working days.",
+    "restart": "Start again",
+    "back": "Back",
+    "next": "Next",
+    "seeResult": "See my estimate"
+  }
+}

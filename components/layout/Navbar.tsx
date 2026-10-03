@@ -22,15 +22,7 @@ export function Navbar() {
             alt={siteConfig.name}
             width={120}
             height={32}
-            className="hidden h-8 w-auto sm:block"
-            priority
-          />
-          <Image
-            src="/images/logo/logo-mobile.svg"
-            alt={siteConfig.name}
-            width={32}
-            height={32}
-            className="h-8 w-8 sm:hidden"
+            className="h-7 w-auto sm:h-8"
             priority
           />
         </Link>
