@@ -46,6 +46,13 @@ export default function RootLayout({
         className="min-h-screen bg-background text-foreground antialiased"
         suppressHydrationWarning
       >
+        {/* FadeIn renders opacity:0 into the static HTML; without JS it would never fade in. */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html:
+              '<style>[style*="opacity:0"]{opacity:1!important;transform:none!important}</style>',
+          }}
+        />
         <MotionProvider>
           <Navbar />
           <main>{children}</main>

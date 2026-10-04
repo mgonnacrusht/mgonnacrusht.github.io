@@ -31,9 +31,10 @@ export default function SaveTPage() {
           <Image
             src="/images/savet/savet_logodark.svg"
             alt="SaveT logo"
-            width={200}
-            height={200}
-            className="mx-auto"
+            width={240}
+            height={240}
+            /* The SVG has empty space around the mark, most of it below. */
+            className="mx-auto -mb-20 -mt-10"
             priority
           />
           <h1 className="sr-only">SaveT</h1>

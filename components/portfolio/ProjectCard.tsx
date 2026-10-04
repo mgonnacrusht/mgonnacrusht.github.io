@@ -35,9 +35,12 @@ function StatusBadge({ status }: { status: PortfolioProject["status"] }) {
 export function ProjectCard({
   project,
   featured = false,
+  compact = false,
 }: {
   project: PortfolioProject & { bullets?: string[] };
   featured?: boolean;
+  /** Hides bullets and the disclaimer so cards in a row stay a similar height. */
+  compact?: boolean;
 }) {
   const ctaLabel =
     project.cta?.label ??
@@ -64,8 +67,8 @@ export function ProjectCard({
           height={cover ? 720 : featured ? 400 : 400}
           className={
             cover
-              ? "h-full w-full object-cover"
-              : "h-full w-full object-contain p-6"
+              ? "absolute inset-0 h-full w-full object-cover"
+              : "absolute inset-0 h-full w-full object-scale-down p-6"
           }
         />
       </div>
@@ -77,7 +80,7 @@ export function ProjectCard({
         <p className="mt-3 text-sm leading-relaxed text-muted">
           {project.description}
         </p>
-        {"bullets" in project && project.bullets ? (
+        {!compact && "bullets" in project && project.bullets ? (
           <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-muted">
             {project.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
@@ -94,7 +97,7 @@ export function ProjectCard({
             </span>
           ))}
         </div>
-        {project.disclaimer ? (
+        {!compact && project.disclaimer ? (
           <p className="mt-4 text-xs leading-relaxed text-muted">
             {project.disclaimer}
           </p>

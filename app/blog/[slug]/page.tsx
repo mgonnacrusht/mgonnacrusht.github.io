@@ -38,6 +38,9 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const url = `${siteConfig.domain}/blog/${post.slug}/`;
+  const related = getAllPosts()
+    .filter((other) => other.slug !== post.slug)
+    .slice(0, 3);
 
   return (
     <>
@@ -70,7 +73,7 @@ export default async function BlogPostPage({
               Guides
             </Link>{" "}
             · By{" "}
-            <Link href="/about/" className="underline">
+            <Link href="/about/" className="text-accent underline">
               Alihan Ersoy
             </Link>{" "}
             · {formatPostDate(post.date)}
@@ -90,9 +93,33 @@ export default async function BlogPostPage({
       <Section className="py-12 sm:py-16">
         <Container className="max-w-3xl">
           <article
-            className="prose-legal"
+            className="prose-blog"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
+          {related.length > 0 ? (
+            <aside className="mt-12 border-t border-border pt-8">
+              <h2 className="text-sm font-semibold uppercase tracking-widest text-accent">
+                Related guides
+              </h2>
+              <ul className="mt-4 space-y-4">
+                {related.map((other) => (
+                  <li key={other.slug}>
+                    <Link
+                      href={`/blog/${other.slug}/`}
+                      className="group block rounded-2xl border border-border bg-surface p-5 transition-shadow hover:shadow-md"
+                    >
+                      <p className="font-bold group-hover:text-accent">
+                        {other.title}
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-muted">
+                        {other.description}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          ) : null}
           <div className="mt-12 rounded-2xl border border-border bg-surface p-6 text-center">
             <h2 className="text-xl font-bold">Have a project in mind?</h2>
             <p className="mt-2 text-muted">

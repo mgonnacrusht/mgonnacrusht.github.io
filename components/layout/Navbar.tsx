@@ -37,7 +37,7 @@ export function Navbar() {
               {item.name}
             </Link>
           ))}
-          <Button href="/contact/">Get in touch</Button>
+          <Button href="/contact/">Get a quote</Button>
         </nav>
 
         <button
@@ -68,7 +68,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button href="/contact/" className="w-full">
-            Get in touch
+            Get a quote
           </Button>
         </Container>
       </div>

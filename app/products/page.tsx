@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/config/site";
 
 export const metadata = buildMetadata({
-  title: "Portfolio",
+  title: "Portfolio: Apps and Websites We Have Built",
   description: siteConfig.tagline,
   path: "/products/",
 });
@@ -25,16 +25,20 @@ export default function ProductsPage() {
 
           <div>
             <h2 className="mb-6 text-2xl font-bold">More shipped work</h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {portfolioProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}
             </div>
           </div>
 
-          <div className="text-center">
-            <Button href={`mailto:${siteConfig.emails.hello}`}>
-              Email {siteConfig.emails.hello}
+          <div className="flex flex-wrap justify-center gap-3">
+            <Button href="/contact/">Get a quote</Button>
+            <Button
+              href={`mailto:${siteConfig.emails.hello}`}
+              variant="secondary"
+            >
+              {siteConfig.emails.hello}
             </Button>
           </div>
         </Container>

@@ -16,7 +16,8 @@ export function ContactForm() {
       <div className="rounded-2xl border border-border bg-surface p-8 text-center">
         <h3 className="text-xl font-bold">Thanks for reaching out</h3>
         <p className="mt-3 text-muted">
-          MgonnacrushT received your message and will reply by email soon.
+          We received your message and will reply by email within two working
+          days.
         </p>
       </div>
     );
@@ -72,12 +73,14 @@ export function ContactForm() {
           id="intent"
           name="intent"
           required
-          defaultValue="services"
+          defaultValue="app"
           className={fieldClass}
         >
-          <option value="services">Services</option>
-          <option value="savet">SaveT</option>
-          <option value="citylinemap">City Line Map</option>
+          <option value="app">Mobile app</option>
+          <option value="website">Website</option>
+          <option value="automation">Automation or hosting</option>
+          <option value="maintenance">App maintenance</option>
+          <option value="products">SaveT or City Line Map</option>
           <option value="other">Other</option>
         </select>
       </div>

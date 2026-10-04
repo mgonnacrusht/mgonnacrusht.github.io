@@ -10,10 +10,10 @@ import { contactBlurb } from "@/lib/content/pricing";
 const calLink = siteConfig.calLink;
 
 export const metadata = buildMetadata({
-  title: "App Development Quote",
+  title: "Get a Quote for Your App, Website or Automation",
   description: calLink
-    ? "Tell MgonnacrushT what you want built. UK app development company. Book a free discovery call or send a brief through the contact form."
-    : "Tell MgonnacrushT what you want built. UK app development company. Send a brief through the contact form and get a scope-based quote in GBP.",
+    ? "Tell us what you want built: an app, a website or an automation. Book a free discovery call or send a brief and get a scope-based quote in GBP."
+    : "Tell us what you want built: an app, a website or an automation. Send a brief and get a scope-based quote in GBP.",
   path: "/contact/",
 });
 
@@ -30,9 +30,9 @@ const buckets = [
     eyebrow: "Services",
     title: "A project",
     description:
-      "Mobile apps, Java Spring Boot APIs, Linux VPS deployment, PostgreSQL, CI/CD, and Google Play publishing.",
+      "Mobile apps, websites, n8n automation, server setup and app maintenance, with published prices.",
     href: "/services/",
-    label: "App development services",
+    label: "Services and prices",
   },
 ];
 
@@ -40,11 +40,11 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        title="Get a quote for your app"
+        title="Get a quote for your project"
         lead={
           calLink
-            ? "Tell MgonnacrushT what you want built. Prefer a call? Book below. Prefer email? Use the form."
-            : "Tell MgonnacrushT what you want built. Quotes are scope-based in GBP, so a short brief is enough to start."
+            ? "Tell us what you want built, from an app or website to an automation. Prefer a call? Book below. Prefer email? Use the form."
+            : "Tell us what you want built, from an app or website to an automation. Quotes are scope-based in GBP, so a short brief is enough to start."
         }
       />
 

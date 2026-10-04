@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { pricingBands } from "@/lib/content/pricing";
+import { hourlyRate } from "@/lib/content/pricing";
 import {
   addOnRange,
   priceRange,
@@ -70,9 +70,7 @@ function fillPlaceholders(body: string, file: string): string {
         case "addon":
           return addOnRange(String(arg));
         case "hourly":
-          return (
-            pricingBands.find((band) => band.label === "Hourly")?.range ?? ""
-          );
+          return hourlyRate;
       }
     } catch (error) {
       throw new Error(`${file}: ${(error as Error).message}`);

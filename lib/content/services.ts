@@ -1,12 +1,12 @@
 export type ServiceIcon =
   | "smartphone"
-  | "android"
   | "api"
   | "cloud"
   | "database"
   | "saas"
   | "workflow"
-  | "website";
+  | "website"
+  | "maintenance";
 
 export type Service = {
   name: string;
@@ -25,18 +25,33 @@ export const services: Service[] = [
   {
     name: "Mobile Apps",
     summary:
-      "Flutter apps from first screen to store release, including small MVPs. Proven on Android, with iOS scoped per project.",
+      "Flutter and native Android apps from first screen to store release, including small MVPs and Google Play publishing. iOS scoped per project.",
     icon: "smartphone",
     href: "/services/flutter-app-development/",
-    chips: ["Flutter", "Android", "MVP"],
+    chips: ["Flutter", "Native Android", "Google Play"],
   },
   {
-    name: "Android Apps",
+    name: "SaaS MVPs",
     summary:
-      "Native Java and Flutter Android builds, with Google Play publishing and release support for your launch.",
-    icon: "android",
-    href: "/services/android-app-development/",
-    chips: ["Java", "Flutter", "Google Play"],
+      "Small SaaS first versions and fixed-scope backends, designed pragmatically for solo founders and small teams.",
+    icon: "saas",
+    chips: ["MVP", "Fixed scope", "Backends"],
+  },
+  {
+    name: "Websites",
+    summary:
+      "Fast, mobile-friendly company websites built with Next.js, with search basics set up and deployed to your domain.",
+    icon: "website",
+    href: "/services/website-development/",
+    chips: ["Next.js", "TypeScript", "SEO basics"],
+  },
+  {
+    name: "Automation",
+    summary:
+      "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over.",
+    icon: "workflow",
+    href: "/services/n8n-automation/",
+    chips: ["n8n", "Integrations", "Automation"],
   },
   {
     name: "Backend & APIs",
@@ -47,14 +62,6 @@ export const services: Service[] = [
     chips: ["Spring Boot", "REST APIs", "Integrations"],
   },
   {
-    name: "Hosting & Servers",
-    summary:
-      "Get your app online and running reliably with Linux VPS setup, Docker and CI/CD, plus AWS or GCP when needed.",
-    icon: "cloud",
-    href: "/services/automation-and-hosting/",
-    chips: ["Linux VPS", "Docker", "CI/CD"],
-  },
-  {
     name: "Databases",
     summary:
       "Reliable data storage for your product, with PostgreSQL schema design, migrations and performance tuning.",
@@ -62,26 +69,20 @@ export const services: Service[] = [
     chips: ["PostgreSQL", "Schema", "Tuning"],
   },
   {
-    name: "SaaS MVPs",
+    name: "Hosting & Servers",
     summary:
-      "Small SaaS first versions and fixed-scope backends, designed pragmatically for solo founders and small teams.",
-    icon: "saas",
-    chips: ["MVP", "Fixed scope", "Backends"],
+      "Get your app online and running reliably with Linux VPS setup, Docker and CI/CD, plus AWS or GCP when needed.",
+    icon: "cloud",
+    href: "/services/server-setup/",
+    chips: ["Linux VPS", "Docker", "CI/CD"],
   },
   {
-    name: "Automation",
+    name: "Maintenance & Support",
     summary:
-      "Connect your tools and automate repetitive work with n8n workflows, installed, configured and handed over.",
-    icon: "workflow",
-    href: "/services/automation-and-hosting/",
-    chips: ["n8n", "Integrations", "Automation"],
-  },
-  {
-    name: "Websites",
-    summary:
-      "Fast, mobile-friendly company websites built with Next.js, with search basics set up and deployed to your domain.",
-    icon: "website",
-    chips: ["Next.js", "TypeScript", "SEO basics"],
+      "Updates, fixes and small improvements after launch, including Google Play target API updates and store policy changes.",
+    icon: "maintenance",
+    href: "/services/app-maintenance/",
+    chips: ["Updates", "Bug fixes", "Store compliance"],
   },
 ];
 
@@ -102,16 +103,4 @@ export const technicalScope: TechnicalScopeGroup[] = [
     label: "Web",
     items: ["Next.js", "TypeScript"],
   },
-];
-
-export const deliveryScope = [
-  "Flutter and native Java Android apps",
-  "Java Spring Boot REST APIs and backend engineering",
-  "PostgreSQL schema design and optimization",
-  "Linux VPS deployment with Docker",
-  "CI/CD and release pipeline setup",
-  "AWS and GCP when the project needs cloud scale",
-  "Google Play publishing and launch support",
-  "Workflow automation and tool integrations with n8n",
-  "Company and marketing websites built with Next.js",
 ];

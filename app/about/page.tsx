@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -8,9 +9,9 @@ import { siteConfig } from "@/lib/config/site";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 export const metadata = buildMetadata({
-  title: "UK App Development Company",
+  title: "About Us: A UK Software Company",
   description:
-    "MgonnacrushT Limited. Solo founder Alihan Ersoy. Mobile apps, Android, and backends. Remote, for UK and English-speaking clients.",
+    "MgonnacrushT Limited is a UK software company led by Alihan Ersoy, building mobile apps, websites and automation for startups and small businesses.",
   path: "/about/",
 });
 
@@ -18,12 +19,12 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        title="A UK-registered app development company"
-        lead="MgonnacrushT Limited delivers mobile apps, Java backends, Linux VPS deployment, and web work for startups when the fit is right. Solo founder, remote delivery, invoiced through the UK company."
+        title="A UK software company for apps, websites and automation"
+        lead="MgonnacrushT Limited builds mobile apps, websites, n8n automations and the servers behind them for UK startups and small businesses. Solo founder, remote delivery, invoiced through the UK company."
       >
-        <Button href={`mailto:${siteConfig.emails.hello}`}>Get in touch</Button>
-        <Button href="/savet/" variant="secondary">
-          Explore SaveT
+        <Button href="/contact/">Get a quote</Button>
+        <Button href="/products/" variant="secondary">
+          See our work
         </Button>
       </PageHero>
 
@@ -104,12 +105,13 @@ export default function AboutPage() {
 
       <Section>
         <Container>
-          <h2 className="mb-8 text-2xl font-bold">What MgonnacrushT builds</h2>
+          <h2 className="mb-8 text-2xl font-bold">What we build</h2>
           <ServiceCardGrid />
           <p className="mt-8 text-sm text-muted">
-            Technical scope includes Flutter and native Java Android apps, Java
-            Spring Boot APIs, PostgreSQL, Linux VPS deployment with Docker,
-            CI/CD, and Google Play publishing. Availability: Remote.{" "}
+            Technical scope includes Flutter and native Java Android apps,
+            Next.js websites, Java Spring Boot APIs, PostgreSQL, n8n, Linux
+            servers with Docker, CI/CD, and Google Play publishing. Availability:
+            Remote.{" "}
             <Link href="/services/#pricing" className="text-accent underline">
               See pricing on Services
             </Link>
@@ -125,20 +127,37 @@ export default function AboutPage() {
             MgonnacrushT builds software worth maintaining: clear UX, stable
             architecture, and room to improve after launch.
           </p>
-          <ul className="mt-5 space-y-2 text-muted">
-            <li>Fix a real problem before adding features.</li>
-            <li>Ship code you can hand over to someone else.</li>
-            <li>Listen to users and adjust.</li>
-          </ul>
+          <PrincipleList
+            items={[
+              "Fix a real problem before adding features.",
+              "Ship code you can hand over to someone else.",
+              "Listen to users and adjust.",
+            ]}
+          />
 
           <h2 className="mt-10 text-2xl font-bold">Privacy and trust</h2>
-          <ul className="mt-5 space-y-2 text-muted">
-            <li>Your data stays yours.</li>
-            <li>Security and reliability belong in v1, not a later patch.</li>
-            <li>Policies should be plain English, not legalese wallpaper.</li>
-          </ul>
+          <PrincipleList
+            items={[
+              "Your data stays yours.",
+              "Security and reliability belong in v1, not a later patch.",
+              "Policies should be plain English, not legalese wallpaper.",
+            ]}
+          />
         </Container>
       </Section>
     </>
+  );
+}
+
+function PrincipleList({ items }: { items: string[] }) {
+  return (
+    <ul className="mt-5 space-y-2 text-muted">
+      {items.map((item) => (
+        <li key={item} className="flex items-start gap-2">
+          <Check aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 text-accent" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   );
 }

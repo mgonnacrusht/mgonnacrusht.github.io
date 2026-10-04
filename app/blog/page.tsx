@@ -5,9 +5,9 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import { formatPostDate, getAllPosts } from "@/lib/blog";
 
 export const metadata = buildMetadata({
-  title: "Blog: App Development Guides",
+  title: "Guides: App, Website and Automation Costs",
   description:
-    "Plain guides on mobile app costs, Flutter and Android, written by a UK app development company.",
+    "Plain guides on what apps, websites and automations cost in the UK, how to keep them running, and how to choose the right technology.",
   path: "/blog/",
 });
 
@@ -18,8 +18,8 @@ export default function BlogIndexPage() {
     <>
       <PageHero
         eyebrow="Guides"
-        title="App development guides"
-        lead="Plain answers to common questions about building a mobile app."
+        title="Guides for apps, websites and automation"
+        lead="Plain answers on costs, upkeep and choosing the right technology, with our real prices."
       />
       <Section>
         <Container className="max-w-3xl">

@@ -72,8 +72,8 @@ export const portfolioProjects: PortfolioProject[] = [
   },
 ];
 
-/** Homepage selected work: three cards, website stays on /products/ only. */
-export const homepagePortfolio = [
-  cityLineMapFeatured,
-  ...portfolioProjects.filter((project) => project.slug !== "mgonnacrusht-website"),
-];
+/**
+ * Homepage selected work. Palia Clock is the featured case study above it,
+ * and the website card stays on /products/ only.
+ */
+export const homepagePortfolio = [cityLineMapFeatured, savetProject];

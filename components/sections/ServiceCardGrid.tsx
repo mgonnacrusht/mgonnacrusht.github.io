@@ -7,21 +7,21 @@ import {
   Layers,
   Server,
   Smartphone,
-  TabletSmartphone,
   Workflow,
+  Wrench,
 } from "lucide-react";
 import { services, type ServiceIcon } from "@/lib/content/services";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 const serviceIcons: Record<ServiceIcon, LucideIcon> = {
   smartphone: Smartphone,
-  android: TabletSmartphone,
   api: Server,
   cloud: Cloud,
   database: Database,
   saas: Layers,
   workflow: Workflow,
   website: Globe,
+  maintenance: Wrench,
 };
 
 export function ServiceCardGrid({ limit }: { limit?: number }) {

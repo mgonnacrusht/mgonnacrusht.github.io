@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "MgonnacrushT",
   tagline:
-    "Product engineering and practical software for startups and small teams.",
+    "Apps, websites and automation for UK startups and small businesses.",
   domain: "https://mgonnacrusht.co.uk",
   showRoadmap: false,
   playStoreUrl: process.env.NEXT_PUBLIC_PLAY_STORE_URL ?? "",

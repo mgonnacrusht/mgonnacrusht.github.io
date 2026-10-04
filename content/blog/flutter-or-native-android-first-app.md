@@ -36,9 +36,11 @@ Flutter can target iOS from the same code, but building and publishing an iOS ap
 
 ## How we usually decide
 
-- **New app, first version:** Flutter by default.
-- **Existing native Android app:** stay native and add to it.
-- **App built around specific Android features:** native.
+| Your situation | What we usually recommend |
+| --- | --- |
+| New app, first version | Flutter by default |
+| Existing native Android app | Stay native and add to it |
+| App built around specific Android features | Native Android |
 
 Our own apps use both. [Palia Clock](/palia-clock/) is a native Java app live on Google Play, and [SaveT](/savet/) is a Flutter app in closed beta.
 
