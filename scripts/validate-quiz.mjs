@@ -3,7 +3,6 @@ import path from "node:path";
 
 const root = process.cwd();
 const quizPath = path.join(root, "lib", "content", "quiz.json");
-const pricingPath = path.join(root, "lib", "content", "pricing.ts");
 
 const errors = [];
 const warnings = [];
@@ -127,28 +126,6 @@ for (const band of config.bands ?? []) {
   previous = band.upTo;
 }
 if (!(config.rounding > 0)) fail("rounding must be greater than 0");
-
-// Soft check: published pricing bands should match the quiz (warning only).
-if (fs.existsSync(pricingPath) && config.pricingLinks) {
-  const source = fs.readFileSync(pricingPath, "utf8");
-  const parse = (text) =>
-    text.match(/£([\d,]+)\s*[–-]\s*£?([\d,]+)/)?.slice(1, 3).map((n) => Number(n.replace(/,/g, "")));
-  for (const [key, label] of Object.entries(config.pricingLinks)) {
-    const [typeId, sizeId] = key.split(".");
-    const quizRange = config.base?.[typeId]?.[sizeId];
-    const block = source.match(
-      new RegExp(`label:\\s*"${label.replace(/[/]/g, "\\/")}"[\\s\\S]*?range:\\s*"([^"]+)"`),
-    );
-    const published = block ? parse(block[1]) : null;
-    if (!published) {
-      warnings.push(`pricing.ts: could not find a range for "${label}"`);
-    } else if (!quizRange || published[0] !== quizRange[0] || published[1] !== quizRange[1]) {
-      warnings.push(
-        `quiz ${key} (${quizRange?.join("–")}) differs from pricing.ts "${label}" (${published.join("–")})`,
-      );
-    }
-  }
-}
 
 for (const warning of warnings) console.warn(`Warning: ${warning}`);
 

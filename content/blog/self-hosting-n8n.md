@@ -1,5 +1,6 @@
 ---
 title: "Self-hosting n8n: what it costs and what you need"
+seoTitle: Self-hosting n8n: costs and what you need
 description: What you need to self-host n8n for a small business, what it costs each month, and the setup steps that keep it secure and reliable.
 date: 2026-09-24
 updated: 2026-09-24

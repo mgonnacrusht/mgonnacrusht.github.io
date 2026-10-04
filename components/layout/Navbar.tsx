@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { mainNav } from "@/lib/content/navigation";
 import { siteConfig } from "@/lib/config/site";
@@ -12,6 +13,12 @@ import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Close the mobile menu after any navigation, including the call to action.
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-surface/90 backdrop-blur">
@@ -42,8 +49,10 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-foreground md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-3 text-foreground md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -51,25 +60,30 @@ export function Navbar() {
       </Container>
 
       <div
+        id="mobile-menu"
         className={cn(
           "border-t border-border bg-surface md:hidden",
           open ? "block" : "hidden",
         )}
       >
-        <Container className="flex flex-col gap-3 py-4">
-          {mainNav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="py-2 text-sm font-medium text-foreground"
-              onClick={() => setOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
-          <Button href="/contact/" className="w-full">
-            Get a quote
-          </Button>
+        <Container className="py-2">
+          <ul className="divide-y divide-border">
+            {mainNav.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="block py-3.5 text-base font-medium text-foreground"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="border-t border-border py-4">
+            <Button href="/contact/" className="px-6 py-3 text-base">
+              Get a quote
+            </Button>
+          </div>
         </Container>
       </div>
     </header>

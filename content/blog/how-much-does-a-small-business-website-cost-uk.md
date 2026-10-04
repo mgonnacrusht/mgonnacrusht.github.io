@@ -1,5 +1,6 @@
 ---
 title: How much does a small business website cost in the UK?
+seoTitle: Small business website cost in the UK
 description: What a small business website costs to build and run in the UK, what changes the price, and what we charge for a fast, custom site.
 date: 2026-09-10
 updated: 2026-09-10

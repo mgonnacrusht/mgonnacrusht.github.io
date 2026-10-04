@@ -12,7 +12,8 @@ import {
  * Blog posts live as Markdown files in content/blog/.
  *
  * Front matter (between --- lines):
- *   title:       required
+ *   title:       required (page heading)
+ *   seoTitle:    optional shorter title for the browser tab and search results
  *   description: required
  *   date:        required, YYYY-MM-DD (first published)
  *   updated:     optional, YYYY-MM-DD (posts are sorted by this, newest first)
@@ -29,6 +30,8 @@ import {
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Shorter title for <title>; falls back to `title` */
+  seoTitle?: string;
   description: string;
   /** YYYY-MM-DD */
   date: string;
@@ -105,6 +108,7 @@ function loadPost(fileName: string): BlogPost {
   return {
     slug,
     title: data.title,
+    seoTitle: data.seoTitle || undefined,
     description: data.description,
     date: data.date,
     updated: data.updated || data.date,

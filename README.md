@@ -10,7 +10,7 @@ Marketing site for [MgonnacrushT Limited](https://mgonnacrusht.co.uk) — produc
 - [Tailwind CSS v4](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Formspree](https://formspree.io/) (contact form)
-- [Umami](https://umami.is/) (analytics)
+- [Umami](https://umami.is/) (analytics, self-hosted)
 
 Static output is deployed to **GitHub Pages** via GitHub Actions. DNS and edge redirects are managed in **Cloudflare**.
 
@@ -58,7 +58,7 @@ Optional GitHub Actions secrets (build-time):
 | `NEXT_PUBLIC_PLAY_STORE_URL` | SaveT Google Play link when live |
 | `NEXT_PUBLIC_CAL_LINK` | Cal.com discovery event URL (e.g. `https://cal.com/user/discovery`). Empty = Book CTAs hidden |
 
-Services pricing copy lives in `lib/content/pricing.ts`. The small-work and small-MVP ranges must match the project estimate (see below); the build warns when they differ.
+Services pricing copy lives in `lib/content/pricing.ts`. The price groups on the services page are derived from `lib/content/quiz.json`, so they always match the project estimate (see below).
 
 Do not commit `.env` files.
 
@@ -85,6 +85,7 @@ updated: 2026-10-03
 Post text in Markdown.
 ```
 
+- `seoTitle` is optional: a shorter title (about 45 characters) for the browser tab and search results, while `title` stays as the page heading.
 - `date` is the first publication date. `updated` is optional and sets the order: the index lists posts by `updated` (falling back to `date`), newest first, and the sitemap uses it as the last modified date.
 - Keep prices in sync with the project estimate by using placeholders instead of typing numbers: `{{price:type_new_app.size_s}}`, `{{timeline:type_new_app.size_s}}`, `{{addon:extra_backend}}` and `{{hourly}}`. An unknown placeholder or a missing field fails the build.
 - External links open in a new tab automatically.

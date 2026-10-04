@@ -1,4 +1,4 @@
-export const companyPrivacyHtml = `<p>Last updated: October 3, 2026</p>
+export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
 
 <p>This Privacy Policy explains how MgonnacrushT Limited collects, uses, and protects personal data on this website and through business communications.</p>
 
@@ -18,7 +18,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 3, 2026</p>
 <ul>
   <li><strong>Contact form data</strong> you submit: name, email address, optional company name, inquiry type, and message content. If you use the project estimate on the services page and then send us your brief, your answers to the estimate questions and the estimated price range are included with your message.</li>
   <li><strong>Email correspondence</strong> if you write to our published addresses (for example hello@, support@, or legal@).</li>
-  <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing. This includes anonymous interaction events on the project estimate (such as which steps are completed and which options are chosen), which contain no names, email addresses, or free-text input.</li>
+  <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics, which we host ourselves on our own server (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing. This includes anonymous interaction events on the project estimate (such as which steps are completed and which options are chosen), which contain no names, email addresses, or free-text input.</li>
 </ul>
 <p>This website does not use advertising pixels, Google Analytics, or marketing cookies.</p>
 
@@ -34,7 +34,8 @@ export const companyPrivacyHtml = `<p>Last updated: October 3, 2026</p>
 <p>We do not sell personal information. We use providers only as needed to run the site and handle inquiries:</p>
 <ul>
   <li><strong>Formspree</strong> (formspree.io): processes contact form submissions on our behalf. See the <a href="https://formspree.io/legal/privacy-policy/">Formspree Privacy Policy</a>.</li>
-  <li><strong>Umami Cloud</strong> (cloud.umami.is): provides cookieless website analytics. See the <a href="https://umami.is/privacy">Umami Privacy Policy</a>.</li>
+  <li><strong>Umami (self-hosted)</strong>: open-source, cookieless website analytics that we run on our own server at umami.mgonnacrusht.co.uk, so analytics data is not sent to a third-party analytics provider. See the <a href="https://umami.is/privacy">Umami Privacy Policy</a> for how the software works.</li>
+  <li><strong>Server hosting</strong>: the analytics server is run with an infrastructure provider that stores the data on our behalf.</li>
   <li><strong>Hosting and CDN</strong>: GitHub Pages and Cloudflare may process connection data (such as IP address and request logs) to deliver the site securely.</li>
 </ul>
 
@@ -47,7 +48,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 3, 2026</p>
 <h2>Retention</h2>
 <ul>
   <li><strong>Contact form and related emails</strong>: kept for as long as needed to handle the inquiry and ordinary business follow-up, then deleted or archived when no longer required (typically up to 24 months unless a longer period is needed for a live engagement or legal obligation).</li>
-  <li><strong>Analytics</strong>: retained according to our Umami Cloud workspace settings for site-improvement reporting.</li>
+  <li><strong>Analytics</strong>: retained on our own Umami server for site-improvement reporting.</li>
 </ul>
 
 <h2>Security</h2>

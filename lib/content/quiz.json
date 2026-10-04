@@ -7,10 +7,6 @@
     { "id": "mid", "upTo": 6000 },
     { "id": "high", "upTo": 12000 }
   ],
-  "pricingLinks": {
-    "type_new_app.size_s": "Small Flutter / Android MVP",
-    "type_features.size_s": "Small scoped work"
-  },
   "steps": [
     {
       "id": "type",

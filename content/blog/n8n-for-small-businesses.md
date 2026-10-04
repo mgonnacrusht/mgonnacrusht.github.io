@@ -1,5 +1,6 @@
 ---
 title: "n8n for small businesses: what to automate first"
+seoTitle: n8n for small businesses: what to automate
 description: A practical guide to n8n for small businesses, with the first workflows worth building, what it costs and when to self-host.
 date: 2026-09-17
 updated: 2026-09-17

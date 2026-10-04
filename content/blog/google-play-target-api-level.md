@@ -1,5 +1,6 @@
 ---
 title: "Google Play target API level: what app owners need to do"
+seoTitle: Google Play target API level: what to do
 description: What the Google Play target API level requirement means for app owners, what happens if you miss it, and how the update works.
 date: 2026-08-26
 updated: 2026-08-26

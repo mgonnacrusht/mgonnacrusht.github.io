@@ -9,7 +9,8 @@ export const siteConfig = {
   formspreeFormId:
     process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? "mwvdyvkr",
   formspreeEndpoint: "https://formspree.io/f/mwvdyvkr",
-  umamiWebsiteId: "957b7146-060b-40e6-8ee1-4f8dec3ad333",
+  umamiScriptUrl: "https://umami.mgonnacrusht.co.uk/script.js",
+  umamiWebsiteId: "131b5837-1155-4e15-b3fa-2780d536a265",
   copyright: "MgonnacrushT Limited, registered in England and Wales.",
   companyNumber: "16877439",
   companiesHouseUrl:
