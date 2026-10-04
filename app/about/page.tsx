@@ -86,6 +86,12 @@ export default function AboutPage() {
               architecture to store release.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
+              Before founding MgonnacrushT, I spent three years as a Unity
+              Developer Technical Support Engineer, helping developers integrate
+              mobile services and take their apps and games through publishing
+              on Huawei AppGallery.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted">
               I prefer small scopes, clear communication, and software you can
               actually use and hand over.
             </p>

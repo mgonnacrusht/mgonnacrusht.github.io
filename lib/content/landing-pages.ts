@@ -397,7 +397,7 @@ export const landingPages: LandingPage[] = [
     },
     proof: {
       title: "We run our own services this way",
-      text: "The analytics for City Line Map are self-hosted with Docker on an Ubuntu server, and this website deploys automatically on every change.",
+      text: "The analytics for City Line Map run self-hosted with Docker on an Ubuntu server that we set up and maintain ourselves, including HTTPS, updates and automatic restarts.",
       links: [{ label: "See City Line Map", href: "/citylinemap/" }],
     },
     prices: [

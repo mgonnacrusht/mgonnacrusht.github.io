@@ -13,6 +13,7 @@ import {
   portfolioProjects,
 } from "@/lib/content/portfolio";
 import Link from "next/link";
+import { Fragment } from "react";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { PriceQuiz } from "@/components/quiz/PriceQuiz";
@@ -30,7 +31,7 @@ const jumpLinks = [
   { label: "Pricing", href: "#pricing" },
   { label: "Estimate", href: "#estimate" },
   { label: "Services", href: "#services" },
-  { label: "Recent work", href: "#work" },
+  { label: "Works", href: "#work" },
 ];
 
 // Live work first, closed beta last.
@@ -50,19 +51,27 @@ export default function ServicesPage() {
         title="Apps, websites and automation, with published prices"
         lead="Mobile apps, websites, n8n workflows and the servers behind them, for UK startups and small businesses. Every price below is a real range, and the scope is agreed in writing before work starts."
       >
-        <Button href="/contact/">Get a quote</Button>
+        <Button href="/contact/" className="px-8 py-3.5 text-base">
+          Get a quote
+        </Button>
         <nav
           aria-label="On this page"
-          className="flex w-full flex-wrap justify-center gap-x-6 gap-y-2 pt-2 text-sm"
+          className="flex w-full flex-wrap items-center justify-center gap-x-3 gap-y-2 pt-2 text-sm"
         >
-          {jumpLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-muted underline underline-offset-4 hover:text-foreground"
-            >
-              {link.label}
-            </a>
+          {jumpLinks.map((link, index) => (
+            <Fragment key={link.href}>
+              {index > 0 ? (
+                <span aria-hidden="true" className="text-muted/60">
+                  ·
+                </span>
+              ) : null}
+              <a
+                href={link.href}
+                className="text-muted underline underline-offset-4 hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            </Fragment>
           ))}
         </nav>
       </PageHero>
