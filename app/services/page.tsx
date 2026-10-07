@@ -15,6 +15,7 @@ import {
 import Link from "next/link";
 import { Fragment } from "react";
 import { Button } from "@/components/ui/Button";
+import { BookLink } from "@/components/ui/BookLink";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { PriceQuiz } from "@/components/quiz/PriceQuiz";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
@@ -42,8 +43,6 @@ const recentWork = [
 ];
 
 export default function ServicesPage() {
-  const callHref = siteConfig.calLink || "/contact/";
-
   return (
     <>
       <PageHero
@@ -112,16 +111,12 @@ export default function ServicesPage() {
           </div>
           <p className="mt-5 text-sm text-muted">
             Hourly work is {hourlyRate}. Every project starts with a free 15 to
-            30 minute discovery call, with no obligation.{" "}
-            <a
-              href={callHref}
-              className="font-semibold text-accent underline"
-              {...(siteConfig.calLink
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : {})}
-            >
+            30 minute discovery call, with no obligation.
+          </p>
+          <p className="text-sm">
+            <BookLink source="services_inline" variant="link">
               Book a discovery call
-            </a>
+            </BookLink>
           </p>
           <p className="mt-10 text-center text-muted">
             Not sure what your project will cost? Use the estimator below, or
@@ -221,13 +216,9 @@ export default function ServicesPage() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Button href="/contact/">Get a quote</Button>
-            <Button
-              href={callHref}
-              variant="secondary"
-              external={Boolean(siteConfig.calLink)}
-            >
+            <BookLink source="services_cta" variant="secondary">
               Book a free discovery call
-            </Button>
+            </BookLink>
           </div>
         </Container>
       </Section>

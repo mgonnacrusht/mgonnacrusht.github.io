@@ -5,7 +5,8 @@ export const siteConfig = {
   domain: "https://mgonnacrusht.co.uk",
   showRoadmap: false,
   playStoreUrl: process.env.NEXT_PUBLIC_PLAY_STORE_URL ?? "",
-  calLink: process.env.NEXT_PUBLIC_CAL_LINK ?? "",
+  // Public Cal.com booking page, so it lives in code rather than in a secret.
+  calLink: "https://cal.com/mgonnacrusht/quickchat",
   formspreeFormId:
     process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? "mwvdyvkr",
   formspreeEndpoint: "https://formspree.io/f/mwvdyvkr",

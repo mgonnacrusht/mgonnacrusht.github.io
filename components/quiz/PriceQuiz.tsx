@@ -358,7 +358,10 @@ function ResultView({
             target="_blank"
             rel="noopener noreferrer"
             className={btnPrimary}
-            onClick={() => trackEvent("quiz_cta_call", { band: result.band })}
+            onClick={() => {
+              trackEvent("quiz_cta_call", { band: result.band });
+              trackEvent("book_click", { source: "quiz", band: result.band });
+            }}
           >
             {copy.ctaCall}
           </a>

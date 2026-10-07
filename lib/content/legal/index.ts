@@ -1,4 +1,4 @@
-export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
+export const companyPrivacyHtml = `<p>Last updated: October 7, 2026</p>
 
 <p>This Privacy Policy explains how MgonnacrushT Limited collects, uses, and protects personal data on this website and through business communications.</p>
 
@@ -10,6 +10,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
 <ul>
   <li>Visitors to <code>mgonnacrusht.co.uk</code></li>
   <li>Contact and service inquiry submissions via this website</li>
+  <li>Call bookings made through our Cal.com booking page</li>
   <li>Related business email and communication records</li>
 </ul>
 <p>Product-specific data for the SaveT mobile app is covered by the separate <a href="/savet/legal/privacy/">SaveT Privacy Policy</a>.</p>
@@ -17,6 +18,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
 <h2>Information we collect</h2>
 <ul>
   <li><strong>Contact form data</strong> you submit: name, email address, optional company name, inquiry type, and message content. If you use the project estimate on the services page and then send us your brief, your answers to the estimate questions and the estimated price range are included with your message.</li>
+  <li><strong>Booking details</strong> if you book a call through Cal.com: your name, email address, chosen time, and any notes you add. Cal.com processes these details and sends us a booking notification.</li>
   <li><strong>Email correspondence</strong> if you write to our published addresses (for example hello@, support@, or legal@).</li>
   <li><strong>Website analytics</strong>: anonymised usage data via Umami Analytics, which we host ourselves on our own server (page views, referrer, browser, operating system, device type, and country derived from IP). Umami does not use cookies on this site and does not store IP addresses in its standard processing. This includes anonymous interaction events on the project estimate (such as which steps are completed and which options are chosen), which contain no names, email addresses, or free-text input.</li>
 </ul>
@@ -26,6 +28,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
 <p>Under UK GDPR, we process personal data on these bases:</p>
 <ul>
   <li><strong>Contact and service inquiries</strong>: to respond to your message and take steps toward a possible engagement (legitimate interests, and where relevant steps prior to entering a contract).</li>
+  <li><strong>Call bookings</strong>: to arrange the call you requested (steps prior to entering a contract, and legitimate interests).</li>
   <li><strong>Business records</strong>: to keep records needed for accounting, legal compliance, and dispute handling (legal obligation and legitimate interests).</li>
   <li><strong>Website analytics</strong>: to understand traffic and improve the site (legitimate interests in operating and improving a public website).</li>
 </ul>
@@ -34,13 +37,14 @@ export const companyPrivacyHtml = `<p>Last updated: October 4, 2026</p>
 <p>We do not sell personal information. We use providers only as needed to run the site and handle inquiries:</p>
 <ul>
   <li><strong>Formspree</strong> (formspree.io): processes contact form submissions on our behalf. See the <a href="https://formspree.io/legal/privacy-policy/">Formspree Privacy Policy</a>.</li>
+  <li><strong>Cal.com</strong> (cal.com): provides our call booking page and calendar scheduling. See the <a href="https://cal.com/privacy">Cal.com Privacy Policy</a>.</li>
   <li><strong>Umami (self-hosted)</strong>: open-source, cookieless website analytics that we run on our own server at umami.mgonnacrusht.co.uk, so analytics data is not sent to a third-party analytics provider. See the <a href="https://umami.is/privacy">Umami Privacy Policy</a> for how the software works.</li>
   <li><strong>Server hosting</strong>: the analytics server is run with an infrastructure provider that stores the data on our behalf.</li>
   <li><strong>Hosting and CDN</strong>: GitHub Pages and Cloudflare may process connection data (such as IP address and request logs) to deliver the site securely.</li>
 </ul>
 
 <h2>International transfers</h2>
-<p>Some providers may process data outside the UK (for example in the United States). Where UK GDPR applies, we rely on appropriate safeguards offered by those providers (such as standard contractual clauses) or other lawful transfer mechanisms they document in their terms.</p>
+<p>Some providers may process data outside the UK (for example in the United States). This includes Cal.com, which may process booking data outside the UK and the EU. Where UK GDPR applies, we rely on appropriate safeguards offered by those providers (such as standard contractual clauses) or other lawful transfer mechanisms they document in their terms.</p>
 
 <h2>Cookies and similar technologies</h2>
 <p>Essential delivery of the site does not require non-essential cookies. Analytics on this site are provided by Umami without cookies. If we add non-essential cookies or similar storage in future, we will update this policy and obtain consent where required by PECR / UK law.</p>

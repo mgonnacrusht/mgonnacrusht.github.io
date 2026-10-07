@@ -31,7 +31,6 @@ jobs:
         env:
           NEXT_PUBLIC_FORMSPREE_FORM_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_FORM_ID }}
           NEXT_PUBLIC_PLAY_STORE_URL: ${{ secrets.NEXT_PUBLIC_PLAY_STORE_URL }}
-          NEXT_PUBLIC_CAL_LINK: ${{ secrets.NEXT_PUBLIC_CAL_LINK }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

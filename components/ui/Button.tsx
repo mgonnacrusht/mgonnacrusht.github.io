@@ -9,6 +9,17 @@ const variants = {
   ghost: "text-foreground hover:bg-background",
 } as const;
 
+export function buttonClasses(
+  variant: keyof typeof variants = "primary",
+  className?: string,
+) {
+  return cn(
+    "inline-flex min-h-[44px] items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-colors",
+    variants[variant],
+    className,
+  );
+}
+
 type ButtonProps = {
   href?: string;
   variant?: keyof typeof variants;
@@ -27,11 +38,7 @@ export function Button({
   external,
   preserveReferrer,
 }: ButtonProps) {
-  const classes = cn(
-    "inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-colors",
-    variants[variant],
-    className,
-  );
+  const classes = buttonClasses(variant, className);
 
   if (!href) {
     return <span className={classes}>{children}</span>;

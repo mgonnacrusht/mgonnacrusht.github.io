@@ -3,6 +3,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { Container, PageHero, Section } from "@/components/layout/Section";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { BookLink } from "@/components/ui/BookLink";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/config/site";
 import { contactBlurb } from "@/lib/content/pricing";
@@ -73,9 +74,9 @@ export default function ContactPage() {
                     15–30 minutes. No obligation.
                   </p>
                   <div className="mt-6">
-                    <Button href={calLink} external>
+                    <BookLink source="contact">
                       Book a free discovery call
-                    </Button>
+                    </BookLink>
                   </div>
                   <p className="mt-4 text-sm text-muted">
                     See{" "}

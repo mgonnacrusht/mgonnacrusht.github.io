@@ -56,9 +56,8 @@ Optional GitHub Actions secrets (build-time):
 |----------|---------|
 | `NEXT_PUBLIC_FORMSPREE_FORM_ID` | Contact form (default: `mwvdyvkr`) |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | SaveT Google Play link when live |
-| `NEXT_PUBLIC_CAL_LINK` | Cal.com discovery event URL (e.g. `https://cal.com/user/discovery`). Empty = Book CTAs hidden |
 
-Services pricing copy lives in `lib/content/pricing.ts`. The price groups on the services page are derived from `lib/content/quiz.json`, so they always match the project estimate (see below).
+The discovery call link (Cal.com) is a constant in `lib/config/site.ts` (`calLink`), not an environment variable. Services pricing copy lives in `lib/content/pricing.ts`. The price groups on the services page are derived from `lib/content/quiz.json`, so they always match the project estimate (see below).
 
 Do not commit `.env` files.
 
@@ -68,7 +67,7 @@ The estimate on `/services/` is driven entirely by `lib/content/quiz.json`: step
 
 - Edit prices, options or copy in `quiz.json` only; no code change is needed to add a step or an option.
 - `npm run validate:quiz` checks the file (unknown ids, missing prices, inconsistent timelines) and runs automatically as part of `npm run build`.
-- Interactions are sent to Umami as custom events (`quiz_start`, `quiz_step`, `quiz_result`, `quiz_cta_call`, `quiz_cta_brief`, `quiz_submit`, `quiz_restart`). The Umami script loads only in production builds, so local development never records events; they are logged to the browser console instead.
+- Interactions are sent to Umami as custom events (`quiz_start`, `quiz_step`, `quiz_result`, `quiz_cta_call`, `quiz_cta_brief`, `quiz_submit`, `quiz_restart`) and every Book link sends `book_click` with a `source` property (`services_inline`, `services_cta`, `contact`, `quiz`). The Umami script loads only in production builds, so local development never records events; they are logged to the browser console instead.
 
 ## Blog
 
