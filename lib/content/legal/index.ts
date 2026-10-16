@@ -247,7 +247,7 @@ export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
 <p>This policy explains what data the Almanogram puzzle game (Android app <code>com.mgonnacrusht.almanogram</code>) handles, why, and the choices you have.</p>
 
 <h2>Who we are</h2>
-<p>Almanogram is made by <strong>MgonnacrushT Limited</strong>, a company registered in England and Wales (company number <strong>16877439</strong>, registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom), which is the data controller. For privacy requests, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
+<p>Almanogram is made by <strong>MgonnacrushT Limited</strong>, a company registered in England and Wales (company number <strong>16877439</strong>, registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom), which is the data controller. For privacy questions, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
 
 <h2>Summary</h2>
 <ul>
@@ -258,7 +258,7 @@ export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
 </ul>
 
 <h2>Data stored on your device</h2>
-<p>The app keeps the following on your device only: solved puzzles, stars and best times, a puzzle you left unfinished, your settings (language, vibration, the analytics switch) and whether you have seen the tutorial. This data is not sent to us. It is removed when you clear the app's data or uninstall the app.</p>
+<p>The app keeps the following on your device only: solved puzzles, stars and best times, a puzzle you left unfinished, your settings (language, vibration, the usage statistics switch), whether you have seen the tutorial and the first-start note, and the random app ID described below. Apart from that ID, which goes with each usage event, this data is not sent to us. It is removed when you clear the app's data or uninstall the app.</p>
 
 <h2>Usage statistics (analytics)</h2>
 <p>To understand which puzzles are too hard, where the tutorial is unclear and which features are used, the app sends usage events to <strong>Umami</strong>, an open-source, cookieless analytics tool that we host ourselves at <code>umami.mgonnacrusht.co.uk</code>, on a server in Germany. The data is not sent to a third-party analytics company. Because the events are linked to a random app ID, they are pseudonymous rather than anonymous: they do not tell us who you are, but they can be connected to each other.</p>
@@ -283,10 +283,16 @@ export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
 <p>We do not sell personal data and do not use it for advertising.</p>
 
 <h2>International transfers</h2>
-<p>Analytics data is stored in Germany (European Union). The UK recognises the EU as providing adequate protection for personal data, so no further transfer safeguards are needed for this. Google Play processes data under its own terms.</p>
+<p>Analytics data is stored in Germany (European Union). The UK recognises the EU as providing adequate protection for personal data, so no further transfer safeguards are needed for this.</p>
 
 <h2>Your rights</h2>
-<p>Where UK or EU GDPR applies, you may have the right to access, correct or erase your data, to restrict or object to processing (including analytics based on legitimate interests) and to data portability. The easiest way to object to analytics is the switch in Settings. Because the app ID is random and not linked to you, we usually cannot find your records without it; if you want to make a request, email <strong>legal@mgonnacrusht.co.uk</strong> and we will help as far as we can. You can also complain to the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/">ico.org.uk</a> or to your local data protection authority.</p>
+<p>Where UK or EU GDPR applies, you have rights over personal data, such as access, erasure and the right to object. In practice, the only data about you that reaches us is the usage statistics described above, and they are linked only to a random app ID that is not connected to your name, email address or any account. We cannot tell which records belong to you, and the app does not show the ID, so we are not able to look up, export or delete individual records (UK GDPR Article 11). Instead, you control the data directly:</p>
+<ul>
+  <li><strong>Stop it</strong>: turn off <strong>Settings &gt; Usage statistics</strong> and the app sends nothing more. This is also how you object to the processing.</li>
+  <li><strong>Start fresh</strong>: clear the app's data or reinstall it; a new random ID is created that is not linked to the old one.</li>
+  <li><strong>It expires</strong>: older statistics are deleted from our server after at most 25 months.</li>
+</ul>
+<p>You do not need to contact us to use these choices. If you have a question about privacy, email <strong>legal@mgonnacrusht.co.uk</strong>. You can also complain to the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/">ico.org.uk</a> or to your local data protection authority.</p>
 
 <h2>Children</h2>
 <p>Almanogram is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
