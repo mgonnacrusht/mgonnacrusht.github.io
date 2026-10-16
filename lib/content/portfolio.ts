@@ -46,7 +46,21 @@ export const savetProject: PortfolioProject = {
   cta: { label: "Case study", href: "/savet/" },
 };
 
+export const almanogramProject: PortfolioProject = {
+  slug: "almanogram",
+  title: "Almanogram",
+  description:
+    "Almanogram is a cozy nonogram puzzle game built in Flutter: hand-made puzzles that turn into illustrations for a collection book. No ads, no account, multi-language localization support.",
+  tags: ["Flutter", "Riverpod", "Umami"],
+  // The splash-screen snowman until the app icon is ready.
+  image: "/images/almanogram/snowman.png",
+  href: "/almanogram/",
+  status: "coming-soon",
+  cta: { label: "Game page", href: "/almanogram/" },
+};
+
 export const portfolioProjects: PortfolioProject[] = [
+  almanogramProject,
   savetProject,
   {
     slug: "palia-clock",
@@ -76,4 +90,4 @@ export const portfolioProjects: PortfolioProject[] = [
  * Homepage selected work. Palia Clock is the featured case study above it,
  * and the website card stays on /products/ only.
  */
-export const homepagePortfolio = [cityLineMapFeatured, savetProject];
+export const homepagePortfolio = [cityLineMapFeatured, almanogramProject];

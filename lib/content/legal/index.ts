@@ -13,7 +13,7 @@ export const companyPrivacyHtml = `<p>Last updated: October 7, 2026</p>
   <li>Call bookings made through our Cal.com booking page</li>
   <li>Related business email and communication records</li>
 </ul>
-<p>Product-specific data for the SaveT mobile app is covered by the separate <a href="/savet/legal/privacy/">SaveT Privacy Policy</a>.</p>
+<p>Product-specific data for the SaveT mobile app is covered by the separate <a href="/savet/legal/privacy/">SaveT Privacy Policy</a>, and for the Almanogram game by the <a href="/almanogram/legal/privacy/">Almanogram Privacy Policy</a>.</p>
 
 <h2>Information we collect</h2>
 <ul>
@@ -241,3 +241,99 @@ export const savetTermsHtml = `<p>Last updated: May 5, 2026</p>
 <p>For terms questions, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
 
 <p>Also see: <a href="/savet/legal/privacy/">SaveT Privacy Policy</a></p>`;
+
+export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
+
+<p>This policy explains what data the Almanogram puzzle game (Android app <code>com.mgonnacrusht.almanogram</code>) handles, why, and the choices you have.</p>
+
+<h2>Who we are</h2>
+<p>Almanogram is made by <strong>MgonnacrushT Limited</strong>, a company registered in England and Wales (company number <strong>16877439</strong>, registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom), which is the data controller. For privacy requests, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>No account, no sign-in, no ads and no in-app purchases.</li>
+  <li>Your game progress and settings are stored only on your device.</li>
+  <li>The game sends usage statistics, linked to a random app ID, to our own analytics server in Germany so we can improve the puzzles. A short note after the tutorial on first start explains this, and you can turn it off at any time in <strong>Settings &gt; Usage statistics</strong>.</li>
+  <li>We do not collect your name, email address, contacts, precise location, photos or advertising ID, and we do not sell data or share it with advertisers.</li>
+</ul>
+
+<h2>Data stored on your device</h2>
+<p>The app keeps the following on your device only: solved puzzles, stars and best times, a puzzle you left unfinished, your settings (language, vibration, the analytics switch) and whether you have seen the tutorial. This data is not sent to us. It is removed when you clear the app's data or uninstall the app.</p>
+
+<h2>Usage statistics (analytics)</h2>
+<p>To understand which puzzles are too hard, where the tutorial is unclear and which features are used, the app sends usage events to <strong>Umami</strong>, an open-source, cookieless analytics tool that we host ourselves at <code>umami.mgonnacrusht.co.uk</code>, on a server in Germany. The data is not sent to a third-party analytics company. Because the events are linked to a random app ID, they are pseudonymous rather than anonymous: they do not tell us who you are, but they can be connected to each other.</p>
+<p>Each event can contain:</p>
+<ul>
+  <li><strong>A random app ID</strong>: a random identifier created on your device the first time the app opens. It is not linked to your name, account, phone number or any hardware or advertising ID. A new random ID replaces it every 12 months, and a new one is also created if you clear the app's data or reinstall.</li>
+  <li><strong>Game events</strong>: for example app opened, app sent to the background or reopened, tutorial step reached or skipped, puzzle started, solved or left, hint or check used, collection opened, language or setting changed. Events can include the puzzle, its level number, time spent, how much of the picture was filled, and the number of hints, checks and mistakes.</li>
+  <li><strong>Technical details</strong>: app version, the store the app was installed from, app language, screen size, operating system (for example Android) and device type (phone or tablet).</li>
+  <li><strong>Approximate location</strong>: country, region and city, derived from your IP address when the event reaches our server. Your IP address is used only for this and to deliver the request: Umami does not store it (it is turned into a one-way, salted session value that cannot be reversed), and our server does not keep access logs with IP addresses.</li>
+</ul>
+<p>We use this data only to improve the game and do not combine it with other data about you. Our lawful basis under UK GDPR (and EU GDPR where it applies) is our legitimate interest in understanding and improving the game. Storing the random app ID on your device for this purpose is covered by the statistics exception in the UK Privacy and Electronic Communications Regulations (as amended by the Data (Use and Access) Act 2025), which requires us to tell you about it and to let you turn it off. The app does not use cookies.</p>
+<p><strong>Your choice:</strong> the first time you play, a short note after the tutorial explains the statistics, and this policy describes them in full. You can turn them off at any time in <strong>Settings &gt; Usage statistics</strong>. When it is off, the app sends nothing. Turning it off sends one final event recording that the setting changed.</p>
+
+<h2>Retention</h2>
+<p>Our analytics software does not delete data automatically, so we delete analytics data older than 25 months from our server by hand on a regular schedule. Data on your device stays until you clear the app's data or uninstall the app.</p>
+
+<h2>Service providers and app stores</h2>
+<ul>
+  <li><strong>Server hosting</strong>: our analytics server is hosted by Hostinger in Germany (European Union), which stores the data on our behalf.</li>
+  <li><strong>Google Play</strong>: when you download the app, Google processes data under its own terms and privacy policy (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>). We receive aggregated statistics from Google Play Console, such as install numbers and crash reports.</li>
+</ul>
+<p>We do not sell personal data and do not use it for advertising.</p>
+
+<h2>International transfers</h2>
+<p>Analytics data is stored in Germany (European Union). The UK recognises the EU as providing adequate protection for personal data, so no further transfer safeguards are needed for this. Google Play processes data under its own terms.</p>
+
+<h2>Your rights</h2>
+<p>Where UK or EU GDPR applies, you may have the right to access, correct or erase your data, to restrict or object to processing (including analytics based on legitimate interests) and to data portability. The easiest way to object to analytics is the switch in Settings. Because the app ID is random and not linked to you, we usually cannot find your records without it; if you want to make a request, email <strong>legal@mgonnacrusht.co.uk</strong> and we will help as far as we can. You can also complain to the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk/">ico.org.uk</a> or to your local data protection authority.</p>
+
+<h2>Children</h2>
+<p>Almanogram is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
+
+<h2>Security</h2>
+<p>Usage statistics are sent over an encrypted HTTPS connection. We apply reasonable technical and organisational measures for a small company. No method of transmission or storage is completely secure.</p>
+
+<h2>Changes</h2>
+<p>If the game changes what it collects (for example if ads are added in a later version), we will update this policy and the "Last updated" date before that version is released.</p>
+
+<h2>Contact</h2>
+<p>For privacy questions, contact <strong>legal@mgonnacrusht.co.uk</strong>. For help with the game, contact <strong>support@mgonnacrusht.co.uk</strong>.</p>
+
+<p>Also see: <a href="/almanogram/legal/terms/">Almanogram Terms of Use</a></p>`;
+
+export const almanogramTermsHtml = `<p>Last updated: October 16, 2026</p>
+
+<p>These terms govern your use of the Almanogram puzzle game, made by <strong>MgonnacrushT Limited</strong> (company number 16877439, England and Wales; registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom). By installing or using the game, you agree to them.</p>
+
+<h2>Licence</h2>
+<p>We give you a personal, non-exclusive, non-transferable licence to install and play Almanogram on devices you own or control, for your own non-commercial use.</p>
+
+<h2>Acceptable use</h2>
+<ul>
+  <li>Do not copy, modify, reverse engineer, resell or redistribute the app, its puzzles or its artwork, except where the law allows it.</li>
+  <li>Do not interfere with the app, our servers or other players' use of the game.</li>
+</ul>
+
+<h2>Content and intellectual property</h2>
+<p>The game, its puzzles, illustrations, name and branding belong to MgonnacrushT Limited or its licensors. Open-source components are used under their own licences, listed in the app under <strong>Settings &gt; About &gt; Licenses</strong>.</p>
+
+<h2>Price, ads and purchases</h2>
+<p>The current version is free, with no ads and no in-app purchases. If a later version adds them, the terms for them will be shown before you pay or agree, and purchases through Google Play follow Google Play's rules and refund policies.</p>
+
+<h2>Your progress</h2>
+<p>Progress is stored only on your device. We cannot restore progress lost by clearing the app's data, uninstalling the app or changing devices.</p>
+
+<h2>Changes and availability</h2>
+<p>We may update, change or stop offering the game or any part of it. We may update these terms; the "Last updated" date will change when we do. If a change is significant, we will tell you in the app or in the update notes before it applies. If you do not agree with updated terms, you can stop using the game and uninstall it.</p>
+
+<h2>Disclaimer and liability</h2>
+<p>The game is provided "as is" and "as available". To the extent permitted by law, we disclaim warranties and are not liable for indirect or consequential loss. Nothing in these terms limits rights you have under consumer law that cannot be excluded.</p>
+
+<h2>Governing law</h2>
+<p>These terms are governed by the laws of England and Wales. If you live elsewhere, you keep the protection of the mandatory consumer laws of your country.</p>
+
+<h2>Contact</h2>
+<p>For questions about these terms, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
+
+<p>Also see: <a href="/almanogram/legal/privacy/">Almanogram Privacy Policy</a></p>`;

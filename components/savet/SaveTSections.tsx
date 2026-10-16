@@ -50,6 +50,7 @@ export function UseCasesAccordion({ items }: { items: UseCase[] }) {
 export function SaveTSteps({
   steps,
   intro,
+  overlap = true,
 }: {
   steps: Array<{
     number: string;
@@ -59,7 +60,11 @@ export function SaveTSteps({
     alt: string;
   }>;
   intro: string;
+  /** Pull each row up into the one above (tall SaveT screenshots). Shorter
+   * screenshots with longer copy (Almanogram) need it off, or rows crowd. */
+  overlap?: boolean;
 }) {
+  const shift = overlap ? "-mt-24 lg:-mt-32" : "lg:-mt-6";
   return (
     <div>
       <p className="mx-auto mb-30 max-w-2xl text-center text-muted">{intro}</p>
@@ -86,17 +91,17 @@ export function SaveTSteps({
             <StepCopy step={steps[0]} />
           </div>
 
-          <div className="-mt-24 flex max-w-[240px] items-center self-center justify-self-start lg:-mt-32">
+          <div className={cn("flex max-w-[240px] items-center self-center justify-self-start", shift)}>
             <StepCopy step={steps[1]} />
           </div>
-          <div className="-mt-24 justify-self-start lg:-mt-32">
+          <div className={cn("justify-self-start", shift)}>
             <StepScreenshot step={steps[1]} />
           </div>
 
-          <div className="-mt-24 justify-self-start lg:-mt-32">
+          <div className={cn("justify-self-start", shift)}>
             <StepScreenshot step={steps[2]} />
           </div>
-          <div className="-mt-24 flex max-w-[240px] items-center self-center justify-self-start lg:-mt-32">
+          <div className={cn("flex max-w-[240px] items-center self-center justify-self-start", shift)}>
             <StepCopy step={steps[2]} />
           </div>
         </div>
