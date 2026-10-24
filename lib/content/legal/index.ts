@@ -308,7 +308,7 @@ export const almanogramPrivacyHtml = `<p>Last updated: October 24, 2026</p>
 
 <p>Also see: <a href="/almanogram/legal/terms/">Almanogram Terms of Use</a></p>`;
 
-export const almanogramTermsHtml = `<p>Last updated: October 16, 2026</p>
+export const almanogramTermsHtml = `<p>Last updated: October 24, 2026</p>
 
 <p>These terms govern your use of the Almanogram puzzle game, made by <strong>MgonnacrushT Limited</strong> (company number 16877439, England and Wales; registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom). By installing or using the game, you agree to them.</p>
 
@@ -325,7 +325,7 @@ export const almanogramTermsHtml = `<p>Last updated: October 16, 2026</p>
 <p>The game, its puzzles, illustrations, name and branding belong to MgonnacrushT Limited or its licensors. Open-source components are used under their own licences, listed in the app under <strong>Settings &gt; About &gt; Licenses</strong>.</p>
 
 <h2>Price, ads and purchases</h2>
-<p>The current version is free, with no ads and no in-app purchases. If a later version adds them, the terms for them will be shown before you pay or agree, and purchases through Google Play follow Google Play's rules and refund policies.</p>
+<p>The current version is free, with no ads and no in-app purchases. If a later version adds them, the terms for them will be shown before you pay or agree, and purchases through an app store follow that store's rules and refund policies.</p>
 
 <h2>Your progress</h2>
 <p>Progress is stored only on your device. We cannot restore progress lost by clearing the app's data, uninstalling the app or changing devices.</p>
