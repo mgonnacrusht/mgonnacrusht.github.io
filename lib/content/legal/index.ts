@@ -242,9 +242,9 @@ export const savetTermsHtml = `<p>Last updated: May 5, 2026</p>
 
 <p>Also see: <a href="/savet/legal/privacy/">SaveT Privacy Policy</a></p>`;
 
-export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
+export const almanogramPrivacyHtml = `<p>Last updated: October 24, 2026</p>
 
-<p>This policy explains what data the Almanogram puzzle game (Android app <code>com.mgonnacrusht.almanogram</code>) handles, why, and the choices you have.</p>
+<p>This policy explains what data the Almanogram puzzle game (Android app, package name starting with <code>com.mgonnacrusht.almanogram</code>) handles, why, and the choices you have.</p>
 
 <h2>Who we are</h2>
 <p>Almanogram is made by <strong>MgonnacrushT Limited</strong>, a company registered in England and Wales (company number <strong>16877439</strong>, registered office: Unit 501 Leroy House, 434-436 Essex Road, London, N1 3FY, United Kingdom), which is the data controller. For privacy questions, contact <strong>legal@mgonnacrusht.co.uk</strong>.</p>
@@ -278,7 +278,7 @@ export const almanogramPrivacyHtml = `<p>Last updated: October 16, 2026</p>
 <h2>Service providers and app stores</h2>
 <ul>
   <li><strong>Server hosting</strong>: our analytics server is hosted by Hostinger in Germany (European Union), which stores the data on our behalf.</li>
-  <li><strong>Google Play</strong>: when you download the app, Google processes data under its own terms and privacy policy (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>). We receive aggregated statistics from Google Play Console, such as install numbers and crash reports.</li>
+  <li><strong>App stores</strong>: when you download the app from an app store, that store processes data under its own terms and privacy policy; please refer to the store you used. We receive aggregated statistics from the store's developer console, such as install numbers and, where the store provides them, crash reports.</li>
 </ul>
 <p>We do not sell personal data and do not use it for advertising.</p>
 
