@@ -14,7 +14,7 @@ const routes: Route[] = [
   { path: "/", priority: 1, lastModified: "2026-10-04" },
   { path: "/savet/", priority: 0.9, lastModified: "2026-09-05" },
   { path: "/citylinemap/", priority: 0.85, lastModified: "2026-09-05" },
-  { path: "/almanogram/", priority: 0.85, lastModified: "2026-10-16" },
+  { path: "/almanogram/", priority: 0.85, lastModified: "2026-10-28" },
   { path: "/services/", priority: 0.85, lastModified: "2026-10-07" },
   { path: "/products/", priority: 0.8, lastModified: "2026-10-04" },
   { path: "/about/", priority: 0.8, lastModified: "2026-10-04" },

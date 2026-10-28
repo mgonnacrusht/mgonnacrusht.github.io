@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 });
 
 export default function AlmanogramPage() {
-  const { logo } = almanogramContent;
+  const { logo, appGalleryBadge } = almanogramContent;
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function AlmanogramPage() {
             alt={logo.alt}
             width={160}
             height={160}
-            className="mx-auto"
+            className="mx-auto rounded-[2rem] shadow-sm"
             priority
           />
           <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
@@ -41,6 +41,19 @@ export default function AlmanogramPage() {
           <p className="mt-5 text-lg leading-relaxed text-muted">
             {almanogramContent.lead}
           </p>
+          <a
+            href={almanogramUrls.appGallery}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-block transition-opacity hover:opacity-90"
+          >
+            <Image
+              src={appGalleryBadge.src}
+              alt={appGalleryBadge.alt}
+              width={280}
+              height={108}
+            />
+          </a>
         </Container>
       </Section>
 

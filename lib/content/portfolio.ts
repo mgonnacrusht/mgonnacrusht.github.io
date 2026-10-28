@@ -52,10 +52,9 @@ export const almanogramProject: PortfolioProject = {
   description:
     "Almanogram is a cozy nonogram puzzle game built in Flutter: hand-made puzzles that turn into illustrations for a collection book. No ads, no account, multi-language localization support.",
   tags: ["Flutter", "Riverpod", "Umami"],
-  // The splash-screen snowman until the app icon is ready.
-  image: "/images/almanogram/snowman.png",
+  image: "/images/almanogram/icon.png",
   href: "/almanogram/",
-  status: "coming-soon",
+  status: "live",
   cta: { label: "Game page", href: "/almanogram/" },
 };
 

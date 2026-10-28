@@ -1,20 +1,24 @@
 export const almanogramUrls = {
   privacy: "/almanogram/legal/privacy/",
   terms: "/almanogram/legal/terms/",
+  appGallery: "https://appgallery.huawei.com/app/C119485685",
 } as const;
 
 export const almanogramContent = {
   name: "Almanogram",
   tagline: "A calm nonogram.",
   statusLine:
-    "Coming soon to Google Play. Free, no ads, no account, works offline.",
+    "Available on Huawei AppGallery. Free, no ads, no account, works offline.",
   lead: "Almanogram is a cozy picture logic puzzle. Use the numbers on the edges to colour in the grid; when every square is right, a small pixel picture turns into a hand-finished illustration and joins your collection book.",
   metaDescription:
     "Almanogram is a cozy nonogram (picture cross) puzzle game for Android: no ads, no timer pressure, no account. Solve puzzles and collect illustrations.",
-  // The snowman from the splash screen until the app icon is ready.
   logo: {
-    src: "/images/almanogram/snowman.png",
-    alt: "Almanogram snowman",
+    src: "/images/almanogram/icon.png",
+    alt: "Almanogram app icon: a smiling snowman",
+  },
+  appGalleryBadge: {
+    src: "/images/almanogram/appgallery-badge.png",
+    alt: "Download Almanogram on Huawei AppGallery",
   },
   stepsIntro: "Fill the grid, ask for a hint when you are stuck, then watch the picture appear.",
   steps: [
@@ -52,7 +56,7 @@ export const almanogramContent = {
     "Multi-language localization support.",
   ],
   facts: [
-    { label: "Platform", value: "Android" },
+    { label: "Platform", value: "Android (AppGallery)" },
     { label: "Price", value: "Free" },
     { label: "Ads", value: "None" },
     { label: "Account", value: "Not needed" },
